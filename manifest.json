@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "repository": "MoDevIO/UnoSim-Examples",
+  "ref": "v1.0.0",
+  "examples": [
+    {
+      "id": "serial-print-test",
+      "title": "Serial Print Test",
+      "category": "Tests",
+      "files": [
+        {
+          "name": "serial-print-test.ino",
+          "path": "examples/00-tests/serial-print-test.ino"
+        }
+      ],
+      "main": "serial-print-test.ino"
+    },
+    {
+      "id": "blink",
+      "title": "Blink",
+      "category": "Basic",
+      "files": [
+        {
+          "name": "blink.ino",
+          "path": "examples/01-basic/blink.ino"
+        }
+      ],
+      "main": "blink.ino"
+    },
+    {
+      "id": "digital-read-write",
+      "title": "Digital Read and Write",
+      "category": "Arduino IO",
+      "files": [
+        {
+          "name": "digital-read-write.ino",
+          "path": "examples/02-io/digital-read-write.ino"
+        }
+      ],
+      "main": "digital-read-write.ino"
+    },
+    {
+      "id": "motor-control",
+      "title": "Motor Control",
+      "category": "Multi File",
+      "files": [
+        {
+          "name": "motor-control.ino",
+          "path": "examples/03-multi-file/motor-control.ino"
+        },
+        {
+          "name": "motor.h",
+          "path": "examples/03-multi-file/motor.h"
+        }
+      ],
+      "main": "motor-control.ino"
+    }
+  ]
+}
