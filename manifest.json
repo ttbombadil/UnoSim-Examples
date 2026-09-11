@@ -1,59 +1,255 @@
 {
   "schemaVersion": 1,
   "repository": "MoDevIO/UnoSim-Examples",
-  "ref": "v1.0.0",
+  "ref": "v2.0.0",
   "examples": [
     {
-      "id": "serial-print-test",
-      "title": "Serial Print Test",
-      "category": "Tests",
-      "files": [
-        {
-          "name": "serial-print-test.ino",
-          "path": "examples/00-tests/serial-print-test.ino"
-        }
-      ],
-      "main": "serial-print-test.ino"
+      "id": "it01-01-variable-speichern",
+      "title": "IT01.1 – Einen Wert in einer Variablen speichern",
+      "category": "IT01 – Daten",
+      "files": [{ "name": "it01-01-variable-speichern.ino", "path": "examples/IT01/it01-01-variable-speichern.ino" }],
+      "main": "it01-01-variable-speichern.ino"
     },
     {
-      "id": "blink",
-      "title": "Blink",
-      "category": "Basic",
-      "files": [
-        {
-          "name": "blink.ino",
-          "path": "examples/01-basic/blink.ino"
-        }
-      ],
-      "main": "blink.ino"
+      "id": "it01-02-konstante",
+      "title": "IT01.2 – Einen unveränderlichen Wert festlegen",
+      "category": "IT01 – Daten",
+      "files": [{ "name": "it01-02-konstante.ino", "path": "examples/IT01/it01-02-konstante.ino" }],
+      "main": "it01-02-konstante.ino"
     },
     {
-      "id": "digital-read-write",
-      "title": "Digital Read and Write",
-      "category": "Arduino IO",
-      "files": [
-        {
-          "name": "digital-read-write.ino",
-          "path": "examples/02-io/digital-read-write.ino"
-        }
-      ],
-      "main": "digital-read-write.ino"
+      "id": "it02-01-arithmetische-operatoren",
+      "title": "IT02.1 – Arithmetische Operatoren",
+      "category": "IT02 – Datenmanipulation",
+      "files": [{ "name": "it02-01-arithmetische-operatoren.ino", "path": "examples/IT02/it02-01-arithmetische-operatoren.ino" }],
+      "main": "it02-01-arithmetische-operatoren.ino"
     },
     {
-      "id": "motor-control",
-      "title": "Motor Control",
-      "category": "Multi File",
+      "id": "it02-02-vergleichsoperatoren",
+      "title": "IT02.2 – Vergleichsoperatoren",
+      "category": "IT02 – Datenmanipulation",
+      "files": [{ "name": "it02-02-vergleichsoperatoren.ino", "path": "examples/IT02/it02-02-vergleichsoperatoren.ino" }],
+      "main": "it02-02-vergleichsoperatoren.ino"
+    },
+    {
+      "id": "it02-03-boolesche-operatoren",
+      "title": "IT02.3 – Boolesche Operatoren",
+      "category": "IT02 – Datenmanipulation",
+      "files": [{ "name": "it02-03-boolesche-operatoren.ino", "path": "examples/IT02/it02-03-boolesche-operatoren.ino" }],
+      "main": "it02-03-boolesche-operatoren.ino"
+    },
+    {
+      "id": "it02-04-bitoperatoren",
+      "title": "IT02.4 – Bitoperatoren",
+      "category": "IT02 – Datenmanipulation",
+      "files": [{ "name": "it02-04-bitoperatoren.ino", "path": "examples/IT02/it02-04-bitoperatoren.ino" }],
+      "main": "it02-04-bitoperatoren.ino"
+    },
+    {
+      "id": "it03-01-serielle-ausgabe",
+      "title": "IT03.1 – Serielle Ausgabe",
+      "category": "IT03 – Ein- und Ausgabe",
+      "files": [{ "name": "it03-01-serielle-ausgabe.ino", "path": "examples/IT03/it03-01-serielle-ausgabe.ino" }],
+      "main": "it03-01-serielle-ausgabe.ino"
+    },
+    {
+      "id": "it03-02-serielles-zeichen-einlesen",
+      "title": "IT03.2 – Serielles Zeichen einlesen",
+      "category": "IT03 – Ein- und Ausgabe",
+      "files": [{ "name": "it03-02-serielles-zeichen-einlesen.ino", "path": "examples/IT03/it03-02-serielles-zeichen-einlesen.ino" }],
+      "main": "it03-02-serielles-zeichen-einlesen.ino"
+    },
+    {
+      "id": "it03-03-digitaler-ausgang",
+      "title": "IT03.3 – Digitaler Ausgang",
+      "category": "IT03 – Ein- und Ausgabe",
+      "files": [{ "name": "it03-03-digitaler-ausgang.ino", "path": "examples/IT03/it03-03-digitaler-ausgang.ino" }],
+      "main": "it03-03-digitaler-ausgang.ino"
+    },
+    {
+      "id": "it03-04-digitaler-eingang",
+      "title": "IT03.4 – Digitaler Eingang",
+      "category": "IT03 – Ein- und Ausgabe",
+      "files": [{ "name": "it03-04-digitaler-eingang.ino", "path": "examples/IT03/it03-04-digitaler-eingang.ino" }],
+      "main": "it03-04-digitaler-eingang.ino"
+    },
+    {
+      "id": "it03-05-millis",
+      "title": "IT03.5 – Vergangene Zeit mit millis()",
+      "category": "IT03 – Ein- und Ausgabe",
+      "files": [{ "name": "it03-05-millis.ino", "path": "examples/IT03/it03-05-millis.ino" }],
+      "main": "it03-05-millis.ino"
+    },
+    {
+      "id": "it04-01-analoger-eingang",
+      "title": "IT04.1 – Analoger Eingang",
+      "category": "IT04 – Analoge Ein- und Ausgabe",
+      "files": [{ "name": "it04-01-analoger-eingang.ino", "path": "examples/IT04/it04-01-analoger-eingang.ino" }],
+      "main": "it04-01-analoger-eingang.ino"
+    },
+    {
+      "id": "it04-02-messwert-in-volt",
+      "title": "IT04.2 – Messwert in Volt umrechnen",
+      "category": "IT04 – Analoge Ein- und Ausgabe",
+      "files": [{ "name": "it04-02-messwert-in-volt.ino", "path": "examples/IT04/it04-02-messwert-in-volt.ino" }],
+      "main": "it04-02-messwert-in-volt.ino"
+    },
+    {
+      "id": "it04-03-pwm-ausgang",
+      "title": "IT04.3 – PWM-Ausgang",
+      "category": "IT04 – Analoge Ein- und Ausgabe",
+      "files": [{ "name": "it04-03-pwm-ausgang.ino", "path": "examples/IT04/it04-03-pwm-ausgang.ino" }],
+      "main": "it04-03-pwm-ausgang.ino"
+    },
+    {
+      "id": "it04-04-map",
+      "title": "IT04.4 – Werte mit map() umrechnen",
+      "category": "IT04 – Analoge Ein- und Ausgabe",
+      "files": [{ "name": "it04-04-map.ino", "path": "examples/IT04/it04-04-map.ino" }],
+      "main": "it04-04-map.ino"
+    },
+    {
+      "id": "it05-01-if",
+      "title": "IT05.1 – Einfache if-Verzweigung",
+      "category": "IT05 – Verzweigungen",
+      "files": [{ "name": "it05-01-if.ino", "path": "examples/IT05/it05-01-if.ino" }],
+      "main": "it05-01-if.ino"
+    },
+    {
+      "id": "it05-02-if-else",
+      "title": "IT05.2 – Verzweigung mit if/else",
+      "category": "IT05 – Verzweigungen",
+      "files": [{ "name": "it05-02-if-else.ino", "path": "examples/IT05/it05-02-if-else.ino" }],
+      "main": "it05-02-if-else.ino"
+    },
+    {
+      "id": "it05-03-switch",
+      "title": "IT05.3 – Mehrfachverzweigung mit switch",
+      "category": "IT05 – Verzweigungen",
+      "files": [{ "name": "it05-03-switch.ino", "path": "examples/IT05/it05-03-switch.ino" }],
+      "main": "it05-03-switch.ino"
+    },
+    {
+      "id": "it06-01-while",
+      "title": "IT06.1 – Kopfgesteuerte while-Schleife",
+      "category": "IT06 – Schleifen",
+      "files": [{ "name": "it06-01-while.ino", "path": "examples/IT06/it06-01-while.ino" }],
+      "main": "it06-01-while.ino"
+    },
+    {
+      "id": "it06-02-do-while",
+      "title": "IT06.2 – Fußgesteuerte do/while-Schleife",
+      "category": "IT06 – Schleifen",
+      "files": [{ "name": "it06-02-do-while.ino", "path": "examples/IT06/it06-02-do-while.ino" }],
+      "main": "it06-02-do-while.ino"
+    },
+    {
+      "id": "it06-03-for",
+      "title": "IT06.3 – Zählschleife mit for",
+      "category": "IT06 – Schleifen",
+      "files": [{ "name": "it06-03-for.ino", "path": "examples/IT06/it06-03-for.ino" }],
+      "main": "it06-03-for.ino"
+    },
+    {
+      "id": "it06-04-verschachtelte-schleifen",
+      "title": "IT06.4 – Verschachtelte Schleifen",
+      "category": "IT06 – Schleifen",
+      "files": [{ "name": "it06-04-verschachtelte-schleifen.ino", "path": "examples/IT06/it06-04-verschachtelte-schleifen.ino" }],
+      "main": "it06-04-verschachtelte-schleifen.ino"
+    },
+    {
+      "id": "it07-01-funktion-ohne-rueckgabe",
+      "title": "IT07.1 – Funktion ohne Rückgabe",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-01-funktion-ohne-rueckgabe.ino", "path": "examples/IT07/it07-01-funktion-ohne-rueckgabe.ino" }],
+      "main": "it07-01-funktion-ohne-rueckgabe.ino"
+    },
+    {
+      "id": "it07-02-funktion-mit-rueckgabe",
+      "title": "IT07.2 – Funktion mit Rückgabe",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-02-funktion-mit-rueckgabe.ino", "path": "examples/IT07/it07-02-funktion-mit-rueckgabe.ino" }],
+      "main": "it07-02-funktion-mit-rueckgabe.ino"
+    },
+    {
+      "id": "it07-03-call-by-value",
+      "title": "IT07.3 – Call-by-value",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-03-call-by-value.ino", "path": "examples/IT07/it07-03-call-by-value.ino" }],
+      "main": "it07-03-call-by-value.ino"
+    },
+    {
+      "id": "it07-04-call-by-reference",
+      "title": "IT07.4 – Call-by-reference",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-04-call-by-reference.ino", "path": "examples/IT07/it07-04-call-by-reference.ino" }],
+      "main": "it07-04-call-by-reference.ino"
+    },
+    {
+      "id": "it07-05-eindimensionales-array",
+      "title": "IT07.5 – Eindimensionales Array",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-05-eindimensionales-array.ino", "path": "examples/IT07/it07-05-eindimensionales-array.ino" }],
+      "main": "it07-05-eindimensionales-array.ino"
+    },
+    {
+      "id": "it07-06-zweidimensionales-array",
+      "title": "IT07.6 – Zweidimensionales Array",
+      "category": "IT07 – Funktionen und Arrays",
+      "files": [{ "name": "it07-06-zweidimensionales-array.ino", "path": "examples/IT07/it07-06-zweidimensionales-array.ino" }],
+      "main": "it07-06-zweidimensionales-array.ino"
+    },
+    {
+      "id": "it08-01-struct",
+      "title": "IT08.1 – Einfache Struktur",
+      "category": "IT08 – Strukturen und Organisation",
+      "files": [{ "name": "it08-01-struct.ino", "path": "examples/IT08/it08-01-struct.ino" }],
+      "main": "it08-01-struct.ino"
+    },
+    {
+      "id": "it08-02-array-aus-structs",
+      "title": "IT08.2 – Array aus Strukturen",
+      "category": "IT08 – Strukturen und Organisation",
+      "files": [{ "name": "it08-02-array-aus-structs.ino", "path": "examples/IT08/it08-02-array-aus-structs.ino" }],
+      "main": "it08-02-array-aus-structs.ino"
+    },
+    {
+      "id": "it08-03-struct-als-parameter",
+      "title": "IT08.3 – Struktur als Funktionsparameter",
+      "category": "IT08 – Strukturen und Organisation",
+      "files": [{ "name": "it08-03-struct-als-parameter.ino", "path": "examples/IT08/it08-03-struct-als-parameter.ino" }],
+      "main": "it08-03-struct-als-parameter.ino"
+    },
+    {
+      "id": "it08-04-funktion-auslagern",
+      "title": "IT08.4 – Funktion in Headerdatei auslagern",
+      "category": "IT08 – Strukturen und Organisation",
       "files": [
-        {
-          "name": "motor-control.ino",
-          "path": "examples/03-multi-file/motor-control.ino"
-        },
-        {
-          "name": "motor.h",
-          "path": "examples/03-multi-file/motor.h"
-        }
+        { "name": "it08-04-funktion-auslagern.ino", "path": "examples/IT08/it08-04-funktion-auslagern.ino" },
+        { "name": "rechnen.h", "path": "examples/IT08/rechnen.h" }
       ],
-      "main": "motor-control.ino"
+      "main": "it08-04-funktion-auslagern.ino"
+    },
+    {
+      "id": "it11-01-matrix-ausgeben",
+      "title": "IT11.1 – Matrix ausgeben",
+      "category": "IT11 – Matrizen",
+      "files": [{ "name": "it11-01-matrix-ausgeben.ino", "path": "examples/IT11/it11-01-matrix-ausgeben.ino" }],
+      "main": "it11-01-matrix-ausgeben.ino"
+    },
+    {
+      "id": "it11-02-matrix-transponieren",
+      "title": "IT11.2 – Matrix transponieren",
+      "category": "IT11 – Matrizen",
+      "files": [{ "name": "it11-02-matrix-transponieren.ino", "path": "examples/IT11/it11-02-matrix-transponieren.ino" }],
+      "main": "it11-02-matrix-transponieren.ino"
+    },
+    {
+      "id": "it11-03-matrizen-addieren",
+      "title": "IT11.3 – Matrizen addieren",
+      "category": "IT11 – Matrizen",
+      "files": [{ "name": "it11-03-matrizen-addieren.ino", "path": "examples/IT11/it11-03-matrizen-addieren.ino" }],
+      "main": "it11-03-matrizen-addieren.ino"
     }
   ]
 }
