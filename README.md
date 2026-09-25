@@ -27,3 +27,40 @@ are not part of the public catalog.
 
 Releases use immutable tags such as `v2.0.0`; production UnoSim deployments may
 pin the corresponding tag or commit SHA.
+
+## Course Content and Tutor authoring
+
+Schema v2 supports an optional Tutor capability in addition to the Examples
+capability. Reusable Tutor Topics live under `tutor/topics/`, Tutor Strategies
+under `tutor/strategies/`, and `tutor/manifest.yaml` enumerates and SHA-256 pins
+each file. The repository `defaultStrategy` is optional; when present it is
+used for Examples and arbitrary sketches unless an Example annotation provides
+an override. Without it, UnoSim uses the application-owned `built-in-default`.
+
+Example-specific Tutor information belongs at the end of the Example's main
+`.ino` file. UnoSim removes the annotation before the source is shown or
+compiled. Annotations are optional, as are their Topic bindings and strategy
+override. `learningObjectives` are teacher-authored learning goals, not raw
+prompts; the current sketch remains the factual authority.
+
+The effective strategy precedence is:
+
+1. embedded Example strategy,
+2. repository `defaultStrategy`,
+3. UnoSim `built-in-default`.
+
+For example:
+
+```cpp
+/* @unosim-tutor
+schemaVersion: 1
+topics:
+  - variables-and-serial
+primaryTopic: variables-and-serial
+learningObjectives:
+  - Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt.
+  - Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen.
+@end-unosim-tutor */
+```
+
+Tutor repository data is normalized didactic data, never a system prompt.

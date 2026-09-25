@@ -6,7 +6,7 @@ topics:
     sha256: 84fc5f3de8722fc4c5d1b47da7bc2e262c82fd20b41d33f14aa6a244b15ca1d2
   - id: setup-loop-and-timing
     path: tutor/topics/setup-loop-and-timing.yaml
-    sha256: 1daf89cd00c6a70a96c98d4b04bf64084757f1b558497739a709d2349da812f4
+    sha256: 7b502d6740d1480c510dbd6566377b02a84916a47379ea820885364ccdea1dfb
 strategies:
   - id: precision-policy
     path: tutor/strategies/precision-policy.yaml

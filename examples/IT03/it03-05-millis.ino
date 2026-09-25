@@ -28,3 +28,13 @@ void loop() {
  * 2. Warum eignet sich unsigned long fuer den Zeitwert?
  * 3. Wird der Zeitwert durch einen erneuten Schleifendurchlauf zurueckgesetzt?
  */
+
+/* @unosim-tutor
+schemaVersion: 1
+topics:
+  - setup-loop-and-timing
+primaryTopic: setup-loop-and-timing
+learningObjectives:
+  - Die Studierenden sollen erklären können, warum millis() einen Zeitwert liefert.
+  - Sie sollen den Zeitwert als Grundlage für einen wiederkehrenden Ablauf einordnen können.
+@end-unosim-tutor */

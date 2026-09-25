@@ -1,6 +1,6 @@
 schemaVersion: 1
 id: setup-loop-and-timing
-title: setup, loop und Timing
+title: Long-Werte im Sketch
 locale: de-DE
 activation:
   any:
@@ -8,69 +8,69 @@ activation:
       values: [long]
 concepts:
   - id: execution-structure
-    title: Ausführungsstruktur
-    objective: Die Aufgaben von setup und loop im Sketch unterscheiden.
+    title: Long-Werte
+    objective: Die Rolle eines long-Werts im aktuellen Sketch erklären.
     prerequisites: []
     difficulty:
       entry: [1, 50]
       transfer: [20, 80]
     misconceptions:
-      - id: loop-runs-once
-        description: loop wird nicht nur einmal ausgeführt, sondern wiederholt aufgerufen.
+      - id: long-too-small
+        description: Ein long-Wert ist für jede beliebige Größe automatisch ausreichend.
     indicators:
-      - id: distinguishes-setup-loop
-        description: Unterscheidet einmalige Vorbereitung und wiederholte Ausführung.
+      - id: identifies-long-value
+        description: Beschreibt, welche Größe oder Messinformation im long-Wert gespeichert wird.
     mastery:
       minimumSuccessfulProbes: 1
       successRatingAtLeast: 3
-      requiredIndicators: [distinguishes-setup-loop]
+      requiredIndicators: [identifies-long-value]
       minimumDistinctQuestionKinds: 1
       recentWeakAnswersAllowed: 0
   - id: timing-interval
-    title: Zeitintervall
-    objective: Die Wirkung eines Zeitintervalls auf wiederholte Abläufe erklären.
+    title: Verwendung eines Long-Werts
+    objective: Die Verwendung eines long-Werts als Mess- oder Zustandsinformation einordnen.
     prerequisites: [execution-structure]
     difficulty:
       entry: [1, 50]
       transfer: [20, 80]
     misconceptions:
-      - id: delay-instant
-        description: Ein delay-Aufruf hält die Ausführung für die angegebene Zeit an.
+      - id: long-is-only-text
+        description: Ein long-Wert sei nur für Text und nicht für numerische Messwerte geeignet.
     indicators:
-      - id: explains-timing-effect
-        description: Erklärt den Einfluss eines Zeitintervalls auf die Wiederholung.
+      - id: explains-long-usage
+        description: Erklärt, warum der long-Wert zur dargestellten Information passt.
     mastery:
       minimumSuccessfulProbes: 1
       successRatingAtLeast: 3
-      requiredIndicators: [explains-timing-effect]
+      requiredIndicators: [explains-long-usage]
       minimumDistinctQuestionKinds: 1
       recentWeakAnswersAllowed: 0
 questions:
-  - id: setup-loop-concept
+  - id: long-value-concept
     concept: execution-structure
-    indicator: distinguishes-setup-loop
+    indicator: identifies-long-value
     kind: concept
     difficulty: [1, 50]
     requires:
       - fact: type-used
         values: [long]
-    text: Welche Aufgabe haben setup und loop in diesem Sketch?
-  - id: timing-application
+    text: Welche Information wird im Sketch in einem long-Wert gespeichert?
+  - id: long-value-application
     concept: timing-interval
-    indicator: explains-timing-effect
+    indicator: explains-long-usage
     kind: application
     difficulty: [20, 80]
     requires:
       - fact: type-used
         values: [long]
-    text: Wie beeinflusst das verwendete Zeitintervall die Wiederholung des Ablaufs?
+    text: Warum passt der Datentyp long zur im Sketch gespeicherten Information?
 scaffolds:
-  - id: timing-scaffold
+  - id: long-value-scaffold
     forConcept: timing-interval
     strategy: smaller-subproblem
     level: 1
-    hint: Vergleiche zuerst den Ablauf ohne Wartezeit mit dem Ablauf, der zwischen zwei Aktionen pausiert.
-    nextQuestion: timing-application
+    hint: Benenne zuerst die Information, die der long-Wert im aktuellen Sketch repräsentiert.
+    nextQuestion: long-value-application
 progression:
   entryConcepts: [execution-structure]
   preferredOrder: [execution-structure, timing-interval]
