@@ -1,0 +1,81 @@
+schemaVersion: 1
+id: setup-loop-and-timing
+title: setup, loop und Timing
+locale: de-DE
+activation:
+  any:
+    - fact: type-used
+      values: [long]
+concepts:
+  - id: execution-structure
+    title: Ausführungsstruktur
+    objective: Die Aufgaben von setup und loop im Sketch unterscheiden.
+    prerequisites: []
+    difficulty:
+      entry: [1, 50]
+      transfer: [20, 80]
+    misconceptions:
+      - id: loop-runs-once
+        description: loop wird nicht nur einmal ausgeführt, sondern wiederholt aufgerufen.
+    indicators:
+      - id: distinguishes-setup-loop
+        description: Unterscheidet einmalige Vorbereitung und wiederholte Ausführung.
+    mastery:
+      minimumSuccessfulProbes: 1
+      successRatingAtLeast: 3
+      requiredIndicators: [distinguishes-setup-loop]
+      minimumDistinctQuestionKinds: 1
+      recentWeakAnswersAllowed: 0
+  - id: timing-interval
+    title: Zeitintervall
+    objective: Die Wirkung eines Zeitintervalls auf wiederholte Abläufe erklären.
+    prerequisites: [execution-structure]
+    difficulty:
+      entry: [1, 50]
+      transfer: [20, 80]
+    misconceptions:
+      - id: delay-instant
+        description: Ein delay-Aufruf hält die Ausführung für die angegebene Zeit an.
+    indicators:
+      - id: explains-timing-effect
+        description: Erklärt den Einfluss eines Zeitintervalls auf die Wiederholung.
+    mastery:
+      minimumSuccessfulProbes: 1
+      successRatingAtLeast: 3
+      requiredIndicators: [explains-timing-effect]
+      minimumDistinctQuestionKinds: 1
+      recentWeakAnswersAllowed: 0
+questions:
+  - id: setup-loop-concept
+    concept: execution-structure
+    indicator: distinguishes-setup-loop
+    kind: concept
+    difficulty: [1, 50]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Welche Aufgabe haben setup und loop in diesem Sketch?
+  - id: timing-application
+    concept: timing-interval
+    indicator: explains-timing-effect
+    kind: application
+    difficulty: [20, 80]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Wie beeinflusst das verwendete Zeitintervall die Wiederholung des Ablaufs?
+scaffolds:
+  - id: timing-scaffold
+    forConcept: timing-interval
+    strategy: smaller-subproblem
+    level: 1
+    hint: Vergleiche zuerst den Ablauf ohne Wartezeit mit dem Ablauf, der zwischen zwei Aktionen pausiert.
+    nextQuestion: timing-application
+progression:
+  entryConcepts: [execution-structure]
+  preferredOrder: [execution-structure, timing-interval]
+  onRating:
+    1-2: remediate
+    3: clarify-same-indicator
+    4: probe-missing-indicator
+    5: evaluate-mastery-and-advance

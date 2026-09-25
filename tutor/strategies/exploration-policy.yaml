@@ -1,0 +1,17 @@
+schemaVersion: 1
+id: exploration-policy
+questionKindWeights:
+  recall: 5
+  concept: 15
+  application: 30
+  prediction: 20
+  transfer: 30
+sketchSpecificity: prefer
+repetition: relaxed
+remediation: scaffold-first
+clarification: new-indicator
+progression: advance-immediately
+scaffolding: prefer-generated
+feedbackVerbosity: detailed
+hintFirst: true
+adaptiveDifficulty: current-contract
