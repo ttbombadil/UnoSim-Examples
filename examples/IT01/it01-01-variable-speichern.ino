@@ -32,3 +32,13 @@ void loop() {
  * 2. Was geschieht mit dem alten Wert bei einer neuen Zuweisung?
  * 3. Warum erscheint jede Ausgabe nur einmal?
  */
+
+/* @unosim-tutor
+schemaVersion: 1
+topics:
+  - variables-and-serial
+primaryTopic: variables-and-serial
+learningObjectives:
+  - Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt.
+  - Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen.
+@end-unosim-tutor */

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "repository": "MoDevIO/UnoSim-Examples",
   "ref": "v2.0.0",
   "examples": [
@@ -251,5 +251,8 @@
       "files": [{ "name": "it11-03-matrizen-addieren.ino", "path": "examples/IT11/it11-03-matrizen-addieren.ino" }],
       "main": "it11-03-matrizen-addieren.ino"
     }
-  ]
+  ],
+  "tutor": {
+    "manifest": "tutor/manifest.yaml"
+  }
 }

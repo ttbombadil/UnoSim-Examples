@@ -1,0 +1,17 @@
+schemaVersion: 1
+id: precision-policy
+questionKindWeights:
+  recall: 50
+  concept: 30
+  application: 10
+  prediction: 5
+  transfer: 5
+sketchSpecificity: strict
+repetition: strict
+remediation: question-first
+clarification: same-indicator
+progression: mastery-then-advance
+scaffolding: prefer-content
+feedbackVerbosity: short
+hintFirst: false
+adaptiveDifficulty: current-contract

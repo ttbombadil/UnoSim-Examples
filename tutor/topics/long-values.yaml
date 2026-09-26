@@ -1,0 +1,81 @@
+schemaVersion: 1
+id: long-values
+title: Long-Werte im Sketch
+locale: de-DE
+activation:
+  any:
+    - fact: type-used
+      values: [long]
+concepts:
+  - id: execution-structure
+    title: Long-Werte
+    objective: Die Rolle eines long-Werts im aktuellen Sketch erklären.
+    prerequisites: []
+    difficulty:
+      entry: [1, 50]
+      transfer: [20, 80]
+    misconceptions:
+      - id: long-too-small
+        description: Ein long-Wert ist für jede beliebige Größe automatisch ausreichend.
+    indicators:
+      - id: identifies-long-value
+        description: Beschreibt, welche Größe oder Messinformation im long-Wert gespeichert wird.
+    mastery:
+      minimumSuccessfulProbes: 1
+      successRatingAtLeast: 3
+      requiredIndicators: [identifies-long-value]
+      minimumDistinctQuestionKinds: 1
+      recentWeakAnswersAllowed: 0
+  - id: timing-interval
+    title: Verwendung eines Long-Werts
+    objective: Die Verwendung eines long-Werts als Mess- oder Zustandsinformation einordnen.
+    prerequisites: [execution-structure]
+    difficulty:
+      entry: [1, 50]
+      transfer: [20, 80]
+    misconceptions:
+      - id: long-is-only-text
+        description: Ein long-Wert sei nur für Text und nicht für numerische Messwerte geeignet.
+    indicators:
+      - id: explains-long-usage
+        description: Erklärt, warum der long-Wert zur dargestellten Information passt.
+    mastery:
+      minimumSuccessfulProbes: 1
+      successRatingAtLeast: 3
+      requiredIndicators: [explains-long-usage]
+      minimumDistinctQuestionKinds: 1
+      recentWeakAnswersAllowed: 0
+questions:
+  - id: long-value-concept
+    concept: execution-structure
+    indicator: identifies-long-value
+    kind: concept
+    difficulty: [1, 50]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Welche Information wird im Sketch in einem long-Wert gespeichert?
+  - id: long-value-application
+    concept: timing-interval
+    indicator: explains-long-usage
+    kind: application
+    difficulty: [20, 80]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Warum passt der Datentyp long zur im Sketch gespeicherten Information?
+scaffolds:
+  - id: long-value-scaffold
+    forConcept: timing-interval
+    strategy: smaller-subproblem
+    level: 1
+    hint: Benenne zuerst die Information, die der long-Wert im aktuellen Sketch repräsentiert.
+    nextQuestion: long-value-application
+progression:
+  entryConcepts: [execution-structure]
+  preferredOrder: [execution-structure, timing-interval]
+  onRating:
+    1-2: remediate
+    3: clarify-same-indicator
+    4: probe-missing-indicator
+    5: evaluate-mastery-and-advance

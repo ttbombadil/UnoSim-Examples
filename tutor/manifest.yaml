@@ -1,0 +1,16 @@
+schemaVersion: 1
+defaultStrategy: precision-policy
+topics:
+  - id: variables-and-serial
+    path: tutor/topics/variables-and-serial.yaml
+    sha256: 84fc5f3de8722fc4c5d1b47da7bc2e262c82fd20b41d33f14aa6a244b15ca1d2
+  - id: long-values
+    path: tutor/topics/long-values.yaml
+    sha256: 1cc3c7ab861443503f1f47acb2863157ae92a2489cbaa55a2b30516c89b96859
+strategies:
+  - id: precision-policy
+    path: tutor/strategies/precision-policy.yaml
+    sha256: 4f5c4f36a3fd6daf1b94e316a956a4bc03223f296d886e9ba7646428f706c4d3
+  - id: exploration-policy
+    path: tutor/strategies/exploration-policy.yaml
+    sha256: 918b460b4e25bc169beba5fa880c034624296d41aafbb7be1e4717c7657d2f2b

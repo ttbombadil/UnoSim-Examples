@@ -28,3 +28,10 @@ void loop() {
  * 2. Welche elektrische Bedeutung haben HIGH und LOW?
  * 3. Warum reicht fuer dieses Beispiel die Funktion setup() aus?
  */
+
+/* @unosim-tutor
+schemaVersion: 1
+learningObjectives:
+  - Die Studierenden sollen erklären können, wie ein digitaler Ausgang im aktuellen Sketch gesetzt wird.
+  - Sie sollen den Zusammenhang zwischen Ausgangszustand und beobachtbarer Wirkung beschreiben können.
+@end-unosim-tutor */
