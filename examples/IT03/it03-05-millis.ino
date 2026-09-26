@@ -32,8 +32,8 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 1
 topics:
-  - setup-loop-and-timing
-primaryTopic: setup-loop-and-timing
+  - long-values
+primaryTopic: long-values
 learningObjectives:
   - Die Studierenden sollen erklären können, warum millis() einen Zeitwert liefert.
   - Sie sollen den Zeitwert als Grundlage für einen wiederkehrenden Ablauf einordnen können.

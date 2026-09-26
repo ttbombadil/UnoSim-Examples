@@ -4,9 +4,9 @@ topics:
   - id: variables-and-serial
     path: tutor/topics/variables-and-serial.yaml
     sha256: 84fc5f3de8722fc4c5d1b47da7bc2e262c82fd20b41d33f14aa6a244b15ca1d2
-  - id: setup-loop-and-timing
-    path: tutor/topics/setup-loop-and-timing.yaml
-    sha256: 7b502d6740d1480c510dbd6566377b02a84916a47379ea820885364ccdea1dfb
+  - id: long-values
+    path: tutor/topics/long-values.yaml
+    sha256: 1cc3c7ab861443503f1f47acb2863157ae92a2489cbaa55a2b30516c89b96859
 strategies:
   - id: precision-policy
     path: tutor/strategies/precision-policy.yaml
