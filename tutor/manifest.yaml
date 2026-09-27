@@ -3,7 +3,7 @@ defaultStrategy: precision-policy
 topics:
   - id: variables-and-serial
     path: tutor/topics/variables-and-serial.yaml
-    sha256: 84fc5f3de8722fc4c5d1b47da7bc2e262c82fd20b41d33f14aa6a244b15ca1d2
+    sha256: 120e5f9604b82ddd006f712a18bf6ef865de736e0071a432f4396170de998f49
   - id: long-values
     path: tutor/topics/long-values.yaml
     sha256: 1cc3c7ab861443503f1f47acb2863157ae92a2489cbaa55a2b30516c89b96859
