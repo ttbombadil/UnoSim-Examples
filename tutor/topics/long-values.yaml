@@ -64,6 +64,24 @@ questions:
       - fact: type-used
         values: [long]
     text: Warum passt der Datentyp long zur im Sketch gespeicherten Information?
+  - id: long-value-prediction
+    concept: execution-structure
+    indicator: identifies-long-value
+    kind: prediction
+    difficulty: [20, 80]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Wie erwartest du, dass sich der gespeicherte long-Wert beim nächsten Schleifendurchlauf verändert?
+  - id: long-value-transfer
+    concept: timing-interval
+    indicator: explains-long-usage
+    kind: transfer
+    difficulty: [20, 80]
+    requires:
+      - fact: type-used
+        values: [long]
+    text: Welche weitere zeitbezogene Information könntest du im aktuellen Sketch mit einem long-Wert erfassen, ohne den vollständigen Code zu entwerfen?
 scaffolds:
   - id: long-value-scaffold
     forConcept: timing-interval

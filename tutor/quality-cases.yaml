@@ -1,0 +1,12 @@
+schemaVersion: 1
+cases:
+  - id: variables-serial-positive
+    example: it01-01-variable-speichern
+    expectedTopics: [variables-and-serial]
+    forbiddenTopics: [long-values]
+  - id: pwm-does-not-activate-variables
+    example: it04-03-pwm-ausgang
+    forbiddenTopics: [variables-and-serial, long-values]
+  - id: long-values-positive
+    example: it03-05-millis
+    expectedTopics: [long-values]
