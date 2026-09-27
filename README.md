@@ -64,3 +64,19 @@ learningObjectives:
 ```
 
 Tutor repository data is normalized didactic data, never a system prompt.
+
+### Deterministic Tutor quality gate
+
+`tutor/quality-cases.yaml` contains small positive and negative activation
+cases that reference Examples by ID. Every Topic needs both kinds of coverage.
+The gate also checks the complete pinned bundle, Topic/Question reachability,
+mastery capacity, and a strict LEARN-to-DEEPEN path. It deliberately does not
+try to judge semantic teaching quality.
+
+`.unosim-compatible-commit` pins the exact UnoSim validator used by CI; it must
+be updated deliberately when the Course Content adopts a newer validator
+contract. With that UnoSim revision checked out locally, run:
+
+```sh
+npm run validate:tutor-course-content -- /path/to/UnoSim-Examples
+```
