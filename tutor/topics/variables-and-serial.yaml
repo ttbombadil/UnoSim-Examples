@@ -4,8 +4,6 @@ title: Variablen, Literale und Serial-Ausgabe
 locale: de-DE
 activation:
   any:
-    - fact: type-used
-      values: [int]
     - fact: serial-call
       values: [print]
 concepts:
@@ -56,7 +54,7 @@ questions:
     requires:
       - fact: type-used
         values: [int]
-    text: Welchen Wert verwendet der Sketch an der betrachteten Integer-Variablen?
+    text: Welche Rolle spielt der Integer-Datentyp im aktuellen Sketch?
   - id: serial-output-concept
     concept: serial-output
     indicator: explains-serial-output
@@ -66,6 +64,26 @@ questions:
       - fact: serial-call
         values: [print]
     text: Welche Rolle hat der Serial-Ausgabeaufruf in diesem Sketch?
+  - id: variable-output-application
+    concept: variable-values
+    indicator: relates-value-to-use
+    kind: application
+    difficulty: [20, 80]
+    requires:
+      - fact: type-used
+        values: [int]
+      - fact: serial-call
+        values: [print]
+    text: Wie hängt der gespeicherte Integerwert mit der sichtbaren seriellen Ausgabe im aktuellen Sketch zusammen?
+  - id: serial-output-transfer
+    concept: serial-output
+    indicator: explains-serial-output
+    kind: transfer
+    difficulty: [20, 80]
+    requires:
+      - fact: serial-call
+        values: [print]
+    text: Welche gezielte Wertänderung im aktuellen Sketch würdest du an der seriellen Ausgabe prüfen, und welche Beobachtung erwartest du?
 scaffolds:
   - id: serial-output-scaffold
     forConcept: serial-output

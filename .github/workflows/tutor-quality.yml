@@ -1,0 +1,53 @@
+name: Tutor Course Content Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-tutor-quality:
+    name: Deterministic Tutor quality hard gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Course Content
+        uses: actions/checkout@v4
+        with:
+          path: course-content
+
+      - name: Read compatible UnoSim commit
+        id: unosim-version
+        shell: bash
+        run: |
+          ref="$(tr -d '[:space:]' < course-content/.unosim-compatible-commit)"
+          if [[ ! "$ref" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "Invalid .unosim-compatible-commit" >&2
+            exit 1
+          fi
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+
+      - name: Check out compatible UnoSim validator
+        uses: actions/checkout@v4
+        with:
+          repository: MoDevIO/UnoSim
+          ref: ${{ steps.unosim-version.outputs.ref }}
+          path: unosim
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: unosim/.nvmrc
+          cache: npm
+          cache-dependency-path: unosim/package-lock.json
+
+      - name: Install validator dependencies
+        working-directory: unosim
+        run: npm ci
+
+      - name: Validate Course Content
+        working-directory: unosim
+        run: npm run validate:tutor-course-content -- "$GITHUB_WORKSPACE/course-content"
