@@ -29,7 +29,7 @@ concepts:
   - id: serial-output
     title: Serielle Ausgabe
     objective: Beschreiben, wie ein Wert über eine Serial-Ausgabe sichtbar wird.
-    prerequisites: [variable-values]
+    prerequisites: []
     difficulty:
       entry: [1, 50]
       transfer: [20, 80]
