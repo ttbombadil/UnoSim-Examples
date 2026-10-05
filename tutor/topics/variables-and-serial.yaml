@@ -9,7 +9,7 @@ activation:
 concepts:
   - id: variable-values
     title: Variablenwerte
-    objective: Den Zusammenhang zwischen einem deklarierten Integerwert und seiner Verwendung erklären.
+    objective: Den Zusammenhang zwischen einem deklarierten Wert und seiner Verwendung erklären.
     prerequisites: []
     difficulty:
       entry: [1, 50]
@@ -19,7 +19,7 @@ concepts:
         description: Eine Deklaration allein erzeugt noch keine Ausgabe im seriellen Monitor.
     indicators:
       - id: relates-value-to-use
-        description: Ordnet einen Integerwert seiner Verwendung im Sketch zu.
+        description: Ordnet einen Variablenwert seiner Verwendung im Sketch zu.
     mastery:
       minimumSuccessfulProbes: 1
       successRatingAtLeast: 3
@@ -53,8 +53,8 @@ questions:
     difficulty: [1, 50]
     requires:
       - fact: type-used
-        values: [int]
-    text: Welche Rolle spielt der Integer-Datentyp im aktuellen Sketch?
+        values: [char, byte, int, long, float]
+    text: Welche Rolle spielt der Datentyp der betrachteten Variable im aktuellen Sketch?
   - id: serial-output-concept
     concept: serial-output
     indicator: explains-serial-output
@@ -71,10 +71,10 @@ questions:
     difficulty: [20, 80]
     requires:
       - fact: type-used
-        values: [int]
+        values: [char, byte, int, long, float]
       - fact: serial-call
         values: [print]
-    text: Wie hängt der gespeicherte Integerwert mit der sichtbaren seriellen Ausgabe im aktuellen Sketch zusammen?
+    text: Wie hängt der in der Variable gespeicherte Wert mit der sichtbaren seriellen Ausgabe im aktuellen Sketch zusammen?
   - id: serial-output-transfer
     concept: serial-output
     indicator: explains-serial-output
