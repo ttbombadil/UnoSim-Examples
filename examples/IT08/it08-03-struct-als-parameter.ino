@@ -38,3 +38,25 @@ void loop() {
  * 2. Welche Bedeutung hat der Operator ->?
  * 3. Wird in der Funktion eine Kopie oder das Original veraendert?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Eine Struktur per Referenz an eine Funktion uebergeben."
+exclusive: true
+focus:
+  - id: zeiger-uebergabe
+    title: "Übergabe per Zeiger"
+    objective: "Die Studierenden sollen den Aspekt \"Übergabe per Zeiger\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum wird beim Aufruf `&messung` verwendet?"
+      - kind: concept
+        text: "Welche Bedeutung hat der Operator `->`?"
+  - id: kopie-oder-original
+    title: "Kopie oder Original"
+    objective: "Die Studierenden sollen den Aspekt \"Kopie oder Original\" erklären können."
+    questions:
+      - kind: concept
+        text: "Wird in `messwertKorrigieren` eine Kopie oder das Original verändert?"
+@end-unosim-tutor */

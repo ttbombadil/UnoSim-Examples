@@ -36,3 +36,27 @@ void loop() {
  * 2. Warum wird fuer spannung der Datentyp float verwendet?
  * 3. Welche Bedeutung hat die Referenzspannung in der Rechnung?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Den digitalisierten Messwert eines Analogeingangs in eine Spannung umrechnen."
+exclusive: true
+focus:
+  - id: umrechnung
+    title: "Umrechnung in Volt"
+    objective: "Die Studierenden sollen den Aspekt \"Umrechnung in Volt\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welche Spannung gehört ungefähr zum Messwert 512?"
+      - kind: concept
+        text: "Welche Bedeutung hat `REFERENZSPANNUNG` in der Rechnung?"
+  - id: datentyp-float
+    title: "Gleitkommazahlen"
+    objective: "Die Studierenden sollen den Aspekt \"Gleitkommazahlen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum wird für `spannung` der Datentyp `float` verwendet?"
+      - kind: prediction
+        text: "Was ändert sich im Ergebnis, wenn bei `1024.0` der Dezimalpunkt entfällt?"
+@end-unosim-tutor */

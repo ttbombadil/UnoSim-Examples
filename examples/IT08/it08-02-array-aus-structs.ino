@@ -43,3 +43,25 @@ void loop() {
  * 2. Was bedeutet messungen[1].messwert?
  * 3. Warum koennen die Felder einer Struktur verschiedene Datentypen haben?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Ein Array verwenden, dessen Elemente Strukturen sind."
+exclusive: true
+focus:
+  - id: array-aus-structs
+    title: "Array aus Strukturen"
+    objective: "Die Studierenden sollen den Aspekt \"Array aus Strukturen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welchen Datentyp besitzt ein einzelnes Element von `messungen`?"
+      - kind: concept
+        text: "Was bedeutet es, das Feld `messwert` des Elements mit dem Index 1 von `messungen` anzusprechen?"
+  - id: gemischte-typen
+    title: "Gemischte Datentypen"
+    objective: "Die Studierenden sollen den Aspekt \"Gemischte Datentypen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum können die Felder einer `struct` verschiedene Datentypen haben?"
+@end-unosim-tutor */

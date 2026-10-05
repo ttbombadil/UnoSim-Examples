@@ -32,3 +32,31 @@ void loop() {
  * 2. Welchen Wert besitzt messwerte[2] zu Beginn?
  * 3. Warum muss die Schleifenbedingung i < ANZAHL_WERTE lauten?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Ein eindimensionales Array deklarieren und ueber seinen Index auslesen."
+exclusive: true
+focus:
+  - id: index
+    title: "Der Index"
+    objective: "Die Studierenden sollen den Aspekt \"Der Index\" erklären können."
+    questions:
+      - kind: recall
+        text: "Mit welchem Index beginnt das Array `messwerte`?"
+      - kind: recall
+        text: "Welchen Wert besitzt das Element von `messwerte` mit dem Index 2 zu Beginn?"
+  - id: schleife-und-grenze
+    title: "Schleife und Obergrenze"
+    objective: "Die Studierenden sollen den Aspekt \"Schleife und Obergrenze\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum muss die Bedingung `i < ANZAHL_WERTE` lauten und darf nicht „kleiner oder gleich“ sein?"
+  - id: elementtyp
+    title: "Der Elementtyp"
+    objective: "Die Studierenden sollen den Aspekt \"Der Elementtyp\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Rolle spielt der Elementtyp `int` des Arrays `messwerte`?"
+@end-unosim-tutor */

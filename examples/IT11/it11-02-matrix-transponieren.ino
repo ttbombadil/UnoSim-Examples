@@ -47,3 +47,25 @@ void loop() {
  * 2. Was geschieht mit den Elementen auf der Hauptdiagonalen?
  * 3. Welche Eigenschaft hat das Ergebnis bei einer symmetrischen Matrix?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Beim Transponieren Zeilen- und Spaltenindizes vertauschen."
+exclusive: true
+focus:
+  - id: transponieren
+    title: "Transponieren"
+    objective: "Die Studierenden sollen den Aspekt \"Transponieren\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche beiden Indizes werden beim Transponieren vertauscht?"
+      - kind: concept
+        text: "Was geschieht mit den Elementen auf der Hauptdiagonalen?"
+  - id: ergebnis
+    title: "Das Ergebnis"
+    objective: "Die Studierenden sollen den Aspekt \"Das Ergebnis\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welcher Wert steht nach dem Transponieren in `transponiert` an der Position mit den Indizes 1 und 0?"
+@end-unosim-tutor */

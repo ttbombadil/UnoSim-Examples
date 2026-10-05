@@ -31,3 +31,25 @@ void loop() {
  * 2. Wie oft wird ihr Block mindestens ausgefuehrt?
  * 3. Warum entsteht beim zweiten Experiment mit Startwert 5 keine Ausgabe?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Einen Anweisungsblock mit do/while mindestens einmal ausfuehren."
+exclusive: true
+focus:
+  - id: pruefung-am-ende
+    title: "Prüfung am Ende"
+    objective: "Die Studierenden sollen den Aspekt \"Prüfung am Ende\" erklären können."
+    questions:
+      - kind: concept
+        text: "Wann wird die Bedingung der `do`/`while`-Schleife geprüft?"
+      - kind: prediction
+        text: "Wie oft wird der Block mindestens ausgeführt?"
+  - id: vergleich-while
+    title: "Vergleich mit while"
+    objective: "Die Studierenden sollen den Aspekt \"Vergleich mit while\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum entstünde mit einer reinen `while`-Schleife und demselben Startwert keine Ausgabe?"
+@end-unosim-tutor */

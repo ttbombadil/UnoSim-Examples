@@ -40,3 +40,25 @@ void loop() {
  * 2. Welchen Wert liefert tabelle[1][2]?
  * 3. Welche Schleife laeuft ueber die Spalten?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Ein zweidimensionales Array als Tabelle verwenden."
+exclusive: true
+focus:
+  - id: zwei-indizes
+    title: "Zwei Indizes"
+    objective: "Die Studierenden sollen den Aspekt \"Zwei Indizes\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche zwei Indizes werden für ein Element von `tabelle` benötigt?"
+      - kind: prediction
+        text: "Welchen Wert hat das Element von `tabelle` in der zweiten Zeile und dritten Spalte?"
+  - id: schleifen
+    title: "Die Schleifen"
+    objective: "Die Studierenden sollen den Aspekt \"Die Schleifen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Schleife läuft über die Spalten?"
+@end-unosim-tutor */

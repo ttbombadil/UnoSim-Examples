@@ -41,3 +41,25 @@ void loop() {
  * 2. Warum werden zwei Schleifen benoetigt?
  * 3. Welche Aufgabe hat das Tabulatorzeichen \t?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Die Elemente einer 3x3-Matrix zeilen- und spaltenweise ausgeben."
+exclusive: true
+focus:
+  - id: elementzugriff
+    title: "Elementzugriff"
+    objective: "Die Studierenden sollen den Aspekt \"Elementzugriff\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welches Element von `matrix` wird mit den Indizes 1 und 2 angesprochen?"
+      - kind: concept
+        text: "Warum werden zwei Schleifen benötigt?"
+  - id: ausgabeformat
+    title: "Ausgabeformat"
+    objective: "Die Studierenden sollen den Aspekt \"Ausgabeformat\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Aufgabe hat das Tabulatorzeichen `\\t`?"
+@end-unosim-tutor */

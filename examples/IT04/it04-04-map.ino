@@ -31,3 +31,27 @@ void loop() {
  * 2. Warum ist das Ergebnis fuer 512 nicht exakt 127,5?
  * 3. Begrenzt map() einen Wert automatisch auf den Zielbereich?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Mit map() die relative Lage eines Wertes auf einen neuen Wertebereich uebertragen."
+exclusive: true
+focus:
+  - id: bereichsgrenzen
+    title: "Bereichsgrenzen"
+    objective: "Die Studierenden sollen den Aspekt \"Bereichsgrenzen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Bedeutung haben die vier Bereichsgrenzen im Aufruf von `map`?"
+      - kind: concept
+        text: "Warum ist das Ergebnis für 512 nicht exakt 127,5?"
+  - id: datentyp-und-grenzen
+    title: "Datentyp und Grenzen"
+    objective: "Die Studierenden sollen den Aspekt \"Datentyp und Grenzen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Rolle spielt der Typ `long` für `ausgangswert`?"
+      - kind: prediction
+        text: "Begrenzt `map` einen Eingangswert wie 1200 automatisch auf den Zielbereich?"
+@end-unosim-tutor */

@@ -32,3 +32,27 @@ void loop() {
  * 2. Was geschieht bei einer falschen Bedingung?
  * 3. Wann unterscheiden sich > und >=?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Mit if einen Programmblock nur bei einer wahren Bedingung ausfuehren."
+exclusive: true
+focus:
+  - id: bedingung
+    title: "Die Bedingung"
+    objective: "Die Studierenden sollen den Aspekt \"Die Bedingung\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welchen Wahrheitswert hat `messwert > GRENZWERT` mit den aktuellen Werten?"
+      - kind: prediction
+        text: "Was geschieht, wenn die Bedingung falsch ist?"
+  - id: grenzfall
+    title: "Der Grenzfall"
+    objective: "Die Studierenden sollen den Aspekt \"Der Grenzfall\" erklären können."
+    questions:
+      - kind: application
+        text: "Wann unterscheidet sich der Vergleich mit `>` von einem Vergleich mit „größer oder gleich“?"
+      - kind: transfer
+        text: "Wie würdest du eine zweite Meldung für Werte unterhalb des `GRENZWERT` ergänzen?"
+@end-unosim-tutor */
