@@ -31,3 +31,27 @@ void loop() {
  * 2. Was liefert Serial.read(), wenn kein Zeichen vorhanden ist?
  * 3. Warum erscheinen bei einer int-Variablen Zahlen statt Zeichen?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Mit Serial.available() und Serial.read() ein einzelnes Zeichen empfangen."
+exclusive: true
+focus:
+  - id: zeichen-empfangen
+    title: "Zeichen empfangen"
+    objective: "Die Studierenden sollen den Aspekt \"Zeichen empfangen\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum wird `Serial.available` vor `Serial.read` geprüft?"
+      - kind: prediction
+        text: "Was geschieht in `loop`, solange kein Zeichen gesendet wurde?"
+  - id: datentyp-char
+    title: "Datentyp char"
+    objective: "Die Studierenden sollen den Aspekt \"Datentyp char\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Rolle spielt der Datentyp `char` für die Variable `zeichen`?"
+      - kind: prediction
+        text: "Was würde sich in der Ausgabe ändern, wenn `zeichen` den Typ `int` hätte?"
+@end-unosim-tutor */

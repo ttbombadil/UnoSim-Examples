@@ -37,3 +37,27 @@ void loop() {
  * 2. Was ist der Unterschied zwischen = und ==?
  * 3. Welchen Datentyp hat das Ergebnis eines Vergleichs?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Vergleichsoperatoren anwenden und ihr boolesches Ergebnis beobachten."
+exclusive: true
+focus:
+  - id: vergleichsergebnis
+    title: "Ergebnis eines Vergleichs"
+    objective: "Die Studierenden sollen den Aspekt \"Ergebnis eines Vergleichs\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welche der Vergleiche `a == b`, `a != b`, `a < b` und `a >= b` sind mit den aktuellen Werten wahr?"
+      - kind: recall
+        text: "Wie werden ein wahres und ein falsches Ergebnis in der Ausgabe dargestellt?"
+  - id: zuweisung-oder-vergleich
+    title: "Zuweisung oder Vergleich"
+    objective: "Die Studierenden sollen den Aspekt \"Zuweisung oder Vergleich\" erklären können."
+    questions:
+      - kind: concept
+        text: "Was ist der Unterschied zwischen `=` und `==`?"
+      - kind: concept
+        text: "Welchen Datentyp hat das Ergebnis eines Vergleichs?"
+@end-unosim-tutor */

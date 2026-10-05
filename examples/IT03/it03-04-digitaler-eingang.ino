@@ -31,3 +31,27 @@ void loop() {
  * 2. Warum liefert ein gedrueckter Taster bei INPUT_PULLUP normalerweise LOW?
  * 3. Welchen Zweck hat ein Pullup-Widerstand?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Einen Eingang mit internem Pullup-Widerstand konfigurieren und lesen."
+exclusive: true
+focus:
+  - id: eingang-lesen
+    title: "Eingang lesen"
+    objective: "Die Studierenden sollen den Aspekt \"Eingang lesen\" erklären können."
+    questions:
+      - kind: recall
+        text: "Welche Werte kann `digitalRead` liefern?"
+      - kind: concept
+        text: "Welchen Zweck hat `INPUT_PULLUP` für den Pin `PIN_TASTER`?"
+  - id: taster-logik
+    title: "Taster-Logik"
+    objective: "Die Studierenden sollen den Aspekt \"Taster-Logik\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welcher Wert wird ausgegeben, solange der Taster gedrückt ist, und warum?"
+      - kind: concept
+        text: "Warum steht in `loop` der Aufruf `delay(500)`?"
+@end-unosim-tutor */

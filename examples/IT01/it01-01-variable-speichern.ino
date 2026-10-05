@@ -34,11 +34,26 @@ void loop() {
  */
 
 /* @unosim-tutor
-schemaVersion: 1
-topics:
-  - variables-and-serial
-primaryTopic: variables-and-serial
+schemaVersion: 2
 learningObjectives:
-  - Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt.
-  - Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen.
+  - "Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt."
+  - "Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen."
+exclusive: true
+focus:
+  - id: wert-und-zuweisung
+    title: "Wert und Zuweisung"
+    objective: "Die Studierenden sollen den Aspekt \"Wert und Zuweisung\" erklären können."
+    questions:
+      - kind: recall
+        text: "Welchen Wert besitzt `anzahlTeile` direkt nach der Deklaration?"
+      - kind: prediction
+        text: "Was geschieht mit dem alten Wert von `anzahlTeile`, wenn `anzahlTeile = 5` ausgeführt wird?"
+  - id: sichtbare-ausgabe
+    title: "Sichtbare Ausgabe"
+    objective: "Die Studierenden sollen den Aspekt \"Sichtbare Ausgabe\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum erscheint jede Ausgabe von `Serial.println` nur einmal?"
+      - kind: transfer
+        text: "Welche weitere Zuweisung und Ausgabe würdest du ergänzen, um einen dritten Wert sichtbar zu machen?"
 @end-unosim-tutor */

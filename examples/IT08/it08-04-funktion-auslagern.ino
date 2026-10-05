@@ -28,3 +28,25 @@ void loop() {
  * 2. In welcher Datei ist addieren() implementiert?
  * 3. Welchen Vorteil bietet die Trennung bei groesseren Programmen?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Eine eigene Headerdatei mit #include in das Hauptprogramm einbinden."
+exclusive: true
+focus:
+  - id: include
+    title: "Die Include-Zeile"
+    objective: "Die Studierenden sollen den Aspekt \"Die Include-Zeile\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Aufgabe hat die Zeile mit `#include`?"
+      - kind: concept
+        text: "In welcher Datei ist `addieren` implementiert?"
+  - id: trennung
+    title: "Trennung von Dateien"
+    objective: "Die Studierenden sollen den Aspekt \"Trennung von Dateien\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welchen Vorteil bietet die Trennung bei größeren Programmen?"
+@end-unosim-tutor */

@@ -35,3 +35,27 @@ void loop() {
  * 2. Wann ergibt eine ODER-Verknuepfung false?
  * 3. Welche Wirkung hat der Operator ! auf einen Wahrheitswert?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Die Operatoren &&, || und ! auf Wahrheitswerte anwenden."
+exclusive: true
+focus:
+  - id: verknuepfungen
+    title: "UND und ODER"
+    objective: "Die Studierenden sollen den Aspekt \"UND und ODER\" erklären können."
+    questions:
+      - kind: concept
+        text: "Wann ergibt `schalter1 && schalter2` den Wert `true`?"
+      - kind: prediction
+        text: "Welche Ausgabe erwartest du für `schalter1 || schalter2` mit den aktuellen Werten?"
+  - id: negation
+    title: "Negation"
+    objective: "Die Studierenden sollen den Aspekt \"Negation\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Wirkung hat der Operator `!` auf `schalter1`?"
+      - kind: transfer
+        text: "Wie würdest du ausdrücken, dass genau einer der beiden Schalter `true` ist?"
+@end-unosim-tutor */

@@ -42,3 +42,27 @@ void loop() {
  * 2. Welche Aufgabe hat der Punktoperator?
  * 3. Ist Messung ein Datentyp oder bereits eine Variable?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Mit struct einen eigenen zusammengesetzten Datentyp definieren."
+exclusive: true
+focus:
+  - id: datentyp-oder-variable
+    title: "Datentyp oder Variable"
+    objective: "Die Studierenden sollen den Aspekt \"Datentyp oder Variable\" erklären können."
+    questions:
+      - kind: concept
+        text: "Ist `Messung` ein Datentyp oder bereits eine Variable?"
+      - kind: concept
+        text: "Welche Datentypen fasst `Messung` zusammen?"
+  - id: feldzugriff
+    title: "Zugriff auf Felder"
+    objective: "Die Studierenden sollen den Aspekt \"Zugriff auf Felder\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Aufgabe hat der Punktoperator in `messung.messwert`?"
+      - kind: application
+        text: "Warum ist für das Feld `zeit` der Typ `unsigned long` passend?"
+@end-unosim-tutor */

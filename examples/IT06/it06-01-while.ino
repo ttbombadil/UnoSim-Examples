@@ -31,3 +31,27 @@ void loop() {
  * 2. Warum muss zaehler im Schleifenblock veraendert werden?
  * 3. Wie oft laeuft die Schleife beim Startwert 5?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Einen Anweisungsblock mit while wiederholen, solange eine Bedingung wahr ist."
+exclusive: true
+focus:
+  - id: bedingungspruefung
+    title: "Bedingungsprüfung"
+    objective: "Die Studierenden sollen den Aspekt \"Bedingungsprüfung\" erklären können."
+    questions:
+      - kind: concept
+        text: "Wann wird die Bedingung `zaehler < 5` geprüft?"
+      - kind: prediction
+        text: "Wie oft läuft die Schleife, wenn `zaehler` mit dem Wert 5 startet?"
+  - id: zaehler
+    title: "Der Zähler"
+    objective: "Die Studierenden sollen den Aspekt \"Der Zähler\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum muss `zaehler` im Schleifenblock verändert werden?"
+      - kind: prediction
+        text: "Welche Zahlen erscheinen im Monitor?"
+@end-unosim-tutor */

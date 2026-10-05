@@ -36,3 +36,25 @@ void loop() {
  * 2. Warum bleibt zaehler ausserhalb der Funktion gleich?
  * 3. In welchem Bereich ist der Parameter zahl gueltig?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Beobachten, dass Call-by-value in der Funktion mit einer Kopie arbeitet."
+exclusive: true
+focus:
+  - id: kopie
+    title: "Der Wert wird kopiert"
+    objective: "Die Studierenden sollen den Aspekt \"Der Wert wird kopiert\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welcher Wert wird beim Aufruf von `erhoehen` kopiert?"
+      - kind: concept
+        text: "Warum bleibt `zaehler` außerhalb der Funktion unverändert?"
+  - id: gueltigkeit
+    title: "Gültigkeit des Parameters"
+    objective: "Die Studierenden sollen den Aspekt \"Gültigkeit des Parameters\" erklären können."
+    questions:
+      - kind: concept
+        text: "In welchem Bereich ist der Parameter `zahl` gültig?"
+@end-unosim-tutor */

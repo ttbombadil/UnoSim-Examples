@@ -39,3 +39,27 @@ void loop() {
  * 2. Welche Aufgabe hat break?
  * 3. Was geschieht ohne das erste break bei modus = 1?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Mit switch/case anhand eines Wertes einen Programmzweig auswaehlen."
+exclusive: true
+focus:
+  - id: default-zweig
+    title: "Der default-Zweig"
+    objective: "Die Studierenden sollen den Aspekt \"Der default-Zweig\" erklären können."
+    questions:
+      - kind: concept
+        text: "Wann wird der `default`-Zweig ausgeführt?"
+      - kind: prediction
+        text: "Welche Meldung erscheint, wenn `modus` den Wert 7 hat?"
+  - id: break
+    title: "Die Rolle von break"
+    objective: "Die Studierenden sollen den Aspekt \"Die Rolle von break\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Aufgabe hat `break` in einem `case`?"
+      - kind: prediction
+        text: "Was geschähe ohne das erste `break` bei `modus` gleich 1?"
+@end-unosim-tutor */

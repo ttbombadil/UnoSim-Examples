@@ -32,3 +32,27 @@ void loop() {
  * 2. Welchen Datentyp besitzt der Rueckgabewert?
  * 3. Was bewirkt die Anweisung return?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Einer Funktion einen Parameter uebergeben und ihr Ergebnis mit return nutzen."
+exclusive: true
+focus:
+  - id: eingabe-und-ergebnis
+    title: "Eingabe und Ergebnis"
+    objective: "Die Studierenden sollen den Aspekt \"Eingabe und Ergebnis\" erklären können."
+    questions:
+      - kind: concept
+        text: "Was geht in `quadrat` hinein, und was kommt heraus?"
+      - kind: concept
+        text: "Welchen Datentyp besitzt der Rückgabewert?"
+  - id: return
+    title: "Die Anweisung return"
+    objective: "Die Studierenden sollen den Aspekt \"Die Anweisung return\" erklären können."
+    questions:
+      - kind: concept
+        text: "Was bewirkt die Anweisung `return`?"
+      - kind: prediction
+        text: "Welcher Wert steht nach `quadrat(6)` in `ergebnis`?"
+@end-unosim-tutor */

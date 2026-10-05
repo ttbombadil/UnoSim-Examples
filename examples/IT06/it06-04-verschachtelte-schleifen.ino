@@ -32,3 +32,27 @@ void loop() {
  * 2. Welche Schleife bestimmt die Anzahl der Zeilen?
  * 3. Warum steht println() ausserhalb der inneren Schleife?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Eine innere Schleife fuer jeden Durchlauf einer aeusseren Schleife ausfuehren."
+exclusive: true
+focus:
+  - id: verschachtelung
+    title: "Verschachtelung"
+    objective: "Die Studierenden sollen den Aspekt \"Verschachtelung\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Wie oft wird die innere Schleife insgesamt durchlaufen?"
+      - kind: concept
+        text: "Welche Schleife bestimmt die Anzahl der Zeilen?"
+  - id: zeilenumbruch
+    title: "Zeilenumbruch"
+    objective: "Die Studierenden sollen den Aspekt \"Zeilenumbruch\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum steht `Serial.println()` außerhalb der inneren Schleife?"
+      - kind: transfer
+        text: "Wie erzeugst du ein Rechteck aus zwei Zeilen und sechs Spalten?"
+@end-unosim-tutor */

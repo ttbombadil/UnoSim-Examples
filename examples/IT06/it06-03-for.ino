@@ -29,3 +29,27 @@ void loop() {
  * 2. Wie oft wird der Schleifenblock ausgefuehrt?
  * 3. Welchen Gueltigkeitsbereich hat die Variable i?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Eine feste Anzahl von Wiederholungen mit for formulieren."
+exclusive: true
+focus:
+  - id: schleifenkopf
+    title: "Der Schleifenkopf"
+    objective: "Die Studierenden sollen den Aspekt \"Der Schleifenkopf\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche drei Angaben stehen im Kopf von `for (byte i = 1; i <= 5; i++)`?"
+      - kind: prediction
+        text: "Wie oft wird der Schleifenblock ausgeführt?"
+  - id: gueltigkeit
+    title: "Gültigkeit und Richtung"
+    objective: "Die Studierenden sollen den Aspekt \"Gültigkeit und Richtung\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welchen Gültigkeitsbereich hat die Variable `i`?"
+      - kind: transfer
+        text: "Wie würdest du die Schleife von 5 bis 1 herunterzählen lassen?"
+@end-unosim-tutor */

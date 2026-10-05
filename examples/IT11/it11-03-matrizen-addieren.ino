@@ -48,3 +48,25 @@ void loop() {
  * 2. Warum muessen beide Matrizen dieselben Abmessungen besitzen?
  * 3. Welchen Wert hat summe[2][1] im Ausgangsbeispiel?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Zwei Matrizen elementweise addieren."
+exclusive: true
+focus:
+  - id: addition
+    title: "Elementweise Addition"
+    objective: "Die Studierenden sollen den Aspekt \"Elementweise Addition\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Elemente werden in `summe[zeile][spalte]` miteinander addiert?"
+      - kind: concept
+        text: "Warum müssen `matrixA` und `matrixB` dieselben Abmessungen besitzen?"
+  - id: ergebnis
+    title: "Das Ergebnis"
+    objective: "Die Studierenden sollen den Aspekt \"Das Ergebnis\" erklären können."
+    questions:
+      - kind: prediction
+        text: "Welchen Wert hat das Element von `summe` mit den Indizes 2 und 1 im Ausgangsbeispiel?"
+@end-unosim-tutor */

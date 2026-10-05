@@ -39,3 +39,27 @@ void loop() {
  * 2. Welche Bedeutung hat das Ergebnis von 13 % 5?
  * 3. Bei welchem Experiment darf der Operator % nicht verwendet werden?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Die Operatoren +, -, *, / und % anwenden."
+exclusive: true
+focus:
+  - id: ganzzahldivision
+    title: "Ganzzahldivision"
+    objective: "Die Studierenden sollen den Aspekt \"Ganzzahldivision\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum liefert `a / b` bei Variablen vom Typ `int` ein ganzzahliges Ergebnis?"
+      - kind: prediction
+        text: "Welches Ergebnis erwartest du für `a / b`, wenn `a` den Wert 13 und `b` den Wert 5 hat?"
+  - id: modulo
+    title: "Rest einer Division"
+    objective: "Die Studierenden sollen den Aspekt \"Rest einer Division\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Bedeutung hat das Ergebnis von `a % b`?"
+      - kind: application
+        text: "Wofür könnte man den Rest einer Division in einem Programm nutzen?"
+@end-unosim-tutor */

@@ -36,3 +36,27 @@ void loop() {
  * 2. Welchen Dezimalwert hat MASKE_BIT_2?
  * 3. Worin unterscheiden sich & und &&?
  */
+
+/* @unosim-tutor
+schemaVersion: 2
+learningObjectives:
+  - "Eine Bitmaske mit dem bitweisen UND-Operator anwenden."
+exclusive: true
+focus:
+  - id: bitmaske
+    title: "Bitmaske"
+    objective: "Die Studierenden sollen den Aspekt \"Bitmaske\" erklären können."
+    questions:
+      - kind: concept
+        text: "Warum bleibt bei `wert & MASKE_BIT_2` nur ein gesetztes Bit erhalten?"
+      - kind: prediction
+        text: "Welches Ergebnis erwartest du für `wert & MASKE_BIT_2`, wenn Bit 2 in `wert` nicht gesetzt wäre?"
+  - id: bitweise-oder-logisch
+    title: "Bitweise oder logisch"
+    objective: "Die Studierenden sollen den Aspekt \"Bitweise oder logisch\" erklären können."
+    questions:
+      - kind: concept
+        text: "Welche Rolle spielt `BIN` in `Serial.println(wert, BIN)`?"
+      - kind: concept
+        text: "Worin unterscheidet sich der bitweise Operator `&` vom logischen UND mit zwei Und-Zeichen?"
+@end-unosim-tutor */
