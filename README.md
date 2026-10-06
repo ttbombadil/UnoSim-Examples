@@ -66,7 +66,7 @@ focus:
   - id: kurzer-bezeichner            # lower-case, digits, hyphens
     title: "Kurzer Titel"
     objective: "Was die Studierenden nach diesem Bereich können sollen."
-    questions:                       # 1 to 6, asked in this order
+    questions:                       # 1 to 6; all are asked, the Tutor picks the order within an area
       - kind: recall                 # recall | concept | application | prediction | transfer
         text: "Welchen Wert besitzt `variable` nach der Deklaration?"
       - kind: concept
@@ -78,6 +78,9 @@ focus:
 
 Rules and recommendations:
 
+- Focus areas are worked through in the order written; within an area the
+  Tutor chooses the next question by question kind, so every question of an
+  area should be fine to ask first.
 - 2 to 3 focus areas per Example, 1 to 3 questions per area. Keep functions
   and parameters to one or two areas; the Tutor does not drift beyond them.
 - Put every code term in backticks. Each backticked term must occur in the
@@ -89,9 +92,9 @@ Rules and recommendations:
 - Mix question kinds: start with `recall` or `concept`, then `prediction`,
   and end with `application` or `transfer`.
 - Questions carry no answers and no hints; the Tutor gives feedback.
-- A focus area counts as mastered after one answer rated 3 or better. If the
-  questions are used up without that, the Tutor also switches to the free
-  mode.
+- A focus area counts as mastered once each of its questions was answered with
+  a rating of 3 or better. If the questions are used up without that, the
+  Tutor also switches to the free mode.
 
 Tutor repository data is normalized didactic data, never a system prompt.
 
