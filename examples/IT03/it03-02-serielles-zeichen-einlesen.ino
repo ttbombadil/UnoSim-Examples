@@ -53,5 +53,5 @@ focus:
       - kind: concept
         text: "Welche Rolle spielt der Datentyp `char` für die Variable `zeichen`?"
       - kind: prediction
-        text: "Was würde sich in der Ausgabe ändern, wenn `zeichen` den Typ `int` hätte?"
+        text: "Was würde sich in der Ausgabe ändern, wenn `zeichen` stattdessen eine Ganzzahl-Variable wäre?"
 @end-unosim-tutor */
