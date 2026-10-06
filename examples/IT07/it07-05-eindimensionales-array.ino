@@ -36,12 +36,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Ein eindimensionales Array deklarieren und ueber seinen Index auslesen."
-exclusive: true
+  - "Die Studierenden sollen ein eindimensionales Array deklarieren und über den Index auslesen können."
+afterFocus: free
 focus:
   - id: index
     title: "Der Index"
-    objective: "Die Studierenden sollen den Aspekt \"Der Index\" erklären können."
+    objective: "Den Startindex nennen und ein Element über seinen Index bestimmen."
     questions:
       - kind: recall
         text: "Mit welchem Index beginnt das Array `messwerte`?"
@@ -49,13 +49,15 @@ focus:
         text: "Welchen Wert besitzt das Element von `messwerte` mit dem Index 2 zu Beginn?"
   - id: schleife-und-grenze
     title: "Schleife und Obergrenze"
-    objective: "Die Studierenden sollen den Aspekt \"Schleife und Obergrenze\" erklären können."
+    objective: "Die Schleifenbedingung über das Array begründen."
     questions:
       - kind: concept
         text: "Warum muss die Bedingung `i < ANZAHL_WERTE` lauten und darf nicht „kleiner oder gleich“ sein?"
+      - kind: prediction
+        text: "Was geschähe, wenn `ANZAHL_WERTE` größer als die Zahl der gespeicherten Werte wäre?"
   - id: elementtyp
     title: "Der Elementtyp"
-    objective: "Die Studierenden sollen den Aspekt \"Der Elementtyp\" erklären können."
+    objective: "Die Rolle des Elementtyps erklären."
     questions:
       - kind: concept
         text: "Welche Rolle spielt der Elementtyp `int` des Arrays `messwerte`?"

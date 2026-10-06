@@ -33,12 +33,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Eine feste Anzahl von Wiederholungen mit for formulieren."
-exclusive: true
+  - "Die Studierenden sollen eine Zählschleife mit for formulieren können."
+afterFocus: free
 focus:
   - id: schleifenkopf
     title: "Der Schleifenkopf"
-    objective: "Die Studierenden sollen den Aspekt \"Der Schleifenkopf\" erklären können."
+    objective: "Die drei Angaben im Schleifenkopf benennen und die Zahl der Durchläufe bestimmen."
     questions:
       - kind: concept
         text: "Welche drei Angaben stehen im Kopf von `for (byte i = 1; i <= 5; i++)`?"
@@ -46,7 +46,7 @@ focus:
         text: "Wie oft wird der Schleifenblock ausgeführt?"
   - id: gueltigkeit
     title: "Gültigkeit und Richtung"
-    objective: "Die Studierenden sollen den Aspekt \"Gültigkeit und Richtung\" erklären können."
+    objective: "Den Gültigkeitsbereich der Zählvariablen erklären und die Zählrichtung ändern."
     questions:
       - kind: concept
         text: "Welchen Gültigkeitsbereich hat die Variable `i`?"

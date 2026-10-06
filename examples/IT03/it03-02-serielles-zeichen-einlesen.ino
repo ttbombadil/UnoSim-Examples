@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit Serial.available() und Serial.read() ein einzelnes Zeichen empfangen."
-exclusive: true
+  - "Die Studierenden sollen ein einzelnes Zeichen seriell einlesen und ausgeben können."
+afterFocus: free
 focus:
   - id: zeichen-empfangen
     title: "Zeichen empfangen"
-    objective: "Die Studierenden sollen den Aspekt \"Zeichen empfangen\" erklären können."
+    objective: "Erklären, warum vor dem Lesen geprüft wird, ob ein Zeichen vorliegt, und was `loop` in der Zwischenzeit tut."
     questions:
       - kind: concept
         text: "Warum wird `Serial.available` vor `Serial.read` geprüft?"
@@ -48,7 +48,7 @@ focus:
         text: "Was geschieht in `loop`, solange kein Zeichen gesendet wurde?"
   - id: datentyp-char
     title: "Datentyp char"
-    objective: "Die Studierenden sollen den Aspekt \"Datentyp char\" erklären können."
+    objective: "Die Rolle von `char` erklären und die Folge eines anderen Datentyps vorhersagen."
     questions:
       - kind: concept
         text: "Welche Rolle spielt der Datentyp `char` für die Variable `zeichen`?"

@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit map() die relative Lage eines Wertes auf einen neuen Wertebereich uebertragen."
-exclusive: true
+  - "Die Studierenden sollen map() zur Umrechnung zwischen Wertebereichen anwenden können."
+afterFocus: free
 focus:
   - id: bereichsgrenzen
     title: "Bereichsgrenzen"
-    objective: "Die Studierenden sollen den Aspekt \"Bereichsgrenzen\" erklären können."
+    objective: "Die vier Bereichsgrenzen deuten und das gerundete Ergebnis erklären."
     questions:
       - kind: concept
         text: "Welche Bedeutung haben die vier Bereichsgrenzen im Aufruf von `map`?"
@@ -48,7 +48,7 @@ focus:
         text: "Warum ist das Ergebnis für 512 nicht exakt 127,5?"
   - id: datentyp-und-grenzen
     title: "Datentyp und Grenzen"
-    objective: "Die Studierenden sollen den Aspekt \"Datentyp und Grenzen\" erklären können."
+    objective: "Die Rolle des Ergebnistyps erklären und das Verhalten außerhalb des Bereichs vorhersagen."
     questions:
       - kind: concept
         text: "Welche Rolle spielt der Typ `long` für `ausgangswert`?"

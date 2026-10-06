@@ -43,12 +43,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit switch/case anhand eines Wertes einen Programmzweig auswaehlen."
-exclusive: true
+  - "Die Studierenden sollen mit switch/case anhand eines Wertes einen Zweig auswählen können."
+afterFocus: free
 focus:
   - id: default-zweig
     title: "Der default-Zweig"
-    objective: "Die Studierenden sollen den Aspekt \"Der default-Zweig\" erklären können."
+    objective: "Erklären, wann `default` greift, und eine Ausgabe vorhersagen."
     questions:
       - kind: concept
         text: "Wann wird der `default`-Zweig ausgeführt?"
@@ -56,10 +56,12 @@ focus:
         text: "Welche Meldung erscheint, wenn `modus` den Wert 7 hat?"
   - id: break
     title: "Die Rolle von break"
-    objective: "Die Studierenden sollen den Aspekt \"Die Rolle von break\" erklären können."
+    objective: "Die Aufgabe von `break` erklären und das Durchfallen ohne `break` vorhersagen."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat `break` in einem `case`?"
       - kind: prediction
         text: "Was geschähe ohne das erste `break` bei `modus` gleich 1?"
+      - kind: transfer
+        text: "Wie würdest du einen dritten Modus ergänzen?"
 @end-unosim-tutor */

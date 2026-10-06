@@ -39,12 +39,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die Operatoren &&, || und ! auf Wahrheitswerte anwenden."
-exclusive: true
+  - "Die Studierenden sollen UND, ODER und NICHT auf Wahrheitswerte anwenden können."
+afterFocus: free
 focus:
   - id: verknuepfungen
     title: "UND und ODER"
-    objective: "Die Studierenden sollen den Aspekt \"UND und ODER\" erklären können."
+    objective: "Die Ergebnisse von UND und ODER bei gegebenen Wahrheitswerten bestimmen und begründen."
     questions:
       - kind: concept
         text: "Wann ergibt `schalter1 && schalter2` den Wert `true`?"
@@ -52,7 +52,7 @@ focus:
         text: "Welche Ausgabe erwartest du für `schalter1 || schalter2` mit den aktuellen Werten?"
   - id: negation
     title: "Negation"
-    objective: "Die Studierenden sollen den Aspekt \"Negation\" erklären können."
+    objective: "Die Wirkung von `!` erklären und eine eigene Verknüpfung formulieren."
     questions:
       - kind: concept
         text: "Welche Wirkung hat der Operator `!` auf `schalter1`?"

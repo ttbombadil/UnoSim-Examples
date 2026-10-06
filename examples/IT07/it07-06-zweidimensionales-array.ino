@@ -44,12 +44,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Ein zweidimensionales Array als Tabelle verwenden."
-exclusive: true
+  - "Die Studierenden sollen ein zweidimensionales Array als Tabelle verwenden können."
+afterFocus: free
 focus:
   - id: zwei-indizes
     title: "Zwei Indizes"
-    objective: "Die Studierenden sollen den Aspekt \"Zwei Indizes\" erklären können."
+    objective: "Die zwei Indizes eines Elements erklären und ein Element bestimmen."
     questions:
       - kind: concept
         text: "Welche zwei Indizes werden für ein Element von `tabelle` benötigt?"
@@ -57,8 +57,10 @@ focus:
         text: "Welchen Wert hat das Element von `tabelle` in der zweiten Zeile und dritten Spalte?"
   - id: schleifen
     title: "Die Schleifen"
-    objective: "Die Studierenden sollen den Aspekt \"Die Schleifen\" erklären können."
+    objective: "Die Aufgabe beider Schleifen zuordnen."
     questions:
       - kind: concept
         text: "Welche Schleife läuft über die Spalten?"
+      - kind: transfer
+        text: "Wie würdest du die Tabelle um eine dritte Zeile erweitern?"
 @end-unosim-tutor */

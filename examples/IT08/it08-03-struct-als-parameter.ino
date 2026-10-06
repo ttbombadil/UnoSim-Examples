@@ -42,12 +42,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Eine Struktur per Referenz an eine Funktion uebergeben."
-exclusive: true
+  - "Die Studierenden sollen eine Struktur per Zeiger an eine Funktion übergeben können."
+afterFocus: free
 focus:
   - id: zeiger-uebergabe
     title: "Übergabe per Zeiger"
-    objective: "Die Studierenden sollen den Aspekt \"Übergabe per Zeiger\" erklären können."
+    objective: "Die Rolle von `&` beim Aufruf und `->` in der Funktion erklären."
     questions:
       - kind: concept
         text: "Warum wird beim Aufruf `&messung` verwendet?"
@@ -55,7 +55,7 @@ focus:
         text: "Welche Bedeutung hat der Operator `->`?"
   - id: kopie-oder-original
     title: "Kopie oder Original"
-    objective: "Die Studierenden sollen den Aspekt \"Kopie oder Original\" erklären können."
+    objective: "Entscheiden, ob Kopie oder Original verändert wird."
     questions:
       - kind: concept
         text: "Wird in `messwertKorrigieren` eine Kopie oder das Original verändert?"

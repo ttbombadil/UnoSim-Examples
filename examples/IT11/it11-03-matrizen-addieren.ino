@@ -52,12 +52,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Zwei Matrizen elementweise addieren."
-exclusive: true
+  - "Die Studierenden sollen zwei Matrizen elementweise addieren können."
+afterFocus: free
 focus:
   - id: addition
     title: "Elementweise Addition"
-    objective: "Die Studierenden sollen den Aspekt \"Elementweise Addition\" erklären können."
+    objective: "Erklären, welche Elemente addiert werden und warum gleiche Abmessungen nötig sind."
     questions:
       - kind: concept
         text: "Welche Elemente werden in `summe[zeile][spalte]` miteinander addiert?"
@@ -65,7 +65,7 @@ focus:
         text: "Warum müssen `matrixA` und `matrixB` dieselben Abmessungen besitzen?"
   - id: ergebnis
     title: "Das Ergebnis"
-    objective: "Die Studierenden sollen den Aspekt \"Das Ergebnis\" erklären können."
+    objective: "Ein Element der Summe vorhersagen."
     questions:
       - kind: prediction
         text: "Welchen Wert hat das Element von `summe` mit den Indizes 2 und 1 im Ausgangsbeispiel?"

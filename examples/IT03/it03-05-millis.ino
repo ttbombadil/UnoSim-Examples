@@ -34,11 +34,11 @@ schemaVersion: 2
 learningObjectives:
   - "Die Studierenden sollen erklären können, warum millis() einen Zeitwert liefert."
   - "Sie sollen den Zeitwert als Grundlage für einen wiederkehrenden Ablauf einordnen können."
-exclusive: true
+afterFocus: free
 focus:
   - id: zeitwert
     title: "Der Zeitwert"
-    objective: "Die Studierenden sollen den Aspekt \"Der Zeitwert\" erklären können."
+    objective: "Die Einheit von `millis()` nennen und das Wachstum des Werts über die Schleifendurchläufe erklären."
     questions:
       - kind: concept
         text: "In welcher Einheit liefert `millis()` die Zeit?"
@@ -46,10 +46,12 @@ focus:
         text: "Wie verändert sich der ausgegebene Wert von einem Schleifendurchlauf zum nächsten?"
   - id: datentyp
     title: "Der Datentyp"
-    objective: "Die Studierenden sollen den Aspekt \"Der Datentyp\" erklären können."
+    objective: "Begründen, warum ein vorzeichenloser langer Ganzzahltyp für Zeitwerte passt, und das Verhalten über Durchläufe hinweg erklären."
     questions:
       - kind: concept
         text: "Warum eignet sich `unsigned long` für `zeitSeitStart`?"
       - kind: concept
         text: "Wird der Zeitwert durch einen erneuten Durchlauf von `loop` zurückgesetzt?"
+      - kind: transfer
+        text: "Wie könntest du mit zwei `millis()`-Werten messen, wie lange etwas gedauert hat?"
 @end-unosim-tutor */

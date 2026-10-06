@@ -40,23 +40,25 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Eine Bitmaske mit dem bitweisen UND-Operator anwenden."
-exclusive: true
+  - "Die Studierenden sollen eine Bitmaske mit dem bitweisen UND anwenden können."
+afterFocus: free
 focus:
   - id: bitmaske
     title: "Bitmaske"
-    objective: "Die Studierenden sollen den Aspekt \"Bitmaske\" erklären können."
+    objective: "Erklären, wie eine Maske einzelne Bits herausfiltert, und das Ergebnis vorhersagen."
     questions:
       - kind: concept
         text: "Warum bleibt bei `wert & MASKE_BIT_2` nur ein gesetztes Bit erhalten?"
       - kind: prediction
         text: "Welches Ergebnis erwartest du für `wert & MASKE_BIT_2`, wenn Bit 2 in `wert` nicht gesetzt wäre?"
-  - id: bitweise-oder-logisch
-    title: "Bitweise oder logisch"
-    objective: "Die Studierenden sollen den Aspekt \"Bitweise oder logisch\" erklären können."
+  - id: darstellung-und-abgrenzung
+    title: "Darstellung und Abgrenzung"
+    objective: "Die Binärausgabe deuten und bitweise von logischen Operatoren unterscheiden."
     questions:
       - kind: concept
         text: "Welche Rolle spielt `BIN` in `Serial.println(wert, BIN)`?"
       - kind: concept
         text: "Worin unterscheidet sich der bitweise Operator `&` vom logischen UND mit zwei Und-Zeichen?"
+      - kind: transfer
+        text: "Wie würdest du prüfen, ob Bit 3 in `wert` gesetzt ist?"
 @end-unosim-tutor */

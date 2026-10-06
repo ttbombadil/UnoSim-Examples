@@ -45,12 +45,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die Elemente einer 3x3-Matrix zeilen- und spaltenweise ausgeben."
-exclusive: true
+  - "Die Studierenden sollen eine Matrix zeilen- und spaltenweise ausgeben können."
+afterFocus: free
 focus:
   - id: elementzugriff
     title: "Elementzugriff"
-    objective: "Die Studierenden sollen den Aspekt \"Elementzugriff\" erklären können."
+    objective: "Ein Element über zwei Indizes bestimmen und die Zahl der Schleifen begründen."
     questions:
       - kind: prediction
         text: "Welches Element von `matrix` wird mit den Indizes 1 und 2 angesprochen?"
@@ -58,8 +58,10 @@ focus:
         text: "Warum werden zwei Schleifen benötigt?"
   - id: ausgabeformat
     title: "Ausgabeformat"
-    objective: "Die Studierenden sollen den Aspekt \"Ausgabeformat\" erklären können."
+    objective: "Die Aufgabe des Tabulators erklären und die Ausgabe verändern."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat das Tabulatorzeichen `\\t`?"
+      - kind: transfer
+        text: "Wie würdest du die Matrix transponiert ausgeben?"
 @end-unosim-tutor */

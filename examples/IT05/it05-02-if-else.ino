@@ -38,12 +38,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit if/else genau einen von zwei Programmzweigen ausfuehren."
-exclusive: true
+  - "Die Studierenden sollen mit if/else genau einen von zwei Zweigen ausführen können."
+afterFocus: free
 focus:
   - id: zwei-zweige
     title: "Zwei Zweige"
-    objective: "Die Studierenden sollen den Aspekt \"Zwei Zweige\" erklären können."
+    objective: "Erklären, dass genau ein Zweig läuft, und den Grenzfall vorhersagen."
     questions:
       - kind: concept
         text: "Können der `if`-Zweig und der `else`-Zweig in einem Durchlauf beide ausgeführt werden?"
@@ -51,7 +51,7 @@ focus:
         text: "Welcher Zweig wird ausgeführt, wenn `messwert` genau dem Wert von `GRENZWERT` entspricht?"
   - id: bedingung-formulieren
     title: "Bedingung formulieren"
-    objective: "Die Studierenden sollen den Aspekt \"Bedingung formulieren\" erklären können."
+    objective: "Eine Bedingung für „mindestens“ formulieren."
     questions:
       - kind: transfer
         text: "Wie müsste die Bedingung lauten, damit der Wert mindestens `GRENZWERT` entspricht?"

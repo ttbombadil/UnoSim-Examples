@@ -36,12 +36,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit if einen Programmblock nur bei einer wahren Bedingung ausfuehren."
-exclusive: true
+  - "Die Studierenden sollen mit if einen Block bedingt ausführen können."
+afterFocus: free
 focus:
   - id: bedingung
     title: "Die Bedingung"
-    objective: "Die Studierenden sollen den Aspekt \"Die Bedingung\" erklären können."
+    objective: "Den Wahrheitswert der Bedingung bestimmen und das Verhalten bei falscher Bedingung beschreiben."
     questions:
       - kind: prediction
         text: "Welchen Wahrheitswert hat `messwert > GRENZWERT` mit den aktuellen Werten?"
@@ -49,7 +49,7 @@ focus:
         text: "Was geschieht, wenn die Bedingung falsch ist?"
   - id: grenzfall
     title: "Der Grenzfall"
-    objective: "Die Studierenden sollen den Aspekt \"Der Grenzfall\" erklären können."
+    objective: "Den Unterschied zwischen „größer“ und „größer oder gleich“ am Grenzwert erklären."
     questions:
       - kind: application
         text: "Wann unterscheidet sich der Vergleich mit `>` von einem Vergleich mit „größer oder gleich“?"

@@ -34,19 +34,21 @@ schemaVersion: 2
 learningObjectives:
   - "Die Studierenden sollen erklären können, wie ein digitaler Ausgang im aktuellen Sketch gesetzt wird."
   - "Sie sollen den Zusammenhang zwischen Ausgangszustand und beobachtbarer Wirkung beschreiben können."
-exclusive: true
+afterFocus: free
 focus:
   - id: pin-konfigurieren
     title: "Pin konfigurieren"
-    objective: "Die Studierenden sollen den Aspekt \"Pin konfigurieren\" erklären können."
+    objective: "Erklären, wie ein Pin als Ausgang konfiguriert und auf einen Zustand gesetzt wird."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat `pinMode(PIN_LED, OUTPUT)`?"
       - kind: concept
         text: "Welche elektrische Bedeutung hat `HIGH` an diesem Pin?"
+      - kind: prediction
+        text: "Was würdest du im Simulator beobachten, wenn dort stattdessen der niedrige Pegel gesetzt würde?"
   - id: programmstruktur
     title: "Programmstruktur"
-    objective: "Die Studierenden sollen den Aspekt \"Programmstruktur\" erklären können."
+    objective: "Begründen, warum `setup` genügt, und eine Erweiterung entwerfen."
     questions:
       - kind: concept
         text: "Warum reicht für dieses Beispiel die Funktion `setup` aus?"

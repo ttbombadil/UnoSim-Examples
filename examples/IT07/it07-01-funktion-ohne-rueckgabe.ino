@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Wiederverwendbare Anweisungen in einer void-Funktion zusammenfassen."
-exclusive: true
+  - "Die Studierenden sollen eine void-Funktion definieren und aufrufen können."
+afterFocus: free
 focus:
   - id: definition-und-aufruf
     title: "Definition und Aufruf"
-    objective: "Die Studierenden sollen den Aspekt \"Definition und Aufruf\" erklären können."
+    objective: "Definition und Aufruf unterscheiden und erklären, wann der Funktionskörper läuft."
     questions:
       - kind: concept
         text: "Welcher Teil ist die Definition und welcher der Aufruf von `begruessungAusgeben`?"
@@ -48,7 +48,7 @@ focus:
         text: "Wann werden die Anweisungen in der Funktion ausgeführt?"
   - id: rueckgabetyp
     title: "Rückgabetyp"
-    objective: "Die Studierenden sollen den Aspekt \"Rückgabetyp\" erklären können."
+    objective: "Die Bedeutung von `void` erklären."
     questions:
       - kind: concept
         text: "Welche Bedeutung hat der Rückgabetyp `void`?"

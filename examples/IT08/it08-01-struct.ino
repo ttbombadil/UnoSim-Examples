@@ -46,12 +46,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit struct einen eigenen zusammengesetzten Datentyp definieren."
-exclusive: true
+  - "Die Studierenden sollen mit struct einen zusammengesetzten Datentyp definieren können."
+afterFocus: free
 focus:
   - id: datentyp-oder-variable
     title: "Datentyp oder Variable"
-    objective: "Die Studierenden sollen den Aspekt \"Datentyp oder Variable\" erklären können."
+    objective: "Zwischen Strukturtyp und Variable unterscheiden und die enthaltenen Datentypen benennen."
     questions:
       - kind: concept
         text: "Ist `Messung` ein Datentyp oder bereits eine Variable?"
@@ -59,7 +59,7 @@ focus:
         text: "Welche Datentypen fasst `Messung` zusammen?"
   - id: feldzugriff
     title: "Zugriff auf Felder"
-    objective: "Die Studierenden sollen den Aspekt \"Zugriff auf Felder\" erklären können."
+    objective: "Den Punktoperator erklären und den Typ eines Feldes begründen."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat der Punktoperator in `messung.messwert`?"

@@ -43,20 +43,23 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die Operatoren +, -, *, / und % anwenden."
-exclusive: true
+  - "Die Studierenden sollen die Operatoren +, -, *, / und % anwenden können."
+  - "Sie sollen das Verhalten der Ganzzahldivision erklären können."
+afterFocus: free
 focus:
   - id: ganzzahldivision
     title: "Ganzzahldivision"
-    objective: "Die Studierenden sollen den Aspekt \"Ganzzahldivision\" erklären können."
+    objective: "Erklären, warum die Division zweier `int`-Werte ein ganzzahliges Ergebnis liefert."
     questions:
       - kind: concept
         text: "Warum liefert `a / b` bei Variablen vom Typ `int` ein ganzzahliges Ergebnis?"
       - kind: prediction
         text: "Welches Ergebnis erwartest du für `a / b`, wenn `a` den Wert 13 und `b` den Wert 5 hat?"
+      - kind: transfer
+        text: "Was müsstest du an den Deklarationen ändern, um ein Ergebnis mit Nachkommastellen zu erhalten?"
   - id: modulo
     title: "Rest einer Division"
-    objective: "Die Studierenden sollen den Aspekt \"Rest einer Division\" erklären können."
+    objective: "Die Bedeutung des Rests erklären und einen Einsatzzweck nennen."
     questions:
       - kind: concept
         text: "Welche Bedeutung hat das Ergebnis von `a % b`?"

@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einen Eingang mit internem Pullup-Widerstand konfigurieren und lesen."
-exclusive: true
+  - "Die Studierenden sollen einen Eingang mit internem Pullup-Widerstand lesen können."
+afterFocus: free
 focus:
   - id: eingang-lesen
     title: "Eingang lesen"
-    objective: "Die Studierenden sollen den Aspekt \"Eingang lesen\" erklären können."
+    objective: "Die möglichen Werte von `digitalRead` nennen und den Zweck des Pullups erklären."
     questions:
       - kind: recall
         text: "Welche Werte kann `digitalRead` liefern?"
@@ -48,10 +48,12 @@ focus:
         text: "Welchen Zweck hat `INPUT_PULLUP` für den Pin `PIN_TASTER`?"
   - id: taster-logik
     title: "Taster-Logik"
-    objective: "Die Studierenden sollen den Aspekt \"Taster-Logik\" erklären können."
+    objective: "Den ausgegebenen Wert bei gedrücktem Taster vorhersagen und die Rolle der Wartezeit erklären."
     questions:
       - kind: prediction
         text: "Welcher Wert wird ausgegeben, solange der Taster gedrückt ist, und warum?"
       - kind: concept
         text: "Warum steht in `loop` der Aufruf `delay(500)`?"
+      - kind: transfer
+        text: "Wie würdest du eine Meldung nur dann ausgeben, wenn der Taster gedrückt ist?"
 @end-unosim-tutor */
