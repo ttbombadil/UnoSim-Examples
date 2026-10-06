@@ -40,12 +40,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Den digitalisierten Messwert eines Analogeingangs in eine Spannung umrechnen."
-exclusive: true
+  - "Die Studierenden sollen einen Rohwert in eine Spannung umrechnen können."
+afterFocus: free
 focus:
   - id: umrechnung
     title: "Umrechnung in Volt"
-    objective: "Die Studierenden sollen den Aspekt \"Umrechnung in Volt\" erklären können."
+    objective: "Die Spannung zu einem Rohwert abschätzen und die Rolle der Referenzspannung erklären."
     questions:
       - kind: prediction
         text: "Welche Spannung gehört ungefähr zum Messwert 512?"
@@ -53,7 +53,7 @@ focus:
         text: "Welche Bedeutung hat `REFERENZSPANNUNG` in der Rechnung?"
   - id: datentyp-float
     title: "Gleitkommazahlen"
-    objective: "Die Studierenden sollen den Aspekt \"Gleitkommazahlen\" erklären können."
+    objective: "Begründen, warum `float` nötig ist, und die Folge einer Ganzzahlrechnung vorhersagen."
     questions:
       - kind: concept
         text: "Warum wird für `spannung` der Datentyp `float` verwendet?"

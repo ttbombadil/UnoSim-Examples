@@ -32,12 +32,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Eine eigene Headerdatei mit #include in das Hauptprogramm einbinden."
-exclusive: true
+  - "Die Studierenden sollen eine Funktion in eine Headerdatei auslagern und einbinden können."
+afterFocus: free
 focus:
   - id: include
     title: "Die Include-Zeile"
-    objective: "Die Studierenden sollen den Aspekt \"Die Include-Zeile\" erklären können."
+    objective: "Die Aufgabe von `#include` erklären und die Implementierung zuordnen."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat die Zeile mit `#include`?"
@@ -45,7 +45,7 @@ focus:
         text: "In welcher Datei ist `addieren` implementiert?"
   - id: trennung
     title: "Trennung von Dateien"
-    objective: "Die Studierenden sollen den Aspekt \"Trennung von Dateien\" erklären können."
+    objective: "Den Nutzen der Trennung begründen."
     questions:
       - kind: concept
         text: "Welchen Vorteil bietet die Trennung bei größeren Programmen?"

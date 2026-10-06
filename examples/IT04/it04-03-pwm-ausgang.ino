@@ -39,12 +39,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Mit analogWrite() unterschiedliche PWM-Tastgrade einstellen."
-exclusive: true
+  - "Die Studierenden sollen mit analogWrite() PWM-Tastgrade einstellen können."
+afterFocus: free
 focus:
   - id: tastgrad
     title: "Wertebereich und Tastgrad"
-    objective: "Die Studierenden sollen den Aspekt \"Wertebereich und Tastgrad\" erklären können."
+    objective: "Den Wertebereich von `analogWrite` nennen und Werte einem Tastgrad zuordnen."
     questions:
       - kind: recall
         text: "Welchen Wertebereich erwartet `analogWrite`?"
@@ -52,7 +52,7 @@ focus:
         text: "Welchem Tastgrad entspricht ungefähr der Wert `128`?"
   - id: pwm-pins
     title: "PWM-Pins"
-    objective: "Die Studierenden sollen den Aspekt \"PWM-Pins\" erklären können."
+    objective: "Erklären, warum nicht jeder Pin PWM kann, und die Wirkung unterschiedlicher Werte beschreiben."
     questions:
       - kind: concept
         text: "Warum ist nicht jeder digitale Pin für PWM geeignet?"

@@ -33,12 +33,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die serielle Verbindung starten und Text mit print() und println() ausgeben."
-exclusive: true
+  - "Die Studierenden sollen die serielle Verbindung starten und Text ausgeben können."
+afterFocus: free
 focus:
   - id: print-und-println
     title: "print und println"
-    objective: "Die Studierenden sollen den Aspekt \"print und println\" erklären können."
+    objective: "Den Unterschied zwischen `print` und `println` erklären und die Zeilenzahl der Ausgabe bestimmen."
     questions:
       - kind: concept
         text: "Was unterscheidet `Serial.print` von `Serial.println`?"
@@ -46,7 +46,7 @@ focus:
         text: "Wie viele Zeilen erscheinen im Monitor, und woran erkennst du das im Code?"
   - id: initialisierung
     title: "Serielle Verbindung starten"
-    objective: "Die Studierenden sollen den Aspekt \"Serielle Verbindung starten\" erklären können."
+    objective: "Begründen, warum die Verbindung vor der ersten Ausgabe gestartet wird und warum der Text nur einmal erscheint."
     questions:
       - kind: concept
         text: "Warum muss `Serial.begin` vor der ersten Ausgabe stehen?"

@@ -49,19 +49,49 @@ The effective strategy precedence is:
 2. repository `defaultStrategy`,
 3. UnoSim `built-in-default`.
 
-For example:
+### Writing Tutor instructions for an Example (template)
+
+Schema 2 lets a teacher say what the Tutor should ask for this Example. The
+Tutor works through the `focus` areas in order and then switches to the free
+Tutor (`afterFocus: free`, the default). `afterFocus: topics` continues with
+the repository Topics instead.
 
 ```cpp
 /* @unosim-tutor
-schemaVersion: 1
-topics:
-  - variables-and-serial
-primaryTopic: variables-and-serial
+schemaVersion: 2
 learningObjectives:
-  - Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt.
-  - Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen.
+  - "Die Studierenden sollen … erklären können."
+afterFocus: free
+focus:
+  - id: kurzer-bezeichner            # lower-case, digits, hyphens
+    title: "Kurzer Titel"
+    objective: "Was die Studierenden nach diesem Bereich können sollen."
+    questions:                       # 1 to 6, asked in this order
+      - kind: recall                 # recall | concept | application | prediction | transfer
+        text: "Welchen Wert besitzt `variable` nach der Deklaration?"
+      - kind: concept
+        text: "Warum …?"
+      - kind: transfer
+        text: "Wie würdest du … erweitern?"
 @end-unosim-tutor */
 ```
+
+Rules and recommendations:
+
+- 2 to 3 focus areas per Example, 1 to 3 questions per area. Keep functions
+  and parameters to one or two areas; the Tutor does not drift beyond them.
+- Put every code term in backticks. Each backticked term must occur in the
+  sketch outside comments; the quality gate rejects the rest. Refer to
+  elements by description (for example "das Element mit dem Index 2") and
+  not by an expression that is not in the code.
+- Never name a type or construct the sketch does not use (`long` for an
+  `unsigned long` sketch).
+- Mix question kinds: start with `recall` or `concept`, then `prediction`,
+  and end with `application` or `transfer`.
+- Questions carry no answers and no hints; the Tutor gives feedback.
+- A focus area counts as mastered after one answer rated 3 or better. If the
+  questions are used up without that, the Tutor also switches to the free
+  mode.
 
 Tutor repository data is normalized didactic data, never a system prompt.
 

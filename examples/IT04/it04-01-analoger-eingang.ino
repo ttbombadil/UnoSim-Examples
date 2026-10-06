@@ -34,12 +34,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einen Messwert mit analogRead() erfassen."
-exclusive: true
+  - "Die Studierenden sollen einen analogen Messwert einlesen und seinen Wertebereich erklären können."
+afterFocus: free
 focus:
   - id: wertebereich
     title: "Wertebereich"
-    objective: "Die Studierenden sollen den Aspekt \"Wertebereich\" erklären können."
+    objective: "Den Wertebereich von `analogRead` nennen und aus der Auflösung begründen."
     questions:
       - kind: recall
         text: "Welchen Wertebereich liefert `analogRead` beim Arduino Uno?"
@@ -47,7 +47,7 @@ focus:
         text: "Warum sind für diesen Bereich 10 Bit erforderlich?"
   - id: pin-und-messwert
     title: "Pin und Messwert"
-    objective: "Die Studierenden sollen den Aspekt \"Pin und Messwert\" erklären können."
+    objective: "Einordnen, wie ein Analogeingang eingerichtet wird, und einen Messwert abschätzen."
     questions:
       - kind: concept
         text: "Muss ein analoger Eingang wie `PIN_SENSOR` mit pinMode() eingerichtet werden?"

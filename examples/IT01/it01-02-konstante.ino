@@ -34,12 +34,13 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einen Wert mit const als Konstante deklarieren."
-exclusive: true
+  - "Die Studierenden sollen eine Konstante von einer Variablen unterscheiden können."
+  - "Sie sollen erklären können, warum der Compiler eine nachträgliche Änderung ablehnt."
+afterFocus: free
 focus:
   - id: konstante-oder-variable
     title: "Konstante oder Variable"
-    objective: "Die Studierenden sollen den Aspekt \"Konstante oder Variable\" erklären können."
+    objective: "Den Unterschied zwischen einer Konstante und einer Variablen erklären und die Folge einer Änderung vorhersagen."
     questions:
       - kind: concept
         text: "Wodurch unterscheidet sich `MAXIMALE_ANZAHL` von einer gewöhnlichen Variablen?"
@@ -47,10 +48,12 @@ focus:
         text: "Was würde der Compiler melden, wenn man später versucht, `MAXIMALE_ANZAHL` einen neuen Wert zuzuweisen, und warum?"
   - id: const-und-namen
     title: "const und Namenswahl"
-    objective: "Die Studierenden sollen den Aspekt \"const und Namenswahl\" erklären können."
+    objective: "Die Rolle von `const` und die Namenskonvention für Konstanten begründen."
     questions:
       - kind: concept
         text: "Welche Aufgabe hat das Schlüsselwort `const` in der Deklaration?"
       - kind: concept
         text: "Warum ist der Name `MAXIMALE_ANZAHL` hier großgeschrieben?"
+      - kind: transfer
+        text: "Für welchen weiteren Wert in einem Sketch wäre eine Konstante sinnvoll?"
 @end-unosim-tutor */

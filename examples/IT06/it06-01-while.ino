@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einen Anweisungsblock mit while wiederholen, solange eine Bedingung wahr ist."
-exclusive: true
+  - "Die Studierenden sollen eine kopfgesteuerte Schleife mit while schreiben und deuten können."
+afterFocus: free
 focus:
   - id: bedingungspruefung
     title: "Bedingungsprüfung"
-    objective: "Die Studierenden sollen den Aspekt \"Bedingungsprüfung\" erklären können."
+    objective: "Erklären, wann die Bedingung geprüft wird, und die Zahl der Durchläufe vorhersagen."
     questions:
       - kind: concept
         text: "Wann wird die Bedingung `zaehler < 5` geprüft?"
@@ -48,7 +48,7 @@ focus:
         text: "Wie oft läuft die Schleife, wenn `zaehler` mit dem Wert 5 startet?"
   - id: zaehler
     title: "Der Zähler"
-    objective: "Die Studierenden sollen den Aspekt \"Der Zähler\" erklären können."
+    objective: "Begründen, warum der Zähler im Block verändert werden muss."
     questions:
       - kind: concept
         text: "Warum muss `zaehler` im Schleifenblock verändert werden?"

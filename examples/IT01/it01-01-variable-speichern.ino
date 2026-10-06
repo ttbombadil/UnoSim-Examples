@@ -38,19 +38,21 @@ schemaVersion: 2
 learningObjectives:
   - "Die Studierenden sollen erklären können, welche Rolle die Variable im aktuellen Sketch spielt."
   - "Sie sollen den Zusammenhang zwischen gespeichertem Wert und serieller Ausgabe verstehen."
-exclusive: true
+afterFocus: free
 focus:
   - id: wert-und-zuweisung
     title: "Wert und Zuweisung"
-    objective: "Die Studierenden sollen den Aspekt \"Wert und Zuweisung\" erklären können."
+    objective: "Erklären, welchen Wert die Variable nach Deklaration und nach einer neuen Zuweisung besitzt und was mit dem alten Wert geschieht."
     questions:
       - kind: recall
         text: "Welchen Wert besitzt `anzahlTeile` direkt nach der Deklaration?"
       - kind: prediction
         text: "Was geschieht mit dem alten Wert von `anzahlTeile`, wenn `anzahlTeile = 5` ausgeführt wird?"
+      - kind: application
+        text: "Wie viele Werte kann `anzahlTeile` zu einem Zeitpunkt gleichzeitig speichern?"
   - id: sichtbare-ausgabe
     title: "Sichtbare Ausgabe"
-    objective: "Die Studierenden sollen den Aspekt \"Sichtbare Ausgabe\" erklären können."
+    objective: "Begründen, warum die Ausgaben genau so und nur einmal erscheinen, und eine Erweiterung planen."
     questions:
       - kind: concept
         text: "Warum erscheint jede Ausgabe von `Serial.println` nur einmal?"

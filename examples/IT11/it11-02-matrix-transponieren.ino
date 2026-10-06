@@ -51,12 +51,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Beim Transponieren Zeilen- und Spaltenindizes vertauschen."
-exclusive: true
+  - "Die Studierenden sollen eine Matrix transponieren können."
+afterFocus: free
 focus:
   - id: transponieren
     title: "Transponieren"
-    objective: "Die Studierenden sollen den Aspekt \"Transponieren\" erklären können."
+    objective: "Die vertauschten Indizes und die Hauptdiagonale erklären."
     questions:
       - kind: concept
         text: "Welche beiden Indizes werden beim Transponieren vertauscht?"
@@ -64,7 +64,7 @@ focus:
         text: "Was geschieht mit den Elementen auf der Hauptdiagonalen?"
   - id: ergebnis
     title: "Das Ergebnis"
-    objective: "Die Studierenden sollen den Aspekt \"Das Ergebnis\" erklären können."
+    objective: "Ein Element der transponierten Matrix vorhersagen."
     questions:
       - kind: prediction
         text: "Welcher Wert steht nach dem Transponieren in `transponiert` an der Position mit den Indizes 1 und 0?"

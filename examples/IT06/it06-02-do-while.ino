@@ -35,12 +35,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einen Anweisungsblock mit do/while mindestens einmal ausfuehren."
-exclusive: true
+  - "Die Studierenden sollen eine fußgesteuerte Schleife mit do/while deuten können."
+afterFocus: free
 focus:
   - id: pruefung-am-ende
     title: "Prüfung am Ende"
-    objective: "Die Studierenden sollen den Aspekt \"Prüfung am Ende\" erklären können."
+    objective: "Erklären, wann die Bedingung geprüft wird und wie oft der Block mindestens läuft."
     questions:
       - kind: concept
         text: "Wann wird die Bedingung der `do`/`while`-Schleife geprüft?"
@@ -48,7 +48,7 @@ focus:
         text: "Wie oft wird der Block mindestens ausgeführt?"
   - id: vergleich-while
     title: "Vergleich mit while"
-    objective: "Die Studierenden sollen den Aspekt \"Vergleich mit while\" erklären können."
+    objective: "Das Verhalten von do/while mit while bei gleichem Startwert vergleichen."
     questions:
       - kind: concept
         text: "Warum entstünde mit einer reinen `while`-Schleife und demselben Startwert keine Ausgabe?"

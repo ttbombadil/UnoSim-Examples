@@ -40,12 +40,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Beobachten, dass Call-by-value in der Funktion mit einer Kopie arbeitet."
-exclusive: true
+  - "Die Studierenden sollen erklären können, dass bei Call-by-value eine Kopie übergeben wird."
+afterFocus: free
 focus:
   - id: kopie
     title: "Der Wert wird kopiert"
-    objective: "Die Studierenden sollen den Aspekt \"Der Wert wird kopiert\" erklären können."
+    objective: "Erklären, was beim Aufruf kopiert wird und warum das Original unverändert bleibt."
     questions:
       - kind: concept
         text: "Welcher Wert wird beim Aufruf von `erhoehen` kopiert?"
@@ -53,7 +53,7 @@ focus:
         text: "Warum bleibt `zaehler` außerhalb der Funktion unverändert?"
   - id: gueltigkeit
     title: "Gültigkeit des Parameters"
-    objective: "Die Studierenden sollen den Aspekt \"Gültigkeit des Parameters\" erklären können."
+    objective: "Den Gültigkeitsbereich des Parameters bestimmen."
     questions:
       - kind: concept
         text: "In welchem Bereich ist der Parameter `zahl` gültig?"

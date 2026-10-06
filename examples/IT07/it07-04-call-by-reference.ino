@@ -37,12 +37,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Eine Variable ueber einen Zeiger in einer Funktion veraendern."
-exclusive: true
+  - "Die Studierenden sollen eine Variable über einen Zeiger in einer Funktion verändern können."
+afterFocus: free
 focus:
   - id: adresse-und-zeiger
     title: "Adresse und Zeiger"
-    objective: "Die Studierenden sollen den Aspekt \"Adresse und Zeiger\" erklären können."
+    objective: "Die Bedeutung von `&` beim Aufruf und `*` in der Funktion erklären."
     questions:
       - kind: concept
         text: "Welche Bedeutung hat `&` beim Aufruf `erhoehen(&zaehler)`?"
@@ -50,7 +50,7 @@ focus:
         text: "Welche Bedeutung hat `*` vor `zahl` in der Funktion?"
   - id: wirkung
     title: "Wirkung außerhalb der Funktion"
-    objective: "Die Studierenden sollen den Aspekt \"Wirkung außerhalb der Funktion\" erklären können."
+    objective: "Begründen, warum die Änderung erhalten bleibt."
     questions:
       - kind: concept
         text: "Warum bleibt die Änderung nach dem Funktionsaufruf erhalten?"

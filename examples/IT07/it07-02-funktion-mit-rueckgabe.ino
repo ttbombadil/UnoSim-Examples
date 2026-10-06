@@ -36,12 +36,12 @@ void loop() {
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Einer Funktion einen Parameter uebergeben und ihr Ergebnis mit return nutzen."
-exclusive: true
+  - "Die Studierenden sollen Parameter und Rückgabewert einer Funktion unterscheiden können."
+afterFocus: free
 focus:
   - id: eingabe-und-ergebnis
     title: "Eingabe und Ergebnis"
-    objective: "Die Studierenden sollen den Aspekt \"Eingabe und Ergebnis\" erklären können."
+    objective: "Parameter und Rückgabewert benennen und den Rückgabetyp erklären."
     questions:
       - kind: concept
         text: "Was geht in `quadrat` hinein, und was kommt heraus?"
@@ -49,7 +49,7 @@ focus:
         text: "Welchen Datentyp besitzt der Rückgabewert?"
   - id: return
     title: "Die Anweisung return"
-    objective: "Die Studierenden sollen den Aspekt \"Die Anweisung return\" erklären können."
+    objective: "Die Wirkung von `return` erklären und ein Ergebnis vorhersagen."
     questions:
       - kind: concept
         text: "Was bewirkt die Anweisung `return`?"
