@@ -16,7 +16,7 @@ concepts:
       transfer: [20, 80]
     misconceptions:
       - id: declaration-is-output
-        description: Eine Deklaration allein erzeugt noch keine Ausgabe im seriellen Monitor.
+        description: Schon die Deklaration einer Variablen erzeugt eine Ausgabe im seriellen Monitor.
     indicators:
       - id: relates-value-to-use
         description: Ordnet einen Variablenwert seiner Verwendung im Sketch zu.
@@ -35,7 +35,7 @@ concepts:
       transfer: [20, 80]
     misconceptions:
       - id: print-is-storage
-        description: Serial.print speichert den Wert nicht dauerhaft, sondern überträgt ihn zur Ausgabe.
+        description: Serial.print speichert den Wert dauerhaft, statt ihn nur zur Ausgabe zu übertragen.
     indicators:
       - id: explains-serial-output
         description: Erklärt die Rolle eines Serial-Ausgabeaufrufs.

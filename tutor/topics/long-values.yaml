@@ -7,7 +7,7 @@ activation:
     - fact: type-used
       values: [long]
 concepts:
-  - id: execution-structure
+  - id: long-value-meaning
     title: Long-Werte
     objective: Die Rolle eines long-Werts im aktuellen Sketch erklären.
     prerequisites: []
@@ -15,7 +15,7 @@ concepts:
       entry: [1, 50]
       transfer: [20, 80]
     misconceptions:
-      - id: long-too-small
+      - id: long-unbounded
         description: Ein long-Wert ist für jede beliebige Größe automatisch ausreichend.
     indicators:
       - id: identifies-long-value
@@ -26,16 +26,16 @@ concepts:
       requiredIndicators: [identifies-long-value]
       minimumDistinctQuestionKinds: 1
       recentWeakAnswersAllowed: 0
-  - id: timing-interval
+  - id: long-value-usage
     title: Verwendung eines Long-Werts
     objective: Die Verwendung eines long-Werts als Mess- oder Zustandsinformation einordnen.
-    prerequisites: [execution-structure]
+    prerequisites: [long-value-meaning]
     difficulty:
       entry: [1, 50]
       transfer: [20, 80]
     misconceptions:
-      - id: long-is-only-text
-        description: Ein long-Wert sei nur für Text und nicht für numerische Messwerte geeignet.
+      - id: long-same-as-int
+        description: Ein langer Ganzzahltyp hat denselben Wertebereich wie int.
     indicators:
       - id: explains-long-usage
         description: Erklärt, warum der long-Wert zur dargestellten Information passt.
@@ -47,7 +47,7 @@ concepts:
       recentWeakAnswersAllowed: 0
 questions:
   - id: long-value-concept
-    concept: execution-structure
+    concept: long-value-meaning
     indicator: identifies-long-value
     kind: concept
     difficulty: [1, 50]
@@ -56,7 +56,7 @@ questions:
         values: [long]
     text: Welche Information wird im Sketch in der betrachteten Variable mit langem Ganzzahltyp gespeichert?
   - id: long-value-application
-    concept: timing-interval
+    concept: long-value-usage
     indicator: explains-long-usage
     kind: application
     difficulty: [20, 80]
@@ -65,7 +65,7 @@ questions:
         values: [long]
     text: Warum passt der für diese Variable verwendete Datentyp zur im Sketch gespeicherten Information?
   - id: long-value-prediction
-    concept: execution-structure
+    concept: long-value-meaning
     indicator: identifies-long-value
     kind: prediction
     difficulty: [20, 80]
@@ -74,7 +74,7 @@ questions:
         values: [long]
     text: Wie erwartest du, dass sich der gespeicherte Wert dieser Variable beim nächsten Schleifendurchlauf verändert?
   - id: long-value-transfer
-    concept: timing-interval
+    concept: long-value-usage
     indicator: explains-long-usage
     kind: transfer
     difficulty: [20, 80]
@@ -84,14 +84,14 @@ questions:
     text: Welche weitere zeitbezogene Information könntest du im aktuellen Sketch mit demselben Datentyp erfassen, ohne den vollständigen Code zu entwerfen?
 scaffolds:
   - id: long-value-scaffold
-    forConcept: timing-interval
+    forConcept: long-value-usage
     strategy: smaller-subproblem
     level: 1
     hint: Benenne zuerst die Information, die der long-Wert im aktuellen Sketch repräsentiert.
     nextQuestion: long-value-application
 progression:
-  entryConcepts: [execution-structure]
-  preferredOrder: [execution-structure, timing-interval]
+  entryConcepts: [long-value-meaning]
+  preferredOrder: [long-value-meaning, long-value-usage]
   onRating:
     1-2: remediate
     3: clarify-same-indicator

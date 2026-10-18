@@ -1,25 +1,37 @@
 /*
- * IT02.3 - Boolesche Aussagen verknuepfen
+ * IT02.3 – Wahrheitswerte verknüpfen
  *
  * Lernziel:
- * Die Operatoren &&, || und ! auf Wahrheitswerte anwenden.
+ * Die Operatoren &&, || und ! auf Wahrheitswerte anwenden und mit
+ * Beispielen aus der Steuerungstechnik verbinden.
+ *
+ * Bezug zu den Unterlagen:
+ * IT02 Datenmanipulation, Folien „Wahrheitswerte“ und
+ * „Wahrheitswerte und ihre Verknüpfung“ (Zweihandbedienung, Not-Aus).
  *
  * Beobachtung:
- * Der serielle Monitor zeigt fuer jede Aussage 1 oder 0.
+ * Der Antrieb bleibt aus (0), weil nur ein Taster gedrückt ist.
+ * Die Antriebe werden gestoppt (1), weil ein Not-Aus-Taster gedrückt ist.
  */
 
-bool schalter1 = true;
-bool schalter2 = false;
+bool tasterLinks = true;
+bool tasterRechts = false;
+bool notAus1 = false;
+bool notAus2 = true;
 
 void setup() {
   Serial.begin(115200);
 
-  Serial.print("schalter1 UND schalter2: ");
-  Serial.println(schalter1 && schalter2);
-  Serial.print("schalter1 ODER schalter2: ");
-  Serial.println(schalter1 || schalter2);
-  Serial.print("NICHT schalter1: ");
-  Serial.println(!schalter1);
+  bool antriebEin = tasterLinks && tasterRechts;   // nur mit beiden Händen
+  bool antriebeStoppen = notAus1 || notAus2;       // ein Not-Aus genügt
+  bool signallampe = !tasterLinks;                 // Lampe aus, solange gedrückt
+
+  Serial.print("Antrieb ein:       ");
+  Serial.println(antriebEin);
+  Serial.print("Antriebe stoppen:  ");
+  Serial.println(antriebeStoppen);
+  Serial.print("Signallampe:       ");
+  Serial.println(signallampe);
 }
 
 void loop() {
@@ -27,35 +39,37 @@ void loop() {
 
 /*
  * Experimente:
- * 1. Setze beide Schalter auf true.
- * 2. Setze beide Schalter auf false.
+ * 1. Setze beide Taster auf true.
+ * 2. Setze beide Not-Aus-Taster auf false.
+ * 3. Setze tasterLinks = 456; statt true. Welcher Wahrheitswert entsteht?
  *
  * Lernfragen:
- * 1. Wann ergibt eine UND-Verknuepfung true?
- * 2. Wann ergibt eine ODER-Verknuepfung false?
- * 3. Welche Wirkung hat der Operator ! auf einen Wahrheitswert?
+ * 1. Wann ergibt eine UND-Verknüpfung true?
+ * 2. Wann ergibt eine ODER-Verknüpfung false?
+ * 3. Welche Zahlenwerte gelten als FALSE, welche als TRUE?
  */
 
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
   - "Die Studierenden sollen UND, ODER und NICHT auf Wahrheitswerte anwenden können."
+  - "Sie sollen eine Steuerungsanforderung in eine boolesche Verknüpfung übersetzen können."
 afterFocus: free
 focus:
-  - id: verknuepfungen
+  - id: und-oder
     title: "UND und ODER"
-    objective: "Die Ergebnisse von UND und ODER bei gegebenen Wahrheitswerten bestimmen und begründen."
+    objective: "Die Ergebnisse von UND und ODER bestimmen und auf die Beispiele beziehen."
     questions:
       - kind: concept
-        text: "Wann ergibt `schalter1 && schalter2` den Wert `true`?"
+        text: "Warum wird für `antriebEin` der Operator `&&` und nicht `||` verwendet?"
       - kind: prediction
-        text: "Welche Ausgabe erwartest du für `schalter1 || schalter2` mit den aktuellen Werten?"
+        text: "Welchen Wert hat `antriebeStoppen`, wenn beide Not-Aus-Taster `false` sind?"
   - id: negation
     title: "Negation"
     objective: "Die Wirkung von `!` erklären und eine eigene Verknüpfung formulieren."
     questions:
       - kind: concept
-        text: "Welche Wirkung hat der Operator `!` auf `schalter1`?"
+        text: "Welche Wirkung hat der Operator `!` in der Zeile mit `signallampe`?"
       - kind: transfer
-        text: "Wie würdest du ausdrücken, dass genau einer der beiden Schalter `true` ist?"
+        text: "Wie würdest du ausdrücken, dass der Antrieb nur läuft, wenn beide Taster gedrückt sind und kein Not-Aus betätigt ist?"
 @end-unosim-tutor */
