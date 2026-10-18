@@ -1,42 +1,53 @@
 /*
- * IT05.1 - Eine Anweisung bedingt ausfuehren
+ * IT05.1 – Eine Anweisung bedingt ausführen
  *
  * Lernziel:
- * Mit if einen Programmblock nur bei einer wahren Bedingung ausfuehren.
+ * Mit if einen Programmblock nur dann ausführen, wenn eine Bedingung wahr ist.
+ *
+ * Bezug zu den Unterlagen:
+ * IT05, Folien „Einfache Verzweigung - if“ und „Einfache Verzweigung - Bedingung“
+ * (unwahr ist nur 0).
  *
  * Beobachtung:
- * Die Meldung erscheint, weil der Messwert groesser als der Grenzwert ist.
+ * Der Messwert von A0 erscheint alle 500 ms. Liegt er über 600, steht
+ * dahinter zusätzlich „Grenzwert ueberschritten“.
  */
 
-int messwert = 75;
-const int GRENZWERT = 60;
+const byte PIN_SENSOR = A0;
+const unsigned int GRENZWERT = 600;
 
 void setup() {
   Serial.begin(115200);
-
-  if (messwert > GRENZWERT) {
-    Serial.println("Grenzwert ueberschritten");
-  }
 }
 
 void loop() {
+  unsigned int messwert = analogRead(PIN_SENSOR);
+  Serial.print(messwert);
+
+  if (messwert > GRENZWERT) {
+    Serial.print("  Grenzwert ueberschritten");
+  }
+
+  Serial.println();
+  delay(500);
 }
 
 /*
  * Experimente:
- * 1. Setze messwert auf 40.
- * 2. Ersetze > durch >= und setze messwert auf 60.
+ * 1. Stelle A0 im Simulator auf 599, 600 und 601.
+ * 2. Ersetze > durch >= und wiederhole das erste Experiment.
+ * 3. Zeichne zu loop() ein UML-Aktivitätsdiagramm mit der Verzweigung.
  *
  * Lernfragen:
- * 1. Welchen Datentyp hat die Bedingung messwert > GRENZWERT?
- * 2. Was geschieht bei einer falschen Bedingung?
- * 3. Wann unterscheiden sich > und >=?
+ * 1. Welchen Wahrheitswert hat die Bedingung bei messwert = 700?
+ * 2. Was geschieht, wenn die Bedingung falsch ist?
+ * 3. Warum steht Serial.println() außerhalb des if-Blocks?
  */
 
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die Studierenden sollen mit if einen Block bedingt ausführen können."
+  - "Die Studierenden sollen eine einfache Verzweigung mit if formulieren und ihren Ablauf beschreiben können."
 afterFocus: free
 focus:
   - id: bedingung
@@ -44,15 +55,15 @@ focus:
     objective: "Den Wahrheitswert der Bedingung bestimmen und das Verhalten bei falscher Bedingung beschreiben."
     questions:
       - kind: prediction
-        text: "Welchen Wahrheitswert hat `messwert > GRENZWERT` mit den aktuellen Werten?"
-      - kind: prediction
-        text: "Was geschieht, wenn die Bedingung falsch ist?"
-  - id: grenzfall
-    title: "Der Grenzfall"
-    objective: "Den Unterschied zwischen „größer“ und „größer oder gleich“ am Grenzwert erklären."
+        text: "Welchen Wahrheitswert hat `messwert > GRENZWERT`, wenn A0 genau den Wert 600 liefert?"
+      - kind: concept
+        text: "Was geschieht mit dem Block nach `if`, wenn die Bedingung falsch ist?"
+  - id: ablauf
+    title: "Ablauf und Grenzfall"
+    objective: "Den Ablauf in `loop` beschreiben und die Bedingung anpassen."
     questions:
-      - kind: application
-        text: "Wann unterscheidet sich der Vergleich mit `>` von einem Vergleich mit „größer oder gleich“?"
+      - kind: concept
+        text: "Warum steht `Serial.println()` außerhalb des Blocks der Verzweigung?"
       - kind: transfer
-        text: "Wie würdest du eine zweite Meldung für Werte unterhalb des `GRENZWERT` ergänzen?"
+        text: "Wie müsste die Bedingung lauten, damit die Meldung schon beim Wert 600 erscheint?"
 @end-unosim-tutor */

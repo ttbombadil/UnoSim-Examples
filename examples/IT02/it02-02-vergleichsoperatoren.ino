@@ -1,11 +1,16 @@
 /*
- * IT02.2 - Zwei Werte vergleichen
+ * IT02.2 – Zwei Werte vergleichen
  *
  * Lernziel:
- * Vergleichsoperatoren anwenden und ihr boolesches Ergebnis beobachten.
+ * Vergleichsoperatoren anwenden, ihr Ergebnis als Wahrheitswert deuten und
+ * den Vergleich == von der Zuweisung = unterscheiden.
+ *
+ * Bezug zu den Unterlagen:
+ * IT02 Datenmanipulation, Folien „Vergleichsoperatoren“ und
+ * „Zuweisungs- und Vergleichsoperator“ (sehr häufige Fehlerursache).
  *
  * Beobachtung:
- * Ein wahres Ergebnis erscheint als 1, ein falsches als 0.
+ * Ein wahrer Vergleich erscheint als 1, ein falscher als 0.
  */
 
 int a = 7;
@@ -22,6 +27,10 @@ void setup() {
   Serial.println(a < b);
   Serial.print("a >= b: ");
   Serial.println(a >= b);
+
+  bool gleich = (a == b);
+  Serial.print("gleich: ");
+  Serial.println(gleich);
 }
 
 void loop() {
@@ -29,20 +38,22 @@ void loop() {
 
 /*
  * Experimente:
- * 1. Setze a ebenfalls auf 10.
- * 2. Ersetze in einer Ausgabe == durch = und beobachte das Ergebnis.
+ * 1. Setze a ebenfalls auf 10. Welche Ergebnisse ändern sich?
+ * 2. Ersetze in der Zeile mit gleich das == durch = und gib danach auch a aus.
+ *    Was ist mit a passiert?
+ * 3. Ergänze die Vergleiche a > b und a <= b.
  *
  * Lernfragen:
  * 1. Welche Vergleiche sind bei a = 7 und b = 10 wahr?
  * 2. Was ist der Unterschied zwischen = und ==?
- * 3. Welchen Datentyp hat das Ergebnis eines Vergleichs?
+ * 3. Welche zwei Werte kann das Ergebnis eines Vergleichs annehmen?
  */
 
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
   - "Die Studierenden sollen Vergleichsoperatoren anwenden und ihr Ergebnis deuten können."
-  - "Sie sollen Zuweisung und Vergleich unterscheiden können."
+  - "Sie sollen Zuweisung und Vergleich sicher unterscheiden können."
 afterFocus: free
 focus:
   - id: vergleichsergebnis
@@ -55,12 +66,12 @@ focus:
         text: "Wie werden ein wahres und ein falsches Ergebnis in der Ausgabe dargestellt?"
   - id: zuweisung-oder-vergleich
     title: "Zuweisung oder Vergleich"
-    objective: "Den Unterschied zwischen `=` und `==` erklären und den Ergebnistyp eines Vergleichs nennen."
+    objective: "Den Unterschied zwischen `=` und `==` erklären und die Folge einer Verwechslung vorhersagen."
     questions:
       - kind: concept
         text: "Was ist der Unterschied zwischen `=` und `==`?"
-      - kind: concept
-        text: "Welchen Datentyp hat das Ergebnis eines Vergleichs?"
       - kind: prediction
-        text: "Was würde sich ändern, wenn `b` den Wert 7 hätte?"
+        text: "Welchen Wert hat `a` danach, wenn in der Zeile mit `gleich` versehentlich nur ein Gleichheitszeichen steht?"
+      - kind: transfer
+        text: "Wie kannst du beim Programmieren verhindern, dass du `=` und `==` verwechselst?"
 @end-unosim-tutor */

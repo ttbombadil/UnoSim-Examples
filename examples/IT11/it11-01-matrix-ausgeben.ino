@@ -1,31 +1,48 @@
 /*
- * IT11.1 - Eine Matrix lesbar ausgeben
+ * IT11.1 – Eine Matrix mit einer Funktion lesbar ausgeben
  *
  * Lernziel:
- * Die Elemente einer 3x3-Matrix zeilen- und spaltenweise ausgeben.
+ * Eine Matrix als zweidimensionales Array speichern und mit einer Funktion
+ * zeilen- und spaltenweise ausgeben, mit wählbarer Genauigkeit.
+ *
+ * Bezug zu den Unterlagen:
+ * IT11 Matrizen, Folien „Matrizen im Speicher halten“ und „Ausgabe, schön
+ * lesbar“ (Schritt 1 bis 3: sequenziell, Schleifen, Genauigkeit).
  *
  * Beobachtung:
- * Der serielle Monitor stellt die neun Werte in drei Zeilen dar.
+ * Die Matrix A erscheint in drei Zeilen mit einer Nachkommastelle;
+ * der Name A steht vor der mittleren Zeile.
  */
 
-const byte ANZAHL_ZEILEN = 3;
-const byte ANZAHL_SPALTEN = 3;
-int matrix[ANZAHL_ZEILEN][ANZAHL_SPALTEN] = {
-  {1, 2, 3},
-  {4, 5, 6},
-  {7, 8, 9}
+const int M = 3;   // Anzahl der Zeilen
+const int N = 3;   // Anzahl der Spalten
+
+double A[M][N] = {
+  { 1, 2, 3 },
+  { 4, 5, 6 },
+  { 7, 8, 9 }
 };
 
-void setup() {
-  Serial.begin(115200);
-
-  for (byte zeile = 0; zeile < ANZAHL_ZEILEN; zeile++) {
-    for (byte spalte = 0; spalte < ANZAHL_SPALTEN; spalte++) {
-      Serial.print(matrix[zeile][spalte]);
+void printMatrix(const double mat[M][N], const char *name = "M", byte precision = 2) {
+  for (int i = 0; i < M; i++) {
+    if (i == 1) {
+      Serial.print(name);
+      Serial.print(" = \t");
+    } else {
+      Serial.print("\t");
+    }
+    for (int k = 0; k < N; k++) {
+      Serial.print(mat[i][k], precision);
       Serial.print("\t");
     }
     Serial.println();
   }
+  Serial.println();
+}
+
+void setup() {
+  Serial.begin(115200);
+  printMatrix(A, "A", 1);
 }
 
 void loop() {
@@ -33,35 +50,38 @@ void loop() {
 
 /*
  * Experimente:
- * 1. Aendere die Werte der Hauptdiagonalen zu 0.
- * 2. Vertausche bei der Ausgabe zeile und spalte.
+ * 1. Rufe printMatrix(A); ohne die letzten beiden Argumente auf.
+ * 2. Gib A mit 0 und mit 3 Nachkommastellen aus.
+ * 3. Setze die Hauptdiagonale von A auf 0 und gib A erneut aus.
  *
  * Lernfragen:
- * 1. Welches Element wird mit matrix[1][2] angesprochen?
- * 2. Warum werden zwei Schleifen benoetigt?
- * 3. Welche Aufgabe hat das Tabulatorzeichen \t?
+ * 1. Welches Element wird mit A[1][2] angesprochen?
+ * 2. Warum werden zwei Schleifen benötigt?
+ * 3. Was geschieht, wenn beim Aufruf name und precision weggelassen werden?
  */
 
 /* @unosim-tutor
 schemaVersion: 2
 learningObjectives:
-  - "Die Studierenden sollen eine Matrix zeilen- und spaltenweise ausgeben können."
+  - "Die Studierenden sollen eine Matrix als zweidimensionales Array speichern und mit einer Funktion ausgeben können."
 afterFocus: free
 focus:
-  - id: elementzugriff
-    title: "Elementzugriff"
+  - id: elemente
+    title: "Elemente der Matrix"
     objective: "Ein Element über zwei Indizes bestimmen und die Zahl der Schleifen begründen."
     questions:
-      - kind: prediction
-        text: "Welches Element von `matrix` wird mit den Indizes 1 und 2 angesprochen?"
+      - kind: application
+        text: "Welcher Wert steht in `A` an der Position mit dem Zeilenindex 1 und dem Spaltenindex 2?"
       - kind: concept
-        text: "Warum werden zwei Schleifen benötigt?"
-  - id: ausgabeformat
-    title: "Ausgabeformat"
-    objective: "Die Aufgabe des Tabulators erklären und die Ausgabe verändern."
+        text: "Warum werden in `printMatrix` zwei Schleifen benötigt?"
+  - id: parameter
+    title: "Parameter der Ausgabefunktion"
+    objective: "Die Parameter von `printMatrix` und ihre Standardwerte erklären."
     questions:
       - kind: concept
-        text: "Welche Aufgabe hat das Tabulatorzeichen `\\t`?"
-      - kind: transfer
-        text: "Wie würdest du die Matrix transponiert ausgeben?"
+        text: "Welche Aufgabe hat der Parameter `precision`?"
+      - kind: prediction
+        text: "Wie sieht die Ausgabe aus, wenn `printMatrix` nur mit `A` aufgerufen wird?"
+      - kind: concept
+        text: "Warum ist der Parameter `mat` als `const` deklariert?"
 @end-unosim-tutor */
