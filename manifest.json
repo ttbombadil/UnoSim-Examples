@@ -1,12 +1,12 @@
 {
   "schemaVersion": 2,
-  "repository": "MoDevIO/UnoSim-Examples",
-  "ref": "v3.0.0",
+  "repository": "ttbombadil/UnoSim-Examples",
   "examples": [
     {
       "id": "it01-01-variable-definieren",
-      "title": "IT01.1 – Eine Variable deklarieren, initialisieren und zuweisen",
+      "title": "IT01.1 – Eine Variable definieren, initialisieren und zuweisen",
       "category": "IT01 – Daten",
+      "board": "uno",
       "files": [{ "name": "it01-01-variable-definieren.ino", "path": "examples/IT01/it01-01-variable-definieren.ino" }],
       "main": "it01-01-variable-definieren.ino"
     },
@@ -14,6 +14,7 @@
       "id": "it01-02-konstante",
       "title": "IT01.2 – Einen unveränderlichen Wert festlegen",
       "category": "IT01 – Daten",
+      "board": "uno",
       "files": [{ "name": "it01-02-konstante.ino", "path": "examples/IT01/it01-02-konstante.ino" }],
       "main": "it01-02-konstante.ino"
     },
@@ -21,6 +22,7 @@
       "id": "it01-03-datentyp-waehlen",
       "title": "IT01.3 – Einen Datentyp begründet auswählen",
       "category": "IT01 – Daten",
+      "board": "uno",
       "files": [{ "name": "it01-03-datentyp-waehlen.ino", "path": "examples/IT01/it01-03-datentyp-waehlen.ino" }],
       "main": "it01-03-datentyp-waehlen.ino"
     },
@@ -28,6 +30,7 @@
       "id": "it01-04-zeichen-ascii",
       "title": "IT01.4 – Zeichen und ihre Codes",
       "category": "IT01 – Daten",
+      "board": "uno",
       "files": [{ "name": "it01-04-zeichen-ascii.ino", "path": "examples/IT01/it01-04-zeichen-ascii.ino" }],
       "main": "it01-04-zeichen-ascii.ino"
     },
@@ -35,6 +38,7 @@
       "id": "it01-05-global-lokal",
       "title": "IT01.5 – Globale und lokale Variablen",
       "category": "IT01 – Daten",
+      "board": "uno",
       "files": [{ "name": "it01-05-global-lokal.ino", "path": "examples/IT01/it01-05-global-lokal.ino" }],
       "main": "it01-05-global-lokal.ino"
     },
@@ -42,6 +46,7 @@
       "id": "it02-01-arithmetische-operatoren",
       "title": "IT02.1 – Mit arithmetischen Operatoren rechnen",
       "category": "IT02 – Datenmanipulation",
+      "board": "uno",
       "files": [{ "name": "it02-01-arithmetische-operatoren.ino", "path": "examples/IT02/it02-01-arithmetische-operatoren.ino" }],
       "main": "it02-01-arithmetische-operatoren.ino"
     },
@@ -49,6 +54,7 @@
       "id": "it02-02-vergleichsoperatoren",
       "title": "IT02.2 – Zwei Werte vergleichen",
       "category": "IT02 – Datenmanipulation",
+      "board": "uno",
       "files": [{ "name": "it02-02-vergleichsoperatoren.ino", "path": "examples/IT02/it02-02-vergleichsoperatoren.ino" }],
       "main": "it02-02-vergleichsoperatoren.ino"
     },
@@ -56,6 +62,7 @@
       "id": "it02-03-boolesche-operatoren",
       "title": "IT02.3 – Wahrheitswerte verknüpfen",
       "category": "IT02 – Datenmanipulation",
+      "board": "uno",
       "files": [{ "name": "it02-03-boolesche-operatoren.ino", "path": "examples/IT02/it02-03-boolesche-operatoren.ino" }],
       "main": "it02-03-boolesche-operatoren.ino"
     },
@@ -63,6 +70,7 @@
       "id": "it02-04-wertebereich-ueberlauf",
       "title": "IT02.4 – Die Grenze eines Datentyps sichtbar machen",
       "category": "IT02 – Datenmanipulation",
+      "board": "uno",
       "files": [{ "name": "it02-04-wertebereich-ueberlauf.ino", "path": "examples/IT02/it02-04-wertebereich-ueberlauf.ino" }],
       "main": "it02-04-wertebereich-ueberlauf.ino"
     },
@@ -70,6 +78,7 @@
       "id": "it02-05-bitoperatoren",
       "title": "IT02.5 – Einzelne Bits prüfen und setzen (optional)",
       "category": "IT02 – Datenmanipulation",
+      "board": "uno",
       "files": [{ "name": "it02-05-bitoperatoren.ino", "path": "examples/IT02/it02-05-bitoperatoren.ino" }],
       "main": "it02-05-bitoperatoren.ino"
     },
@@ -77,6 +86,7 @@
       "id": "it03-01-serielle-ausgabe",
       "title": "IT03.1 – Text und Zahlen seriell ausgeben",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-01-serielle-ausgabe.ino", "path": "examples/IT03/it03-01-serielle-ausgabe.ino" }],
       "main": "it03-01-serielle-ausgabe.ino"
     },
@@ -84,6 +94,7 @@
       "id": "it03-02-zeichen-einlesen",
       "title": "IT03.2 – Zeichen seriell einlesen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-02-zeichen-einlesen.ino", "path": "examples/IT03/it03-02-zeichen-einlesen.ino" }],
       "main": "it03-02-zeichen-einlesen.ino"
     },
@@ -91,6 +102,7 @@
       "id": "it03-03-zahl-einlesen",
       "title": "IT03.3 – Eine Zahl am Stück einlesen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-03-zahl-einlesen.ino", "path": "examples/IT03/it03-03-zahl-einlesen.ino" }],
       "main": "it03-03-zahl-einlesen.ino"
     },
@@ -98,6 +110,7 @@
       "id": "it03-04-led-blinken",
       "title": "IT03.4 – Eine LED blinken lassen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-04-led-blinken.ino", "path": "examples/IT03/it03-04-led-blinken.ino" }],
       "main": "it03-04-led-blinken.ino"
     },
@@ -105,6 +118,7 @@
       "id": "it03-05-pins-als-konstanten",
       "title": "IT03.5 – Pin-Nummern als Konstanten",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-05-pins-als-konstanten.ino", "path": "examples/IT03/it03-05-pins-als-konstanten.ino" }],
       "main": "it03-05-pins-als-konstanten.ino"
     },
@@ -112,6 +126,7 @@
       "id": "it03-06-digitaler-eingang",
       "title": "IT03.6 – Einen digitalen Eingang lesen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-06-digitaler-eingang.ino", "path": "examples/IT03/it03-06-digitaler-eingang.ino" }],
       "main": "it03-06-digitaler-eingang.ino"
     },
@@ -119,6 +134,7 @@
       "id": "it03-07-zeit-messen",
       "title": "IT03.7 – Eine Zeitdifferenz messen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-07-zeit-messen.ino", "path": "examples/IT03/it03-07-zeit-messen.ino" }],
       "main": "it03-07-zeit-messen.ino"
     },
@@ -126,6 +142,7 @@
       "id": "it03-08-map",
       "title": "IT03.8 – Werte mit map() umrechnen",
       "category": "IT03 – Ein- und Ausgabe 1",
+      "board": "uno",
       "files": [{ "name": "it03-08-map.ino", "path": "examples/IT03/it03-08-map.ino" }],
       "main": "it03-08-map.ino"
     },
@@ -133,6 +150,7 @@
       "id": "it04-01-analoger-eingang",
       "title": "IT04.1 – Einen analogen Eingang lesen",
       "category": "IT04 – Ein- und Ausgabe 2",
+      "board": "uno",
       "files": [{ "name": "it04-01-analoger-eingang.ino", "path": "examples/IT04/it04-01-analoger-eingang.ino" }],
       "main": "it04-01-analoger-eingang.ino"
     },
@@ -140,6 +158,7 @@
       "id": "it04-02-spannung-berechnen",
       "title": "IT04.2 – Einen Messwert in Volt umrechnen",
       "category": "IT04 – Ein- und Ausgabe 2",
+      "board": "uno",
       "files": [{ "name": "it04-02-spannung-berechnen.ino", "path": "examples/IT04/it04-02-spannung-berechnen.ino" }],
       "main": "it04-02-spannung-berechnen.ino"
     },
@@ -147,6 +166,7 @@
       "id": "it04-03-pwm-ausgang",
       "title": "IT04.3 – Einen Ausgang mit PWM ansteuern",
       "category": "IT04 – Ein- und Ausgabe 2",
+      "board": "uno",
       "files": [{ "name": "it04-03-pwm-ausgang.ino", "path": "examples/IT04/it04-03-pwm-ausgang.ino" }],
       "main": "it04-03-pwm-ausgang.ino"
     },
@@ -154,6 +174,7 @@
       "id": "it04-04-taster-flanke",
       "title": "IT04.4 – Einen Tasterwechsel erkennen",
       "category": "IT04 – Ein- und Ausgabe 2",
+      "board": "uno",
       "files": [{ "name": "it04-04-taster-flanke.ino", "path": "examples/IT04/it04-04-taster-flanke.ino" }],
       "main": "it04-04-taster-flanke.ino"
     },
@@ -161,6 +182,7 @@
       "id": "it04-05-helligkeit-steuern",
       "title": "IT04.5 – Mit einem Sensorwert die Helligkeit steuern",
       "category": "IT04 – Ein- und Ausgabe 2",
+      "board": "uno",
       "files": [{ "name": "it04-05-helligkeit-steuern.ino", "path": "examples/IT04/it04-05-helligkeit-steuern.ino" }],
       "main": "it04-05-helligkeit-steuern.ino"
     },
@@ -168,6 +190,7 @@
       "id": "it05-01-if",
       "title": "IT05.1 – Eine Anweisung bedingt ausführen",
       "category": "IT05 – Verzweigungen",
+      "board": "uno",
       "files": [{ "name": "it05-01-if.ino", "path": "examples/IT05/it05-01-if.ino" }],
       "main": "it05-01-if.ino"
     },
@@ -175,6 +198,7 @@
       "id": "it05-02-if-else",
       "title": "IT05.2 – Zwischen zwei Alternativen entscheiden",
       "category": "IT05 – Verzweigungen",
+      "board": "uno",
       "files": [{ "name": "it05-02-if-else.ino", "path": "examples/IT05/it05-02-if-else.ino" }],
       "main": "it05-02-if-else.ino"
     },
@@ -182,6 +206,7 @@
       "id": "it05-03-else-if",
       "title": "IT05.3 – Mehrere Bedingungen nacheinander prüfen",
       "category": "IT05 – Verzweigungen",
+      "board": "uno",
       "files": [{ "name": "it05-03-else-if.ino", "path": "examples/IT05/it05-03-else-if.ino" }],
       "main": "it05-03-else-if.ino"
     },
@@ -189,6 +214,7 @@
       "id": "it05-04-switch-menue",
       "title": "IT05.4 – Ein Menü mit switch",
       "category": "IT05 – Verzweigungen",
+      "board": "uno",
       "files": [{ "name": "it05-04-switch-menue.ino", "path": "examples/IT05/it05-04-switch-menue.ino" }],
       "main": "it05-04-switch-menue.ino"
     },
@@ -196,6 +222,7 @@
       "id": "it05-05-intervall-ohne-delay",
       "title": "IT05.5 – Alle 500 ms etwas tun, ohne delay()",
       "category": "IT05 – Verzweigungen",
+      "board": "uno",
       "files": [{ "name": "it05-05-intervall-ohne-delay.ino", "path": "examples/IT05/it05-05-intervall-ohne-delay.ino" }],
       "main": "it05-05-intervall-ohne-delay.ino"
     },
@@ -203,6 +230,7 @@
       "id": "it06-01-while",
       "title": "IT06.1 – Eine kopfgesteuerte Schleife",
       "category": "IT06 – Schleifen",
+      "board": "uno",
       "files": [{ "name": "it06-01-while.ino", "path": "examples/IT06/it06-01-while.ino" }],
       "main": "it06-01-while.ino"
     },
@@ -210,6 +238,7 @@
       "id": "it06-02-do-while",
       "title": "IT06.2 – Eine fußgesteuerte Schleife",
       "category": "IT06 – Schleifen",
+      "board": "uno",
       "files": [{ "name": "it06-02-do-while.ino", "path": "examples/IT06/it06-02-do-while.ino" }],
       "main": "it06-02-do-while.ino"
     },
@@ -217,6 +246,7 @@
       "id": "it06-03-for",
       "title": "IT06.3 – Zählschleifen mit for",
       "category": "IT06 – Schleifen",
+      "board": "uno",
       "files": [{ "name": "it06-03-for.ino", "path": "examples/IT06/it06-03-for.ino" }],
       "main": "it06-03-for.ino"
     },
@@ -224,6 +254,7 @@
       "id": "it06-04-binaerzahl",
       "title": "IT06.4 – Eine Zahl binär ausgeben",
       "category": "IT06 – Schleifen",
+      "board": "uno",
       "files": [{ "name": "it06-04-binaerzahl.ino", "path": "examples/IT06/it06-04-binaerzahl.ino" }],
       "main": "it06-04-binaerzahl.ino"
     },
@@ -231,6 +262,7 @@
       "id": "it06-05-verschachtelte-schleifen",
       "title": "IT06.5 – Zwei Schleifen verschachteln",
       "category": "IT06 – Schleifen",
+      "board": "uno",
       "files": [{ "name": "it06-05-verschachtelte-schleifen.ino", "path": "examples/IT06/it06-05-verschachtelte-schleifen.ino" }],
       "main": "it06-05-verschachtelte-schleifen.ino"
     },
@@ -238,6 +270,7 @@
       "id": "it07-01-funktion-ohne-rueckgabe",
       "title": "IT07.1 – Wiederkehrende Abläufe in Funktionen bündeln",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-01-funktion-ohne-rueckgabe.ino", "path": "examples/IT07/it07-01-funktion-ohne-rueckgabe.ino" }],
       "main": "it07-01-funktion-ohne-rueckgabe.ino"
     },
@@ -245,6 +278,7 @@
       "id": "it07-02-funktion-mit-rueckgabe",
       "title": "IT07.2 – Einen Wert aus einer Funktion zurückgeben",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-02-funktion-mit-rueckgabe.ino", "path": "examples/IT07/it07-02-funktion-mit-rueckgabe.ino" }],
       "main": "it07-02-funktion-mit-rueckgabe.ino"
     },
@@ -252,6 +286,7 @@
       "id": "it07-03-call-by-value",
       "title": "IT07.3 – Einen Parameter als Wert übergeben (Call-by-value)",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-03-call-by-value.ino", "path": "examples/IT07/it07-03-call-by-value.ino" }],
       "main": "it07-03-call-by-value.ino"
     },
@@ -259,6 +294,7 @@
       "id": "it07-04-call-by-reference",
       "title": "IT07.4 – Die Adresse einer Variablen übergeben (Call-by-reference)",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-04-call-by-reference.ino", "path": "examples/IT07/it07-04-call-by-reference.ino" }],
       "main": "it07-04-call-by-reference.ino"
     },
@@ -266,6 +302,7 @@
       "id": "it07-05-eindimensionales-array",
       "title": "IT07.5 – Gleichartige Werte in einem Array speichern",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-05-eindimensionales-array.ino", "path": "examples/IT07/it07-05-eindimensionales-array.ino" }],
       "main": "it07-05-eindimensionales-array.ino"
     },
@@ -273,6 +310,7 @@
       "id": "it07-06-zweidimensionales-array",
       "title": "IT07.6 – Ein Tastenfeld als zweidimensionales Array",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-06-zweidimensionales-array.ino", "path": "examples/IT07/it07-06-zweidimensionales-array.ino" }],
       "main": "it07-06-zweidimensionales-array.ino"
     },
@@ -280,6 +318,7 @@
       "id": "it07-07-array-an-funktion",
       "title": "IT07.7 – Ein Array an eine Funktion übergeben",
       "category": "IT07 – Funktionen und Arrays",
+      "board": "uno",
       "files": [{ "name": "it07-07-array-an-funktion.ino", "path": "examples/IT07/it07-07-array-an-funktion.ino" }],
       "main": "it07-07-array-an-funktion.ino"
     },
@@ -287,6 +326,7 @@
       "id": "it08-01-struct",
       "title": "IT08.1 – Unterschiedliche Daten in einer Struktur zusammenfassen",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [{ "name": "it08-01-struct.ino", "path": "examples/IT08/it08-01-struct.ino" }],
       "main": "it08-01-struct.ino"
     },
@@ -294,6 +334,7 @@
       "id": "it08-02-struct-uebergeben",
       "title": "IT08.2 – Eine Struktur als Wert oder als Zeiger übergeben",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [{ "name": "it08-02-struct-uebergeben.ino", "path": "examples/IT08/it08-02-struct-uebergeben.ino" }],
       "main": "it08-02-struct-uebergeben.ino"
     },
@@ -301,6 +342,7 @@
       "id": "it08-03-array-aus-structs",
       "title": "IT08.3 – Mehrere Messstellen in einem Array aus Strukturen",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [{ "name": "it08-03-array-aus-structs.ino", "path": "examples/IT08/it08-03-array-aus-structs.ino" }],
       "main": "it08-03-array-aus-structs.ino"
     },
@@ -308,6 +350,7 @@
       "id": "it08-04-typedef",
       "title": "IT08.4 – Mit typedef einen lesbaren Datentyp festlegen",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [{ "name": "it08-04-typedef.ino", "path": "examples/IT08/it08-04-typedef.ino" }],
       "main": "it08-04-typedef.ino"
     },
@@ -315,6 +358,7 @@
       "id": "it08-05-headerdatei",
       "title": "IT08.5 – Struktur und Funktionen in eine Headerdatei auslagern",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [
         { "name": "it08-05-headerdatei.ino", "path": "examples/IT08/it08-05-headerdatei.ino" },
         { "name": "messung.h", "path": "examples/IT08/messung.h" }
@@ -325,6 +369,7 @@
       "id": "it08-06-funktion-testen",
       "title": "IT08.6 – Eine Funktion mit Testfällen prüfen",
       "category": "IT08 – Strukturen und Organisation",
+      "board": "uno",
       "files": [{ "name": "it08-06-funktion-testen.ino", "path": "examples/IT08/it08-06-funktion-testen.ino" }],
       "main": "it08-06-funktion-testen.ino"
     },
@@ -332,6 +377,7 @@
       "id": "it11-01-matrix-ausgeben",
       "title": "IT11.1 – Eine Matrix mit einer Funktion lesbar ausgeben",
       "category": "IT11 – Matrizen",
+      "board": "uno",
       "files": [{ "name": "it11-01-matrix-ausgeben.ino", "path": "examples/IT11/it11-01-matrix-ausgeben.ino" }],
       "main": "it11-01-matrix-ausgeben.ino"
     },
@@ -339,6 +385,7 @@
       "id": "it11-02-skalarmultiplikation",
       "title": "IT11.2 – Funktionen auslagern und eine Matrix skalieren",
       "category": "IT11 – Matrizen",
+      "board": "uno",
       "files": [
         { "name": "it11-02-skalarmultiplikation.ino", "path": "examples/IT11/it11-02-skalarmultiplikation.ino" },
         { "name": "mat_func.h", "path": "examples/IT11/mat_func.h" }
@@ -349,6 +396,7 @@
       "id": "it11-03-matrizen-addieren",
       "title": "IT11.3 – Zwei Matrizen addieren",
       "category": "IT11 – Matrizen",
+      "board": "uno",
       "files": [
         { "name": "it11-03-matrizen-addieren.ino", "path": "examples/IT11/it11-03-matrizen-addieren.ino" },
         { "name": "mat_func.h", "path": "examples/IT11/mat_func.h" }
@@ -359,6 +407,7 @@
       "id": "it11-04-matrix-transponieren",
       "title": "IT11.4 – Eine Matrix transponieren",
       "category": "IT11 – Matrizen",
+      "board": "uno",
       "files": [
         { "name": "it11-04-matrix-transponieren.ino", "path": "examples/IT11/it11-04-matrix-transponieren.ino" },
         { "name": "mat_func.h", "path": "examples/IT11/mat_func.h" }
@@ -369,6 +418,7 @@
       "id": "it11-05-matrizen-multiplizieren",
       "title": "IT11.5 – Matrizen multiplizieren und die Einheitsmatrix prüfen",
       "category": "IT11 – Matrizen",
+      "board": "uno",
       "files": [
         { "name": "it11-05-matrizen-multiplizieren.ino", "path": "examples/IT11/it11-05-matrizen-multiplizieren.ino" },
         { "name": "mat_func.h", "path": "examples/IT11/mat_func.h" }

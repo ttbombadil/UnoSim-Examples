@@ -59,7 +59,7 @@ focus:
       - kind: concept
         text: "Warum werden `taster` und `tasterAlt` miteinander verglichen?"
       - kind: prediction
-        text: "Wie oft erscheint eine Ausgabe, wenn der Taster gedrückt und zwei Sekunden lang gehalten wird?"
+        text: "Wie oft läuft der Block mit `taster != tasterAlt`, wenn der Taster gedrückt und zwei Sekunden lang gehalten wird?"
   - id: static
     title: "Den alten Zustand speichern"
     objective: "Die Aufgabe von `static` erklären und die Folge ohne `static` vorhersagen."
@@ -69,5 +69,5 @@ focus:
       - kind: prediction
         text: "Was erscheint, solange der Taster gedrückt ist, wenn `static` entfernt wird?"
       - kind: transfer
-        text: "Wie würdest du zählen, wie oft der Taster gedrückt wurde?"
+        text: "Wie würdest du den Block mit `taster != tasterAlt` erweitern, um die Tastendrücke zu zählen?"
 @end-unosim-tutor */

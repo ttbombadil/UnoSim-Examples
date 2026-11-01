@@ -10,8 +10,8 @@
  * „Matrizenmultiplikation“.
  *
  * Beobachtung:
- * E ist die Einheitsmatrix (Ausgabe 1). A*E ergibt wieder A.
- * A*B ergibt neue Werte, z. B. oben links 1*9 + 2*6 + 3*3 = 30.
+ * Zuerst erscheint, ob E die Einheitsmatrix ist, danach die Ergebnisse von A*E
+ * und A*B. Oben links in A*B steht 1*9 + 2*6 + 3*3 = 30.
  */
 
 #include "mat_func.h"

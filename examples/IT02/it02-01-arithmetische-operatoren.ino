@@ -43,7 +43,7 @@ void loop() {
  * Experimente:
  * 1. Setze a auf 20 und b auf 4. Welchen Rest liefert a % b jetzt?
  * 2. Ergänze float z = a / b; und gib z mit zwei Nachkommastellen aus.
- *    Warum erscheint 2.00 und nicht 2.60?
+ *    Vergleiche das Ergebnis mit x / y und erkläre den Unterschied.
  * 3. Ergänze a = a + 1; vor den Ausgaben. Schreibe dasselbe danach mit a++;
  *
  * Lernfragen:

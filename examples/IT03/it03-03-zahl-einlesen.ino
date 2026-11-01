@@ -64,5 +64,5 @@ focus:
       - kind: concept
         text: "Warum prüft das Programm `zahl != 0`, bevor es etwas ausgibt?"
       - kind: transfer
-        text: "Wie würdest du das Programm verwenden, um eine eingegebene Pausenzeit abzuwarten?"
+        text: "Wie würdest du `zahl` verwenden, um eine eingegebene Pausenzeit abzuwarten?"
 @end-unosim-tutor */

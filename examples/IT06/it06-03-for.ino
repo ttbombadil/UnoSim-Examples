@@ -48,7 +48,7 @@ void loop() {
  * Lernfragen:
  * 1. Welche drei Angaben stehen im Kopf einer for-Schleife?
  * 2. Wie oft wird der Block der ersten Schleife ausgeführt?
- * 3. Warum endet die dritte Schleife mit byte nie?
+ * 3. Was beobachtest du in der dritten Schleife mit byte, und warum?
  */
 
 /* @unosim-tutor
@@ -75,5 +75,5 @@ focus:
       - kind: prediction
         text: "Was geschieht, wenn `i` in der Schleife mit `i >= 0` vom Typ `byte` ist?"
       - kind: transfer
-        text: "Wie würdest du eine Schleife schreiben, die von 20 in Zweierschritten bis 2 herunterzählt?"
+        text: "Wie würdest du die Schleife mit `i--` ändern, damit sie von 20 in Zweierschritten bis 2 herunterzählt?"
 @end-unosim-tutor */

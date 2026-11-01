@@ -69,7 +69,7 @@ focus:
       - kind: concept
         text: "Warum liefert `abgeschnitten` den Wert 3 und nicht 3,33?"
       - kind: prediction
-        text: "Welches Ergebnis liefert `map` für den Wert 150, wenn der Ausgangsbereich von 0 bis 100 reicht?"
+        text: "Welches Ergebnis liefert `map` für den Wert 150 mit dem Bereich von `A_VON` bis `A_BIS` und dem von `B_VON` bis `B_BIS`?"
       - kind: transfer
         text: "Wie würdest du einen Messwert von 0 bis 1023 mit `map` in einen Wert von 0 bis 255 umrechnen?"
 @end-unosim-tutor */

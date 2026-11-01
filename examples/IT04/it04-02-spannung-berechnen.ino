@@ -34,7 +34,7 @@ void loop() {
  * Experimente:
  * 1. Stelle A0 auf 567 und prüfe die Rechnung der Folie.
  * 2. Ersetze 1024.0 durch 1024 und 5.0 durch 5. Was erscheint jetzt und warum?
- * 3. Welche Spannung gehört zum Messwert 700? Prüfe deine Rechnung im Simulator.
+ * 3. Welche Spannung berechnet das Programm, wenn `messwert` den Wert 700 hat? Prüfe deine Rechnung im Simulator.
  *
  * Lernfragen:
  * 1. Warum wird durch 1024 geteilt und mit 5 multipliziert?
@@ -57,7 +57,7 @@ focus:
       - kind: concept
         text: "Warum wird `messwert` durch `1024.0` geteilt und mit `5.0` multipliziert?"
       - kind: application
-        text: "Welche Spannung gehört zum Messwert 700?"
+        text: "Welche Spannung berechnet das Programm, wenn `messwert` den Wert 700 hat?"
   - id: kommazahlen
     title: "Kommazahlen"
     objective: "Begründen, warum `float` und Kommazahl-Konstanten nötig sind."

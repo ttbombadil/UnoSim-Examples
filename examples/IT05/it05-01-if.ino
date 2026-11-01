@@ -65,5 +65,5 @@ focus:
       - kind: concept
         text: "Warum steht `Serial.println()` außerhalb des Blocks der Verzweigung?"
       - kind: transfer
-        text: "Wie müsste die Bedingung lauten, damit die Meldung schon beim Wert 600 erscheint?"
+        text: "Wie müsste `messwert > GRENZWERT` lauten, damit die Meldung schon beim Wert 600 erscheint?"
 @end-unosim-tutor */

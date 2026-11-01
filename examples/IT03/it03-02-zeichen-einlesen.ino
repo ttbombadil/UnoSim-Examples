@@ -9,9 +9,9 @@
  * IT03, Folien „Serielle Eingabe“ und „Serielle Eingabe Beispiel int/char“.
  *
  * Beobachtung:
- * Sende im seriellen Monitor den Text Hi. Es erscheinen H (Code 72) und
- * i (Code 105). Danach kommt noch Code 10: das Zeilenende, das beim Senden
- * angehängt wird – deshalb steht dort kein sichtbares Zeichen.
+ * Sende im seriellen Monitor den Text Hi mit der Zeilenende-Einstellung
+ * „Newline“ (Voreinstellung). Es erscheinen H (Code 72), i (Code 105) und eine
+ * weitere Zeile ohne sichtbares Zeichen.
  */
 
 void setup() {
@@ -38,7 +38,8 @@ void loop() {
  *    ergänze am Ende von loop() delay(500);. Was erscheint, solange nichts
  *    gesendet wird?
  * 3. Sende ein Wort mit fünf Buchstaben. Wie oft wird loop() dafür mit einem
- *    empfangenen Zeichen durchlaufen?
+ *    empfangenen Zeichen durchlaufen? Stelle das Zeilenende im Monitor auf
+ *    „No line ending“ und vergleiche.
  *
  * Lernfragen:
  * 1. Warum wird Serial.available() vor Serial.read() geprüft?
@@ -68,5 +69,5 @@ focus:
       - kind: concept
         text: "Warum erscheint für `zeichen` ein Buchstabe, für `code` aber eine Zahl?"
       - kind: prediction
-        text: "Welcher Code erscheint nach dem letzten gesendeten Buchstaben, und woher kommt er?"
+        text: "Welchen Code zeigt `code` nach dem letzten Buchstaben, wenn im Monitor das Zeilenende „Newline“ eingestellt ist?"
 @end-unosim-tutor */

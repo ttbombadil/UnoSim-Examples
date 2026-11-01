@@ -56,7 +56,7 @@ focus:
     objective: "Die Zahl der Durchläufe bestimmen und die Rolle beider Schleifen erklären."
     questions:
       - kind: prediction
-        text: "Wie oft wird der Block der inneren Schleife insgesamt ausgeführt?"
+        text: "Wie oft wird der Block der Schleife mit `spalte` insgesamt ausgeführt?"
       - kind: concept
         text: "Welche der beiden Schleifen bestimmt die Anzahl der Zeilen, die Schleife mit `zeile` oder die mit `spalte`?"
   - id: feldnummer

@@ -73,5 +73,5 @@ focus:
       - kind: recall
         text: "Welche Zahlenwerte stehen hinter den vordefinierten Konstanten `HIGH` und `LOW`?"
       - kind: transfer
-        text: "Für welchen weiteren Wert in einem Arduino-Programm wäre eine Konstante sinnvoll?"
+        text: "Für welchen weiteren Wert wäre eine Konstante wie `ZOLL_IN_CM` sinnvoll?"
 @end-unosim-tutor */

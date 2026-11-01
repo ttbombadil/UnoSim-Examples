@@ -62,7 +62,7 @@ focus:
       - kind: concept
         text: "Warum wird `messwert < GRENZE_MITTEL` nur geprüft, wenn `messwert < GRENZE_DUNKEL` falsch ist?"
       - kind: prediction
-        text: "Welche Ausgabe erscheint für den Messwert 300?"
+        text: "Welche Ausgabe erscheint, wenn `messwert` genau 300 ist?"
   - id: reihenfolge-aendern
     title: "Reihenfolge ändern"
     objective: "Die Folge einer vertauschten Reihenfolge vorhersagen und eine Stufe ergänzen."
@@ -70,5 +70,5 @@ focus:
       - kind: prediction
         text: "Erscheint „dunkel“ noch, wenn zuerst `GRENZE_MITTEL` und erst danach `GRENZE_DUNKEL` geprüft wird?"
       - kind: transfer
-        text: "Wie würdest du eine vierte Stufe für sehr helles Licht ergänzen?"
+        text: "Wie würdest du die Kette nach `GRENZE_MITTEL` um eine vierte Stufe für sehr helles Licht ergänzen?"
 @end-unosim-tutor */

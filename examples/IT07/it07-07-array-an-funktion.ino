@@ -60,7 +60,7 @@ void loop() {
  * Lernfragen:
  * 1. Warum steht beim Aufruf messwerteErfassen(messwerte) kein &?
  * 2. Warum enthält messwerte nach dem Aufruf die gemessenen Werte?
- * 3. Warum wird summe als float deklariert?
+ * 3. Warum wird summe als float definiert?
  */
 
 /* @unosim-tutor
@@ -83,9 +83,9 @@ focus:
     objective: "Die Berechnung des Mittelwerts erklären und erweitern."
     questions:
       - kind: concept
-        text: "Warum wird `summe` als `float` deklariert?"
+        text: "Warum wird `summe` als `float` definiert?"
       - kind: prediction
-        text: "Welcher Mittelwert erscheint, wenn vier Messwerte 100 sind und einer 600 ist?"
+        text: "Welchen Wert liefert `mittelwertBerechnen`, wenn vier Messwerte 100 sind und einer 600 ist?"
       - kind: transfer
         text: "Wie würdest du eine Funktion schreiben, die den größten Wert aus `messwerte` zurückgibt?"
 @end-unosim-tutor */

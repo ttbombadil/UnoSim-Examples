@@ -12,7 +12,8 @@
  * Beobachtung:
  * Es wird so lange gewürfelt, bis eine 6 fällt. Mindestens ein Wurf findet
  * immer statt. Danach steht die Zahl der Versuche im Monitor.
- * random(1, 7) liefert eine Zufallszahl von 1 bis 6.
+ * random(1, 7) liefert eine Zufallszahl von 1 bis 6. Ohne randomSeed() ist
+ * die Folge bei jedem Start dieselbe.
  */
 
 void setup() {
@@ -69,5 +70,5 @@ focus:
       - kind: prediction
         text: "Wie oft wird gewürfelt, wenn eine `while`-Schleife mit derselben Bedingung verwendet wird und `wurf` vorher den Wert 6 hat?"
       - kind: concept
-        text: "Warum passt eine fußgesteuerte Schleife gut zum Würfeln bis zur 6?"
+        text: "Warum passt die Schleife mit `while (wurf != 6)` am Ende gut zum Würfeln bis zur 6?"
 @end-unosim-tutor */

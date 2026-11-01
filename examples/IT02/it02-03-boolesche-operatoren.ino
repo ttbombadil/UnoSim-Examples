@@ -71,5 +71,5 @@ focus:
       - kind: concept
         text: "Welche Wirkung hat der Operator `!` in der Zeile mit `signallampe`?"
       - kind: transfer
-        text: "Wie würdest du ausdrücken, dass der Antrieb nur läuft, wenn beide Taster gedrückt sind und kein Not-Aus betätigt ist?"
+        text: "Wie würdest du `antriebEin` so ausdrücken, dass der Antrieb nur läuft, wenn beide Taster gedrückt sind und kein Not-Aus betätigt ist?"
 @end-unosim-tutor */

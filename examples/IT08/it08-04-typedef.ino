@@ -60,7 +60,7 @@ void loop() {
 /*
  * Experimente:
  * 1. Schreibe eine Funktion subtrahieren() und berechne b - a.
- * 2. Deklariere eine Variable mit struct vektor c = {3, 4}; statt mit Vektor.
+ * 2. Definiere eine Variable mit struct vektor c = {3, 4}; statt mit Vektor.
  *    Gib ihre Länge aus.
  * 3. Ergänze eine Funktion skalieren(Vektor v, float faktor).
  *
@@ -83,8 +83,8 @@ focus:
     questions:
       - kind: concept
         text: "Wofür steht der Name `Vektor` nach der Anweisung mit `typedef`?"
-      - kind: recall
-        text: "Wie würdest du eine Variable desselben Typs ohne den Alias `Vektor` deklarieren?"
+      - kind: application
+        text: "Wie würdest du eine Variable desselben Typs ohne den Alias `Vektor` definieren?"
   - id: struktur-als-rueckgabe
     title: "Struktur als Parameter und Rückgabe"
     objective: "Erklären, wie `addieren` mit Kopien arbeitet und ihr Ergebnis zurückgibt."

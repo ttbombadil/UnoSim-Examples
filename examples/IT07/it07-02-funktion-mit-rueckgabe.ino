@@ -73,5 +73,5 @@ focus:
       - kind: prediction
         text: "Welcher Mittelwert ergibt sich für 4 und 7, wenn `2.0` durch 2 ersetzt wird?"
       - kind: transfer
-        text: "Wie würdest du eine Funktion schreiben, die den Mittelwert von drei Zahlen zurückgibt?"
+        text: "Wie würdest du `mittelwert` ändern, damit sie den Mittelwert von drei Zahlen zurückgibt?"
 @end-unosim-tutor */
