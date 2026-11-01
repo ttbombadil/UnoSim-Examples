@@ -39,7 +39,8 @@ void loop() {
 /*
  * Experimente:
  * 1. Ändere die Maske so, dass Bit 0 geprüft wird.
- * 2. Gib wert & MASKE_BIT_2 einmal ohne && 1 aus. Warum erscheint 100?
+ * 2. Gib wert & MASKE_BIT_2 einmal ohne && 1 aus. Warum erscheint 4?
+ *    Wie erscheint derselbe Wert, wenn du ihn mit BIN ausgibst?
  * 3. Vergleiche die Ausgaben von wert & 6 und wert && 6.
  *
  * Lernfragen:

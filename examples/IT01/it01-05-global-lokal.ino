@@ -68,5 +68,5 @@ focus:
       - kind: concept
         text: "Warum beginnt `schritt` bei jedem Durchlauf von `loop` wieder mit demselben Wert?"
       - kind: transfer
-        text: "Wo würdest du eine Variable deklarieren, die zählen soll, wie oft `loop` durchlaufen wurde?"
+        text: "Wo würdest du eine Variable definieren, die zählen soll, wie oft `loop` durchlaufen wurde?"
 @end-unosim-tutor */

@@ -66,5 +66,5 @@ focus:
       - kind: concept
         text: "Warum zählt die Schleife mit `i--` von 7 herunter?"
       - kind: transfer
-        text: "Was musst du ändern, damit alle 16 Bits einer größeren Zahl ausgegeben werden?"
+        text: "Was musst du an `a` und `i` ändern, damit alle 16 Bits einer größeren Zahl ausgegeben werden?"
 @end-unosim-tutor */

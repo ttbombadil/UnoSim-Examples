@@ -45,7 +45,7 @@ void loop() {
  * 1. Setze werte[0] = 99; und gib das Element danach aus.
  * 2. Ändere ANZAHL auf 6. An wie vielen Stellen musst du das Programm ändern?
  * 3. Ändere die zweite Schleifenbedingung in i <= ANZAHL. Was wird zusätzlich
- *    ausgegeben? (Der Wert ist zufällig – es wird außerhalb des Arrays gelesen.)
+ *    ausgegeben? (Das Programm liest außerhalb des Arrays; der Wert ist nicht festgelegt.)
  *
  * Lernfragen:
  * 1. Mit welchem Index beginnt ein Array, mit welchem endet es?
@@ -66,7 +66,7 @@ focus:
       - kind: recall
         text: "Mit welchem Index beginnt das Array `werte`, und mit welchem endet es?"
       - kind: application
-        text: "Welchen Wert liefert `werte[2]`, und warum ist das nicht das zweite Element?"
+        text: "Welches Element von `werte` liefert `werte[2]`, wenn du von vorn zählst?"
   - id: schleife
     title: "Array und Schleife"
     objective: "Die Schleifenbedingung über das Array begründen und die Konstante `ANZAHL` nutzen."

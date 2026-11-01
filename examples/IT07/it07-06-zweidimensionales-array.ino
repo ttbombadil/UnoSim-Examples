@@ -77,9 +77,9 @@ focus:
     objective: "Die Aufgabe der Schleifen und des Sonderwerts erklären."
     questions:
       - kind: concept
-        text: "Welche der beiden Schleifen läuft über die Spalten?"
+        text: "Welche der beiden Schleifen läuft über die Spalten, die mit `zeile` oder die mit `spalte`?"
       - kind: concept
         text: "Wozu dient der Wert -1 in `tastenfeld`, und wie behandelt die Ausgabe ihn?"
       - kind: transfer
-        text: "Wie würdest du zu jeder Taste zusätzlich die Anzahl ihrer Betätigungen speichern?"
+        text: "Wie würdest du zu jeder Taste aus `tastenfeld` zusätzlich die Anzahl ihrer Betätigungen speichern?"
 @end-unosim-tutor */

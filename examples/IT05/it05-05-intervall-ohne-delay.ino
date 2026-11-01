@@ -71,5 +71,5 @@ focus:
       - kind: prediction
         text: "Wie verändert sich die Zahl in `durchlaeufe` zwischen zwei Ausgaben, wenn das Programm stattdessen nach jeder Ausgabe 500 ms anhält?"
       - kind: transfer
-        text: "Wie würdest du zusätzlich eine LED im selben Takt umschalten, ohne das Programm anzuhalten?"
+        text: "Wie würdest du im Block mit `letzteAusgabe = jetzt` zusätzlich eine LED umschalten, ohne das Programm anzuhalten?"
 @end-unosim-tutor */

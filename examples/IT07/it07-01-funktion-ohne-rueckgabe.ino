@@ -102,5 +102,5 @@ focus:
       - kind: prediction
         text: "Wie ändert sich der Ablauf, wenn `DIT` auf 100 gesetzt wird?"
       - kind: transfer
-        text: "Wie würdest du eine Funktion für den Buchstaben H schreiben?"
+        text: "Wie würdest du eine Funktion wie `morseS` für den Buchstaben H schreiben?"
 @end-unosim-tutor */

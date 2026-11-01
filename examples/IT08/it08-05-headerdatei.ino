@@ -69,5 +69,5 @@ focus:
       - kind: recall
         text: "In welcher Datei sind `messwertEinlesen` und `messwertAusgeben` implementiert?"
       - kind: concept
-        text: "Welchen Vorteil bietet die Trennung in Hauptprogramm und Headerdatei bei größeren Programmen?"
+        text: "Welchen Vorteil bietet die Auslagerung nach `messung.h` bei größeren Programmen?"
 @end-unosim-tutor */

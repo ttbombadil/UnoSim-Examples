@@ -6,8 +6,7 @@
  * Messwert definieren und mit dem Punktoperator auf die Felder zugreifen.
  *
  * Bezug zu den Unterlagen:
- * IT08, Folien „Bedarf“, „struct – Deklaration der Struktur“ und
- * „struct – Deklaration einer Variablen der Struktur“.
+ * IT08, Folien „Bedarf“ und die beiden struct-Folien zu Struktur und Variable.
  *
  * Beobachtung:
  * Jede Sekunde erscheint ein Datensatz aus Zeit, Messstelle und Spannung an A0.
@@ -80,5 +79,5 @@ focus:
       - kind: application
         text: "Warum ist für das Feld `zeit` der Typ `unsigned long` passend?"
       - kind: transfer
-        text: "Welches Feld würdest du ergänzen, um zu speichern, ob ein Messwert gültig ist?"
+        text: "Welches Feld würdest du in `Messung` ergänzen, um zu speichern, ob ein Messwert gültig ist?"
 @end-unosim-tutor */

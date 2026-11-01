@@ -71,8 +71,8 @@ focus:
     questions:
       - kind: concept
         text: "Welche Aufgabe hat `BIN` in `Serial.println(zahl, BIN)`?"
-      - kind: application
+      - kind: recall
         text: "Wie viele Nachkommastellen erscheinen bei `Serial.println(wert, 4)`?"
       - kind: transfer
-        text: "Wie würdest du eine Spannung mit genau einer Nachkommastelle ausgeben?"
+        text: "Wie würdest du `wert` mit genau einer Nachkommastelle ausgeben?"
 @end-unosim-tutor */

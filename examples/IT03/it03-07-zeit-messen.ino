@@ -67,7 +67,7 @@ focus:
       - kind: concept
         text: "Warum eignet sich `unsigned long` für `zeit1` und `zeit2`?"
       - kind: prediction
-        text: "Um wie viel ändert sich die Startzeit ungefähr von einer Ausgabe zur nächsten?"
+        text: "Um wie viel ändert sich `zeit1` ungefähr von einer Ausgabe zur nächsten?"
       - kind: transfer
         text: "Wie würdest du messen, wie lange eine Ausgabe mit `Serial.print` dauert?"
 @end-unosim-tutor */

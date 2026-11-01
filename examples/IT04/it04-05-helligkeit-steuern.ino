@@ -67,5 +67,5 @@ focus:
       - kind: application
         text: "Welche Schritte liegen zwischen einer Lichtänderung am Sensor und einer Helligkeitsänderung an `PIN_LED`?"
       - kind: transfer
-        text: "Wie würdest du das Programm ändern, damit die LED bei viel Licht dunkler wird?"
+        text: "Wie würdest du den Aufruf von `map` ändern, damit die LED bei viel Licht dunkler wird?"
 @end-unosim-tutor */

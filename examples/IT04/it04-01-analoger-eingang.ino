@@ -51,7 +51,7 @@ focus:
       - kind: recall
         text: "Welchen Wertebereich liefert `analogRead` beim Arduino Uno?"
       - kind: concept
-        text: "Warum sind für diesen Wertebereich 10 Bit erforderlich?"
+        text: "Warum sind für die Werte von `analogRead` 10 Bit erforderlich?"
   - id: messwert
     title: "Messwert und Datentyp"
     objective: "Den Datentyp begründen und einen Messwert abschätzen."

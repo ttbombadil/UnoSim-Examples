@@ -65,5 +65,5 @@ focus:
       - kind: prediction
         text: "Was beobachtest du, wenn die letzte Zeile `delay(PAUSENDAUER)` entfernt wird?"
       - kind: transfer
-        text: "Wie würdest du das Programm ändern, um das Morsezeichen S auszugeben?"
+        text: "Wie würdest du `loop` ändern, um das Morsezeichen S auszugeben?"
 @end-unosim-tutor */

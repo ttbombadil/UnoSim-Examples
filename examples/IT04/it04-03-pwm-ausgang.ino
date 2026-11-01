@@ -55,9 +55,9 @@ focus:
       - kind: recall
         text: "Welchen Wertebereich erwartet `analogWrite`?"
       - kind: concept
-        text: "Warum entspricht der Wert 25 ungefähr einem Tastgrad von 10 %?"
+        text: "Warum entspricht `analogWrite(PIN_PWM, 25)` ungefähr einem Tastgrad von 10 %?"
       - kind: application
-        text: "Welchen Wert brauchst du, um an einem PWM-Pin eine mittlere Spannung von 3,3 V zu erzeugen?"
+        text: "Welchen Wert brauchst du in `analogWrite` für eine mittlere Spannung von 3,3 V?"
   - id: pwm-prinzip
     title: "Prinzip der PWM"
     objective: "Erklären, wie PWM eine mittlere Spannung erzeugt, und geeignete Pins nennen."

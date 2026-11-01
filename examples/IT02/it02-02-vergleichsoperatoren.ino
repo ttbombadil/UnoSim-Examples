@@ -63,7 +63,7 @@ focus:
       - kind: prediction
         text: "Welche der Vergleiche `a == b`, `a != b`, `a < b` und `a >= b` sind mit den aktuellen Werten wahr?"
       - kind: recall
-        text: "Wie werden ein wahres und ein falsches Ergebnis in der Ausgabe dargestellt?"
+        text: "Welche Zahl gibt `Serial.println` für einen wahren und für einen falschen Vergleich aus?"
   - id: zuweisung-oder-vergleich
     title: "Zuweisung oder Vergleich"
     objective: "Den Unterschied zwischen `=` und `==` erklären und die Folge einer Verwechslung vorhersagen."

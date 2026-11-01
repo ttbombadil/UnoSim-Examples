@@ -90,5 +90,5 @@ focus:
       - kind: concept
         text: "Warum greifen `messwertEinlesen` und `messwertAusgeben` nicht direkt auf `messungen` zu?"
       - kind: transfer
-        text: "Was musst du ändern, um eine vierte Messstelle zu ergänzen?"
+        text: "Was musst du an `ANZAHL_MESSSTELLEN` und `MESSSTELLEN` ändern, um eine vierte Messstelle zu ergänzen?"
 @end-unosim-tutor */

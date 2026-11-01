@@ -69,5 +69,5 @@ focus:
       - kind: prediction
         text: "Was passiert mit der LED an `PIN_LED`, wenn der `else`-Zweig fehlt und der Messwert wieder sinkt?"
       - kind: transfer
-        text: "Wie würdest du einen zweiten Grenzwert für eine Warnmeldung ergänzen?"
+        text: "Wie würdest du neben `GRENZWERT` einen zweiten Grenzwert für eine Warnmeldung ergänzen?"
 @end-unosim-tutor */

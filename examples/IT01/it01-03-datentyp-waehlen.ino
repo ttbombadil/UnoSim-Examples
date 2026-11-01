@@ -65,9 +65,9 @@ focus:
     objective: "Die Wahl von `unsigned int` nach dem Schema der Folie begründen."
     questions:
       - kind: concept
-        text: "Warum darf `sensorwertPassend` mit `unsigned` deklariert werden?"
+        text: "Warum darf `sensorwertPassend` mit `unsigned` definiert werden?"
       - kind: prediction
         text: "Welcher Wert erscheint für `sensorwertZuKlein`, wenn `sensorwertPassend` den Wert 300 hat?"
       - kind: transfer
-        text: "Welchen Datentyp würdest du für einen Füllstand von 0,4 m bis 6,0 m wählen, und wie begründest du das?"
+        text: "Welchen Datentyp statt `unsigned int` würdest du für einen Füllstand von 0,4 m bis 6,0 m wählen, und warum?"
 @end-unosim-tutor */
