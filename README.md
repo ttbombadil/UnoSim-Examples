@@ -145,6 +145,47 @@ Rules and recommendations:
 
 Tutor repository data is normalized didactic data, never a system prompt.
 
+### Reference answers (schema 3)
+
+Annotation `schemaVersion: 3` may give a focus question a reviewed
+`reference` (UnoSim CourseContent SSOT 6.4, LearningQuestions 3.10). The
+learner sees it only after three own answers and only on request; it also
+corrects a rating that contradicts it.
+
+```yaml
+      - kind: prediction
+        text: "Was wird im ersten Durchlauf ausgegeben, wenn `a` den Wert 200 hat?"
+        reference:
+          answer: "1"                       # what the learner sees, at most 300 characters
+          explanation: "Im ersten Durchlauf ist i = 7 …"   # how to get there, at most 1 500
+          accept: ["1", "200 = 1"]          # optional: short answers that are certainly correct
+          assumptions: ["a = 200"]          # optional: values the question itself sets
+          requiresCode:                     # the code lines the answer depends on
+            - "for (int i = 7; i >= 0; i--) {"
+            - "Serial.print(a & (1 << i) && 1);"
+```
+
+- A reference is bound to this Example's exact program and board. It applies
+  only while the learner's code is the Example's code character for
+  character (only whitespace at the end is ignored). The one allowed change
+  is the initial value of a variable named in `assumptions`, at its single
+  declaration before the first `{` (`byte a = 37;` → `byte a = 200;`). Any
+  other edit disables the reference, so it neither grades nor is shown.
+- A reference without `assumptions` therefore applies only to the unchanged
+  Example. After the learner's first experiment the Tutor says that no
+  matching reference exists.
+- Compute every answer by hand from the code and the question; never take
+  it from a model. Plain text only: no code block, no replacement sketch,
+  no URL.
+
+**Compatibility.** Schema 3 needs an UnoSim with LearningQuestions 3.10
+support (branch `feature/tutor-learning-support-spec`). An older UnoSim,
+including the one pinned in `.unosim-compatible-commit`, rejects the whole
+Tutor bundle, so all Course Content questions would be lost. Merge and
+deploy that UnoSim first, then move `.unosim-compatible-commit` to its merge
+commit, then merge Course Content with schema 3. Until then the CI of a
+branch with schema 3 fails on purpose.
+
 ### Deterministic Tutor quality gate
 
 `tutor/quality-cases.yaml` contains small positive and negative activation
