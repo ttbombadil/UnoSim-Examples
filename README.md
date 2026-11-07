@@ -169,8 +169,11 @@ corrects a rating that contradicts it.
   only while the learner's code is the Example's code character for
   character (only whitespace at the end is ignored). The one allowed change
   is the initial value of a variable named in `assumptions`, at its single
-  declaration before the first `{` (`byte a = 37;` → `byte a = 200;`). Any
-  other edit disables the reference, so it neither grades nor is shown.
+  declaration before the first `{` (`byte a = 37;` → `byte a = 200;`). The
+  declaration must name an arithmetic type explicitly, and the replacement
+  must keep the literal's kind and suffix. This exception applies only to a
+  single-file program with no preprocessor directive before the declaration.
+  Any other edit disables the reference, so it neither grades nor is shown.
 - A reference without `assumptions` therefore applies only to the unchanged
   Example. After the learner's first experiment the Tutor says that no
   matching reference exists.
@@ -179,12 +182,11 @@ corrects a rating that contradicts it.
   no URL.
 
 **Compatibility.** Schema 3 needs an UnoSim with LearningQuestions 3.10
-support (branch `feature/tutor-learning-support-spec`). An older UnoSim,
-including the one pinned in `.unosim-compatible-commit`, rejects the whole
-Tutor bundle, so all Course Content questions would be lost. Merge and
-deploy that UnoSim first, then move `.unosim-compatible-commit` to its merge
-commit, then merge Course Content with schema 3. Until then the CI of a
-branch with schema 3 fails on purpose.
+support. `.unosim-compatible-commit` pins the validator to merge commit
+[`1aef8c1cd6621d78f55a7fcfb1147cc3c42af794`](https://github.com/MoDevIO/UnoSim/commit/1aef8c1cd6621d78f55a7fcfb1147cc3c42af794),
+which includes that support. Deploy this UnoSim version or a compatible
+successor before serving Course Content with schema 3. An older UnoSim
+rejects the whole Tutor bundle, so all Course Content questions would be lost.
 
 ### Deterministic Tutor quality gate
 
