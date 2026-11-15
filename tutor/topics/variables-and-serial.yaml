@@ -54,7 +54,7 @@ questions:
     requires:
       - fact: type-used
         values: [char, byte, int, long, float]
-    text: Welche Rolle spielt der Datentyp der betrachteten Variable im aktuellen Sketch?
+    text: "Nenne eine Variable aus dem aktuellen Sketch mit ihrem Datentyp: Wozu verwendet der Sketch ihren Wert?"
   - id: serial-output-concept
     concept: serial-output
     indicator: explains-serial-output
@@ -63,7 +63,7 @@ questions:
     requires:
       - fact: serial-call
         values: [print]
-    text: Welche Rolle hat der Serial-Ausgabeaufruf in diesem Sketch?
+    text: "Nenne einen Aufruf von Serial.print oder Serial.println aus dem aktuellen Sketch: Was bewirkt er, während der Sketch läuft?"
   - id: variable-output-application
     concept: variable-values
     indicator: relates-value-to-use
@@ -74,7 +74,7 @@ questions:
         values: [char, byte, int, long, float]
       - fact: serial-call
         values: [print]
-    text: Wie hängt der in der Variable gespeicherte Wert mit der sichtbaren seriellen Ausgabe im aktuellen Sketch zusammen?
+    text: "Wähle eine Variable, die die serielle Ausgabe beeinflusst: Wie wirkt sich eine Änderung ihres Werts auf die Ausgabe aus?"
   - id: serial-output-transfer
     concept: serial-output
     indicator: explains-serial-output
