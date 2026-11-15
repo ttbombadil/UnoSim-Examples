@@ -11,3 +11,13 @@ strategies:
   - id: precision-policy
     path: tutor/strategies/precision-policy.yaml
     sha256: 4f5c4f36a3fd6daf1b94e316a956a4bc03223f296d886e9ba7646428f706c4d3
+aspects:
+  - id: branching
+    path: tutor/aspects/branching.yaml
+    sha256: 486b512e0b7ca159e22d1e1ab5ac9e1495c904f30f47ccb95ec0f98cf14ed6fe
+  - id: loops
+    path: tutor/aspects/loops.yaml
+    sha256: 61e637dc83262dcac386e7ccdb8af226f51cbcd9c820d16beb5dc55766cfe030
+  - id: variables
+    path: tutor/aspects/variables.yaml
+    sha256: f0c3841b858c9f64e2b18fc594ca1ec8348238020b7d3ea37952dee7ef124b83
