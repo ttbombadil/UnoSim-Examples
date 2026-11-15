@@ -20,7 +20,7 @@ aspects:
     sha256: 61e637dc83262dcac386e7ccdb8af226f51cbcd9c820d16beb5dc55766cfe030
   - id: variables
     path: tutor/aspects/variables.yaml
-    sha256: f0c3841b858c9f64e2b18fc594ca1ec8348238020b7d3ea37952dee7ef124b83
+    sha256: 91f2e25434d640a14dbdb75f5bd2385d9d4368a9247a20e252175c91631ccb3d
   - id: pins
     path: tutor/aspects/pins.yaml
     sha256: bd2fc857e664aee376c2e90641e74ab4a245d16d9a0e873f0e5732cf097bda96

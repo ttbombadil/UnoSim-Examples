@@ -48,7 +48,8 @@ assignments:
     level: 3
     task: >-
       Lass vorhersagen, wie sich das Verhalten des Sketches ändert, wenn dieser Wert auf einen von dir
-      genannten anderen Wert gesetzt wird. Nenne den Namen und den neuen Wert wörtlich.
+      genannten anderen Wert gesetzt wird. Der neue Wert ist ein Wert derselben Art (eine andere Zahl oder ein
+      anderer Pin), kein anderer Name aus dem Sketch. Nenne den Namen und den neuen Wert wörtlich.
     needs: [constant, initial-value]
     fallback: "Wie ändert sich das Verhalten des Sketches, wenn du den Wert in {code} deutlich vergrößerst, und woran siehst du das im Simulator?"
   - id: variables-predict-lifetime
