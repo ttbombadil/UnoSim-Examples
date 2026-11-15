@@ -54,7 +54,7 @@ questions:
     requires:
       - fact: type-used
         values: [long]
-    text: Welche Information wird im Sketch in der betrachteten Variable mit langem Ganzzahltyp gespeichert?
+    text: Welche Information speichert eine Variable vom Typ long oder unsigned long im aktuellen Sketch, und wie heißt sie?
   - id: long-value-application
     concept: long-value-usage
     indicator: explains-long-usage
@@ -63,7 +63,7 @@ questions:
     requires:
       - fact: type-used
         values: [long]
-    text: Warum passt der für diese Variable verwendete Datentyp zur im Sketch gespeicherten Information?
+    text: "Nenne eine long-Variable aus dem aktuellen Sketch: Warum reicht für ihre Werte der Datentyp int nicht aus?"
   - id: long-value-prediction
     concept: long-value-meaning
     indicator: identifies-long-value
@@ -72,7 +72,7 @@ questions:
     requires:
       - fact: type-used
         values: [long]
-    text: Wie erwartest du, dass sich der gespeicherte Wert dieser Variable beim nächsten Schleifendurchlauf verändert?
+    text: "Wähle eine Variable mit langem Ganzzahltyp, die sich in loop() ändert: Welchen Verlauf erwartest du für ihren Wert über mehrere Durchläufe?"
   - id: long-value-transfer
     concept: long-value-usage
     indicator: explains-long-usage
