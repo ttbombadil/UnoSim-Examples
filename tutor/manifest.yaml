@@ -14,7 +14,7 @@ strategies:
 aspects:
   - id: branching
     path: tutor/aspects/branching.yaml
-    sha256: 630fc0b2f544517918d212ce9730691bec066c6a8fcbe2568d8e9994943bacad
+    sha256: 12d7d232c2924fb062de7c2c7a4b8339af44861142d6d06c777147e7b6a315d1
   - id: loops
     path: tutor/aspects/loops.yaml
     sha256: 6cd4631cfebbfe9756e53b844a689f67a64baf92f9f5504825d678adf72f9f10
