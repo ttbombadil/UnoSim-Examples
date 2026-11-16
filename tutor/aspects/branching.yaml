@@ -32,6 +32,7 @@ assignments:
       Die Lernenden sollen den Fall mit Werten oder Bedingungen beschreiben, nicht nur "sonst" sagen.
     needs: [condition, else-branch]
     fallback: "Die Verzweigung in {function} beginnt mit der Bedingung {code}: In welchem Fall wird ihr letzter Zweig ohne eigene Bedingung erreicht?"
+    graphic: activity
   - id: branching-explain-early-return
     level: 2
     task: >-
@@ -63,6 +64,7 @@ assignments:
       und welche Beobachtung im Simulator die Änderung bestätigt. Verlange keine fertige Codezeile.
     needs: [condition, variable, relational]
     fallback: "Wie müsstest du die Bedingung {code} in {function} ändern, damit auch der Grenzfall in diesen Zweig fällt, und woran erkennst du im Simulator, dass es wirkt?"
+    graphic: activity
   - id: branching-change-order
     level: 4
     task: >-
@@ -70,6 +72,7 @@ assignments:
       Verzweigung vertauscht wird, und wie sich das im Simulator zeigen ließe.
     needs: [condition, else-if]
     fallback: "Die Verzweigung in {function} prüft zuerst {code}: Was ändert sich am Verhalten, wenn du die Reihenfolge ihrer Bedingungen vertauschst, und wie zeigst du das im Simulator?"
+    graphic: activity
   - id: branching-change-extend
     level: 4
     task: >-
@@ -77,3 +80,4 @@ assignments:
       sinnvoll wäre, und welche Bedingung dieser Fall bräuchte.
     needs: [condition]
     fallback: "Die Verzweigung in {function} prüft die Bedingung {code}: Welchen weiteren Fall könntest du sinnvoll ergänzen, und welche Bedingung bräuchte er?"
+    graphic: activity

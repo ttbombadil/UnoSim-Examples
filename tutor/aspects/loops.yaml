@@ -52,6 +52,7 @@ assignments:
       Folge das im Sketch hätte, etwa bei einem Zugriff auf ein Array. Verlange keine fertige Codezeile.
     needs: [condition]
     fallback: "Was müsstest du an der Schleife mit {code} in {function} ändern, damit ihr Rumpf einmal öfter läuft, und welche Folge hätte das im Sketch?"
+    graphic: activity
   - id: loops-change-kind
     level: 4
     task: >-
@@ -59,3 +60,4 @@ assignments:
       worauf dabei zu achten ist, damit sie gleich oft läuft.
     needs: [condition]
     fallback: "Wie ließe sich die Wiederholung der Schleife mit {code} in {function} mit einer anderen Schleifenart ausdrücken, und worauf musst du achten, damit sie gleich oft läuft?"
+    graphic: activity
