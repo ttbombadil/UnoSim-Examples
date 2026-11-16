@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: serial
+title: Serielle Ausgabe und Eingabe
+objective: >-
+  Die Lernenden können für einen Aufruf der seriellen Schnittstelle erklären, was er überträgt und wozu,
+  die Ausgabe im seriellen Monitor vorhersagen und sie gezielt verändern.
+assignments:
+  - id: serial-find-output
+    level: 1
+    task: >-
+      Lass benennen, was dieser Aufruf an den seriellen Monitor schickt: einen festen Text oder den Wert
+      einer Größe. Nenne den Aufruf wörtlich.
+    needs: [output]
+    fallback: "Betrachte den Aufruf {code} in {function}: Schickt er einen festen Text oder den Wert einer Größe an den seriellen Monitor?"
+  - id: serial-find-when
+    level: 1
+    task: >-
+      Lass benennen, in welcher Funktion dieser Aufruf steht und ob er deshalb einmal oder immer wieder läuft.
+    needs: [output]
+    fallback: "In welcher Funktion steht der Aufruf {code}, und läuft er deshalb einmal oder immer wieder?"
+  - id: serial-explain-purpose
+    level: 2
+    task: >-
+      Lass erklären, wozu diese Ausgabe beim Arbeiten mit dem Sketch dient: Was erfährt man durch sie, das man
+      am Board allein nicht sieht.
+    needs: [output]
+    fallback: "Wozu dient der Aufruf {code} in {function}: Was erfährst du durch ihn, das du am Board allein nicht siehst?"
+  - id: serial-explain-value
+    level: 2
+    task: >-
+      Lass erklären, woher der ausgegebene Wert stammt und was er bedeutet. Nenne den Namen der Größe wörtlich.
+    needs: [output, output-value]
+    fallback: "Woher stammt der Wert, den der Aufruf {code} in {function} ausgibt, und was bedeutet er?"
+  - id: serial-explain-begin
+    level: 2
+    task: >-
+      Lass erklären, wozu dieser Aufruf nötig ist, bevor der Sketch etwas ausgeben kann, und was die Zahl
+      in der Klammer festlegt. Nenne den Aufruf wörtlich.
+    needs: [mode]
+    fallback: "Wozu braucht der Sketch den Aufruf {code} in {function}, bevor er etwas ausgeben kann, und was legt die Zahl in der Klammer fest?"
+  - id: serial-predict-line
+    level: 3
+    task: >-
+      Lass für eine von dir genannte konkrete Situation vorhersagen, was nach diesem Aufruf genau im seriellen
+      Monitor steht, einschließlich der Frage, ob danach eine neue Zeile beginnt. Fordere zur Prüfung im Simulator auf.
+    needs: [output]
+    fallback: "Was steht genau im seriellen Monitor, nachdem der Aufruf {code} in {function} gelaufen ist, und beginnt danach eine neue Zeile?"
+  - id: serial-predict-rate
+    level: 3
+    task: >-
+      Lass vorhersagen, wie oft diese Ausgabe in einer von dir genannten Zeitspanne im seriellen Monitor
+      erscheint, und lass das aus dem Ablauf des Sketches begründen. Fordere zur Prüfung im Simulator auf.
+    needs: [output]
+    fallback: "Wie oft erscheint die Ausgabe des Aufrufs {code} in zehn Sekunden im seriellen Monitor, und wie folgt das aus dem Ablauf des Sketches?"
+  - id: serial-change-format
+    level: 4
+    task: >-
+      Lass überlegen, wie der Aufruf geändert werden muss, damit die Ausgabe eine von dir genannte andere Form
+      hat (zum Beispiel alles in einer Zeile oder mit Einheit), und woran man das im seriellen Monitor erkennt.
+    needs: [output]
+    fallback: "Wie musst du den Aufruf {code} in {function} ändern, damit die Ausgabe in derselben Zeile wie die folgende steht, und woran erkennst du das im seriellen Monitor?"
+  - id: serial-change-add
+    level: 4
+    task: >-
+      Lass eine zusätzliche Ausgabe entwerfen, die an dieser Stelle eine weitere Größe des Sketches sichtbar
+      macht, und lass begründen, wobei sie bei der Fehlersuche hilft.
+    needs: [output]
+    fallback: "Welche zusätzliche Ausgabe würdest du neben dem Aufruf {code} in {function} einfügen, um eine weitere Größe sichtbar zu machen, und wobei hilft sie bei der Fehlersuche?"

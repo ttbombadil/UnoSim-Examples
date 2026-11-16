@@ -1,0 +1,56 @@
+schemaVersion: 1
+id: expressions
+title: Ausdrücke und Berechnungen
+objective: >-
+  Die Lernenden können einen zusammengesetzten Ausdruck des Sketches in seine Rechenschritte zerlegen,
+  sein Ergebnis für konkrete Werte vorhersagen und ihn gezielt verändern.
+assignments:
+  - id: expressions-find-order
+    level: 1
+    task: >-
+      Lass benennen, welcher Teil dieses Ausdrucks zuerst ausgerechnet wird und woran man das erkennt.
+      Nenne den Ausdruck wörtlich.
+    fallback: "Betrachte den Ausdruck {code} in {function}: Welcher Teil wird zuerst ausgerechnet, und woran erkennst du das?"
+  - id: expressions-find-operands
+    level: 1
+    task: >-
+      Lass benennen, welche Teile dieses Ausdrucks feste Zahlen sind und welche sich im Lauf des Sketches ändern können.
+    fallback: "Welche Teile des Ausdrucks {code} in {function} sind feste Zahlen, und welche können sich im Lauf des Sketches ändern?"
+  - id: expressions-explain-meaning
+    level: 2
+    task: >-
+      Lass erklären, was dieser Ausdruck berechnet: von welcher Größe er ausgeht und welche Größe herauskommt.
+      Nenne den Ausdruck wörtlich, aber nicht die Bedeutung des Ergebnisses.
+    fallback: "Was berechnet der Ausdruck {code} in {function}: Von welcher Größe geht er aus, und welche Größe kommt heraus?"
+  - id: expressions-explain-numbers
+    level: 2
+    task: >-
+      Lass erklären, wofür die Zahlen in diesem Ausdruck stehen und warum sie als Kommazahlen oder als ganze
+      Zahlen geschrieben sind.
+    fallback: "Wofür stehen die Zahlen im Ausdruck {code} in {function}, und warum sind sie als Kommazahlen oder als ganze Zahlen geschrieben?"
+  - id: expressions-predict-result
+    level: 3
+    task: >-
+      Nenne einen konkreten Wert für die Variable des Ausdrucks und lass das Ergebnis vorhersagen, mit den
+      Zwischenschritten. Nenne Ausdruck und Wert wörtlich und fordere zur Prüfung im Simulator auf.
+    needs: [variable]
+    fallback: "Wähle einen konkreten Wert für {name}: Welches Ergebnis liefert dann der Ausdruck {code} in {function}, Schritt für Schritt gerechnet?"
+  - id: expressions-predict-range
+    level: 3
+    task: >-
+      Lass vorhersagen, welches kleinste und welches größte Ergebnis dieser Ausdruck liefern kann, wenn die
+      Variable ihren ganzen Wertebereich durchläuft.
+    needs: [variable]
+    fallback: "Welches kleinste und welches größte Ergebnis kann der Ausdruck {code} in {function} liefern, wenn {name} seinen ganzen Wertebereich durchläuft?"
+  - id: expressions-change-integer
+    level: 4
+    task: >-
+      Lass abschätzen, was sich am Ergebnis ändert, wenn die Kommazahlen dieses Ausdrucks als ganze Zahlen
+      geschrieben werden oder eine Klammer entfällt, und welche Beobachtung im Simulator das zeigt.
+    fallback: "Was ändert sich am Ergebnis, wenn du im Ausdruck {code} in {function} die Klammern weglässt, und welche Beobachtung im Simulator zeigt es?"
+  - id: expressions-change-unit
+    level: 4
+    task: >-
+      Lass überlegen, wie der Ausdruck geändert werden muss, damit das Ergebnis in einer von dir genannten
+      anderen Einheit oder Skala vorliegt, und wie man das Ergebnis prüft.
+    fallback: "Wie musst du den Ausdruck {code} in {function} ändern, damit das Ergebnis in einer anderen Einheit vorliegt, und wie prüfst du das?"

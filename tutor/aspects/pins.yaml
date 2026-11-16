@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: pins
+title: Digitale und analoge Pins
+objective: >-
+  Die Lernenden können für einen Pin-Aufruf des Sketches erklären, was er am Board bewirkt oder liest,
+  das Verhalten für konkrete Signale vorhersagen und die Beschaltung im Code gezielt verändern.
+assignments:
+  - id: pins-find-direction
+    level: 1
+    task: >-
+      Lass benennen, ob der Sketch mit diesem Aufruf etwas vom Board liest oder etwas am Board setzt, und
+      über welchen Pin. Nenne den Aufruf wörtlich, aber nicht die Richtung.
+    needs: [pin]
+    fallback: "Betrachte den Aufruf {code} in {function}: Liest der Sketch hier etwas vom Board oder setzt er etwas, und über welchen Pin?"
+  - id: pins-find-partner
+    level: 1
+    task: >-
+      Lass die Stelle im Sketch nennen, an der dieser Pin für seine Aufgabe vorbereitet wird, oder, wenn dies
+      schon die Vorbereitung ist, eine Stelle, an der er danach benutzt wird.
+    needs: [pin]
+    fallback: "Betrachte den Aufruf {code} in {function}: An welcher anderen Stelle des Sketches wird derselbe Pin vorbereitet oder benutzt?"
+  - id: pins-explain-effect
+    level: 2
+    task: >-
+      Lass erklären, was dieser Aufruf am angeschlossenen Bauteil bewirkt und wozu der Sketch das an dieser
+      Stelle braucht. Nenne den Aufruf wörtlich, aber nicht die Wirkung.
+    needs: [pin, output]
+    fallback: "Was bewirkt der Aufruf {code} in {function} am angeschlossenen Bauteil, und wozu braucht der Sketch das an dieser Stelle?"
+  - id: pins-explain-reading
+    level: 2
+    task: >-
+      Lass erklären, welche Werte dieser Aufruf liefern kann und was sie über das angeschlossene Bauteil
+      aussagen. Nenne den Aufruf wörtlich, aber keine Werte.
+    needs: [pin, input]
+    fallback: "Welche Werte kann der Aufruf {code} in {function} liefern, und was sagen sie über das angeschlossene Bauteil aus?"
+  - id: pins-explain-mode
+    level: 2
+    task: >-
+      Lass erklären, wozu dieser Aufruf den Pin vorbereitet und was ohne ihn bei der späteren Benutzung des
+      Pins nicht wie erwartet funktionieren würde. Nenne den Aufruf wörtlich.
+    needs: [pin, mode]
+    fallback: "Wozu bereitet der Aufruf {code} in {function} den Pin vor, und was würde ohne ihn bei der späteren Benutzung nicht wie erwartet funktionieren?"
+  - id: pins-predict-signal
+    level: 3
+    task: >-
+      Nenne ein konkretes Signal am Pin (zum Beispiel einen gedrückten Taster oder einen Reglerwert im
+      Simulator) und lass vorhersagen, welchen Wert dieser Aufruf dann liefert und was der Sketch danach tut.
+      Fordere zur Prüfung im Simulator auf.
+    needs: [pin, input]
+    fallback: "Stelle im Simulator ein Signal deiner Wahl am Pin ein: Welchen Wert liefert dann der Aufruf {code} in {function}, und was tut der Sketch danach?"
+  - id: pins-predict-output
+    level: 3
+    task: >-
+      Lass vorhersagen, was im Simulator am Pin zu beobachten ist, unmittelbar nachdem dieser Aufruf
+      gelaufen ist, und wie lange dieser Zustand bestehen bleibt. Fordere zur Prüfung im Simulator auf.
+    needs: [pin, output]
+    fallback: "Was ist im Simulator am Pin zu beobachten, unmittelbar nachdem der Aufruf {code} in {function} gelaufen ist, und wie lange bleibt das so?"
+  - id: pins-change-pin
+    level: 4
+    task: >-
+      Lass überlegen, was alles im Sketch geändert werden muss, damit das Bauteil an einem von dir genannten
+      anderen Pin funktioniert, und woran man im Simulator sieht, dass es gelungen ist.
+    needs: [pin]
+    fallback: "Was musst du im Sketch alles ändern, damit das Bauteil aus dem Aufruf {code} an einem anderen Pin funktioniert, und woran siehst du im Simulator, dass es gelungen ist?"
+  - id: pins-change-omit
+    level: 4
+    task: >-
+      Lass abschätzen, wie sich der Sketch verhält, wenn dieser Aufruf gelöscht wird, und welche Beobachtung
+      im Simulator den Unterschied zeigt.
+    needs: [pin]
+    fallback: "Wie verhält sich der Sketch, wenn du den Aufruf {code} in {function} löschst, und welche Beobachtung im Simulator zeigt den Unterschied?"

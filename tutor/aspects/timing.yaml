@@ -1,0 +1,54 @@
+schemaVersion: 1
+id: timing
+title: Zeitsteuerung
+objective: >-
+  Die Lernenden können für eine Zeitangabe des Sketches erklären, was der Sketch währenddessen tut und
+  nicht tut, den zeitlichen Ablauf vorhersagen und ihn gezielt verändern.
+assignments:
+  - id: timing-find-duration
+    level: 1
+    task: >-
+      Lass benennen, wie lange dieser Aufruf dauert, in einer alltäglichen Einheit. Nenne den Aufruf wörtlich,
+      aber nicht die umgerechnete Dauer.
+    fallback: "Betrachte den Aufruf {code} in {function}: Wie lange dauert er, in Sekunden ausgedrückt?"
+  - id: timing-find-position
+    level: 1
+    task: >-
+      Lass benennen, welche Anweisung unmittelbar vor und welche unmittelbar nach diesem Aufruf läuft.
+    fallback: "Welche Anweisung läuft unmittelbar vor dem Aufruf {code} in {function}, und welche unmittelbar danach?"
+  - id: timing-explain-purpose
+    level: 2
+    task: >-
+      Lass erklären, wozu der Sketch an dieser Stelle Zeit vergehen lässt und was ohne diese Zeitangabe anders wäre.
+    fallback: "Wozu lässt der Sketch mit dem Aufruf {code} in {function} Zeit vergehen, und was wäre ohne ihn anders?"
+  - id: timing-explain-blocking
+    level: 2
+    task: >-
+      Lass erklären, was der Sketch während dieses Aufrufs tut und was er in dieser Zeit nicht bemerken kann.
+      Nenne kein Beispiel aus dem Sketch.
+    fallback: "Was tut der Sketch während des Aufrufs {code} in {function}, und was kann er in dieser Zeit nicht bemerken?"
+  - id: timing-predict-reaction
+    level: 3
+    task: >-
+      Nenne ein konkretes Ereignis im Simulator, das während dieses Aufrufs eintritt (zum Beispiel ein Tastendruck
+      oder ein geänderter Reglerwert), und lass vorhersagen, wann der Sketch frühestens darauf reagiert.
+      Fordere zur Prüfung im Simulator auf.
+    fallback: "Du änderst im Simulator eine Eingabe, kurz nachdem der Aufruf {code} in {function} begonnen hat: Wann reagiert der Sketch frühestens darauf?"
+  - id: timing-predict-cycle
+    level: 3
+    task: >-
+      Lass vorhersagen, wie lange ein vollständiger Durchlauf von loop() ungefähr dauert, in dem dieser Aufruf
+      läuft, und lass das begründen. Fordere zur Prüfung im Simulator auf.
+    fallback: "Wie lange dauert ungefähr ein Durchlauf von loop(), in dem der Aufruf {code} läuft, und wie prüfst du das im Simulator?"
+  - id: timing-change-duration
+    level: 4
+    task: >-
+      Lass überlegen, wie sich das Verhalten des Sketches ändert, wenn die Zeit in diesem Aufruf auf einen von
+      dir genannten deutlich anderen Wert gesetzt wird, und welche Beobachtung im Simulator das zeigt.
+    fallback: "Wie ändert sich das Verhalten des Sketches, wenn du die Zeit im Aufruf {code} in {function} auf ein Zehntel verkürzt, und welche Beobachtung im Simulator zeigt es?"
+  - id: timing-change-nonblocking
+    level: 4
+    task: >-
+      Lass einen Weg skizzieren, wie der Sketch denselben zeitlichen Abstand einhalten kann, ohne in dieser Zeit
+      blind für Eingaben zu sein. Eine Beschreibung in Worten genügt.
+    fallback: "Wie könnte der Sketch denselben zeitlichen Abstand wie mit dem Aufruf {code} in {function} einhalten, ohne in dieser Zeit blind für Eingaben zu sein?"
