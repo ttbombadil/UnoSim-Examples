@@ -33,3 +33,12 @@ aspects:
   - id: expressions
     path: tutor/aspects/expressions.yaml
     sha256: be5d1781d834ff056e6f9f26b31523f28f7dc30d6007a0282d74a8db00417369
+  - id: functions
+    path: tutor/aspects/functions.yaml
+    sha256: 7178146e9e1f3621d72aacf4c815df5a961ac9f05637132e1456e88fa841562e
+  - id: program-flow
+    path: tutor/aspects/program-flow.yaml
+    sha256: 72d917bf423f15fc25b6f3c3bd0f901a14aa97f47aa92549b6fe69d7eb06ab41
+  - id: diagrams
+    path: tutor/aspects/diagrams.yaml
+    sha256: 8a158da8edd35fe9ab9af116097962c1eae5da9f7f8b49b24b9e95f735988bb4
